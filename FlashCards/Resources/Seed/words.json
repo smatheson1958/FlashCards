@@ -1,0 +1,22 @@
+[
+  { "id": "word_001", "orderIndex": 1, "word": "cat", "audioStem": "cat" },
+  { "id": "word_002", "orderIndex": 2, "word": "bat", "audioStem": "bat" },
+  { "id": "word_003", "orderIndex": 3, "word": "cup", "audioStem": "cup" },
+  { "id": "word_004", "orderIndex": 4, "word": "dog", "audioStem": "dog" },
+  { "id": "word_005", "orderIndex": 5, "word": "egg", "audioStem": "egg" },
+  { "id": "word_006", "orderIndex": 6, "word": "fish", "audioStem": "fish" },
+  { "id": "word_007", "orderIndex": 7, "word": "goat", "audioStem": "goat" },
+  { "id": "word_008", "orderIndex": 8, "word": "hat", "audioStem": "hat" },
+  { "id": "word_009", "orderIndex": 9, "word": "igloo", "audioStem": "igloo" },
+  { "id": "word_010", "orderIndex": 10, "word": "jam", "audioStem": "jam" },
+  { "id": "word_011", "orderIndex": 11, "word": "kite", "audioStem": "kite" },
+  { "id": "word_012", "orderIndex": 12, "word": "leg", "audioStem": "leg" },
+  { "id": "word_013", "orderIndex": 13, "word": "man", "audioStem": "man" },
+  { "id": "word_014", "orderIndex": 14, "word": "net", "audioStem": "net" },
+  { "id": "word_015", "orderIndex": 15, "word": "dog", "audioStem": "dog" },
+  { "id": "word_016", "orderIndex": 16, "word": "pen", "audioStem": "pen" },
+  { "id": "word_017", "orderIndex": 17, "word": "queen", "audioStem": "queen" },
+  { "id": "word_018", "orderIndex": 18, "word": "rat", "audioStem": "rat" },
+  { "id": "word_019", "orderIndex": 19, "word": "sun", "audioStem": "sun" },
+  { "id": "word_020", "orderIndex": 20, "word": "top", "audioStem": "top" }
+]

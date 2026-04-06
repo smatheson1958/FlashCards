@@ -21,6 +21,7 @@ struct ContentView: View {
                 FlashCardStudyView(session: session, isLibraryPreparing: isPreparingLibrary)
                     .navigationTitle("Study")
                     .navigationBarTitleDisplayMode(.inline)
+                    .studyAppearanceToolbar()
             }
             .tabItem {
                 Label("Study", systemImage: "rectangle.on.rectangle.angled")
@@ -44,6 +45,7 @@ struct ContentView: View {
                 WordStudyView(isLibraryPreparing: isPreparingLibrary)
                     .navigationTitle("Words")
                     .navigationBarTitleDisplayMode(.inline)
+                    .studyAppearanceToolbar()
             }
             .tabItem {
                 Label("Words", systemImage: "text.bubble")

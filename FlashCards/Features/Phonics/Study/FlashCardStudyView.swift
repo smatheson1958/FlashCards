@@ -11,6 +11,7 @@ import UIKit
 struct FlashCardStudyView: View {
     @Environment(\.modelContext) private var modelContext
     @Bindable var session: StudySessionStore
+    @Bindable private var appearance = StudyAppearanceSettings.shared
     /// True while bundled JSON is imported into SwiftData on first launch.
     var isLibraryPreparing: Bool = false
 
@@ -43,7 +44,7 @@ struct FlashCardStudyView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(.systemGroupedBackground))
+        .background(appearance.backgroundColor)
         .animation(.spring(duration: 0.45, bounce: 0.22), value: showingBack)
         .animation(.spring(duration: 0.45, bounce: 0.22), value: flipDegrees)
         .onChange(of: session.currentEntry?.id) { _, _ in
@@ -66,12 +67,12 @@ struct FlashCardStudyView: View {
         VStack(spacing: 20) {
             ProgressView()
                 .scaleEffect(1.25)
-                .tint(.accentColor)
+                .tint(appearance.surroundColor)
             Text("Building your library…")
-                .font(.headline)
+                .font(appearance.bodyFont(size: 17, weight: .semibold))
             Text("Loading sounds and cards from the bundled reference files. This only runs once.")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .font(appearance.bodyFont(size: 15))
+                .foregroundStyle(appearance.surroundColor.opacity(0.85))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
         }
@@ -82,11 +83,12 @@ struct FlashCardStudyView: View {
         VStack(spacing: 20) {
             ProgressView()
                 .scaleEffect(1.2)
+                .tint(appearance.surroundColor)
             Text("Preparing your session…")
-                .font(.headline)
+                .font(appearance.bodyFont(size: 17, weight: .semibold))
             Text("Shuffling the current deck and review cards.")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .font(appearance.bodyFont(size: 15))
+                .foregroundStyle(appearance.surroundColor.opacity(0.85))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 28)
         }
@@ -146,12 +148,12 @@ struct FlashCardStudyView: View {
     private var hintRow: some View {
         HStack {
             Label("Wrong", systemImage: "arrow.left")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .font(appearance.bodyFont(size: 15))
+                .foregroundStyle(appearance.surroundColor.opacity(0.95))
             Spacer()
             Label("Correct", systemImage: "arrow.right")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .font(appearance.bodyFont(size: 15))
+                .foregroundStyle(appearance.surroundColor.opacity(0.95))
         }
         .padding(.horizontal, 32)
     }
@@ -161,16 +163,18 @@ struct FlashCardStudyView: View {
         HStack {
             if isReview {
                 Text("Review")
-                    .font(.caption.weight(.semibold))
+                    .font(appearance.bodyFont(size: 12, weight: .semibold))
                     .padding(.horizontal, 10)
                     .padding(.vertical, 4)
-                    .background(.orange.opacity(0.2), in: Capsule())
+                    .background(appearance.surroundColor.opacity(0.35), in: Capsule())
+                    .foregroundStyle(appearance.primaryTextColor.opacity(0.9))
             }
             Spacer()
             if !isReview {
                 Text("\(card.masteryCorrectCount)/\(FlashCardsConstants.masteryThreshold)")
-                    .font(.caption.monospacedDigit())
-                    .foregroundStyle(.secondary)
+                    .font(appearance.bodyFont(size: 12))
+                    .monospacedDigit()
+                    .foregroundStyle(appearance.surroundColor.opacity(0.9))
             }
         }
         .padding(.horizontal, 24)
@@ -179,8 +183,12 @@ struct FlashCardStudyView: View {
     private func cardFace(card: CardProgress, isReview: Bool) -> some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill(Color(.secondarySystemGroupedBackground))
-                .shadow(color: .black.opacity(0.08), radius: 12, y: 6)
+                .fill(appearance.cardFillColor)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                        .strokeBorder(appearance.surroundColor.opacity(0.45), lineWidth: 1.5)
+                }
+                .shadow(color: appearance.surroundColor.opacity(0.25), radius: 12, y: 6)
 
             Group {
                 if showingBack {
@@ -244,30 +252,32 @@ struct FlashCardStudyView: View {
     private func frontContent(card: CardProgress) -> some View {
         VStack(spacing: 12) {
             Text("Sound")
-                .font(.caption)
-                .foregroundStyle(.secondary)
+                .font(appearance.bodyFont(size: 12))
+                .foregroundStyle(appearance.surroundColor.opacity(0.85))
             Text(card.sound)
-                .font(.system(size: 72, weight: .medium, design: .rounded))
+                .font(appearance.titleFont(size: 72, weight: .medium))
+                .foregroundStyle(appearance.primaryTextColor)
                 .minimumScaleFactor(0.5)
                 .lineLimit(1)
             Text("Tap to flip")
-                .font(.footnote)
-                .foregroundStyle(.tertiary)
+                .font(appearance.bodyFont(size: 13))
+                .foregroundStyle(appearance.surroundColor.opacity(0.65))
         }
     }
 
     private func backContent(card: CardProgress) -> some View {
         VStack(spacing: 16) {
             Text("Word")
-                .font(.caption)
-                .foregroundStyle(.secondary)
+                .font(appearance.bodyFont(size: 12))
+                .foregroundStyle(appearance.surroundColor.opacity(0.85))
             Text(card.word.capitalized)
-                .font(.system(size: 44, weight: .semibold, design: .rounded))
+                .font(appearance.titleFont(size: 44, weight: .semibold))
+                .foregroundStyle(appearance.primaryTextColor)
                 .multilineTextAlignment(.center)
             cardImage(card: card)
             Text("Swipe → correct, ← wrong")
-                .font(.footnote)
-                .foregroundStyle(.tertiary)
+                .font(appearance.bodyFont(size: 13))
+                .foregroundStyle(appearance.surroundColor.opacity(0.65))
         }
     }
 

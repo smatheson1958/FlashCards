@@ -3,12 +3,14 @@
 //  FlashCards
 //
 
+import Observation
 import SwiftData
 import SwiftUI
 
 struct WordStudyView: View {
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \WordCard.orderIndex) private var wordCards: [WordCard]
+    @Bindable private var appearance = StudyAppearanceSettings.shared
 
     var isLibraryPreparing: Bool = false
 
@@ -30,7 +32,7 @@ struct WordStudyView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(.systemGroupedBackground))
+        .background(appearance.backgroundColor)
         .onChange(of: wordCards.count) { _, newCount in
             if index >= newCount { index = max(0, newCount - 1) }
         }
@@ -43,16 +45,17 @@ struct WordStudyView: View {
         VStack(spacing: 20) {
             ProgressView()
                 .scaleEffect(1.25)
+                .tint(appearance.surroundColor)
             Text("Building word list…")
-                .font(.headline)
+                .font(appearance.bodyFont(size: 17, weight: .semibold))
             Text("Loading entries from words.json. This only runs once.")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .font(appearance.bodyFont(size: 15))
+                .foregroundStyle(appearance.surroundColor.opacity(0.85))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(.systemGroupedBackground))
+        .background(appearance.backgroundColor)
     }
 
     private var wordStudyContent: some View {
@@ -60,8 +63,8 @@ struct WordStudyView: View {
 
         return VStack(spacing: 24) {
             Text("Word \(index + 1) of \(wordCards.count)")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .font(appearance.bodyFont(size: 15))
+                .foregroundStyle(appearance.surroundColor.opacity(0.9))
 
             wordFace(card: card)
                 .padding(.horizontal, 20)
@@ -81,18 +84,23 @@ struct WordStudyView: View {
     private func wordFace(card: WordCard) -> some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill(Color(.secondarySystemGroupedBackground))
-                .shadow(color: .black.opacity(0.08), radius: 12, y: 6)
+                .fill(appearance.cardFillColor)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                        .strokeBorder(appearance.surroundColor.opacity(0.45), lineWidth: 1.5)
+                }
+                .shadow(color: appearance.surroundColor.opacity(0.25), radius: 12, y: 6)
 
             VStack(spacing: 16) {
                 Text(card.word.capitalized)
-                    .font(.system(size: 48, weight: .semibold, design: .rounded))
+                    .font(appearance.titleFont(size: 48, weight: .semibold))
+                    .foregroundStyle(appearance.primaryTextColor)
                     .multilineTextAlignment(.center)
                     .minimumScaleFactor(0.5)
 
                 Label("Tap to hear", systemImage: "speaker.wave.2.fill")
-                    .font(.footnote)
-                    .foregroundStyle(.tertiary)
+                    .font(appearance.bodyFont(size: 13))
+                    .foregroundStyle(appearance.surroundColor.opacity(0.7))
             }
             .padding(36)
         }
@@ -111,6 +119,8 @@ struct WordStudyView: View {
             } label: {
                 Image(systemName: "chevron.left.circle.fill")
                     .font(.system(size: 44))
+                    .symbolRenderingMode(.palette)
+                    .foregroundStyle(appearance.surroundColor, appearance.surroundColor.opacity(0.35))
             }
             .disabled(index <= 0)
 
@@ -118,6 +128,7 @@ struct WordStudyView: View {
                 audio.stop()
             } label: {
                 Label("Stop", systemImage: "stop.circle")
+                    .foregroundStyle(appearance.surroundColor)
             }
 
             Button {
@@ -125,6 +136,8 @@ struct WordStudyView: View {
             } label: {
                 Image(systemName: "chevron.right.circle.fill")
                     .font(.system(size: 44))
+                    .symbolRenderingMode(.palette)
+                    .foregroundStyle(appearance.surroundColor, appearance.surroundColor.opacity(0.35))
             }
             .disabled(index >= wordCards.count - 1)
         }

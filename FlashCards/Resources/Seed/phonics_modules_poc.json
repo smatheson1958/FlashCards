@@ -5,13 +5,17 @@
     { "id": "seg_002", "orderIndex": 2, "word": "dog", "segments": ["d", "o", "g"] },
     { "id": "seg_003", "orderIndex": 3, "word": "sun", "segments": ["s", "u", "n"] },
     { "id": "seg_004", "orderIndex": 4, "word": "hat", "segments": ["h", "a", "t"] },
-    { "id": "seg_005", "orderIndex": 5, "word": "pen", "segments": ["p", "e", "n"] }
+    { "id": "seg_005", "orderIndex": 5, "word": "pen", "segments": ["p", "e", "n"] },
+    { "id": "seg_006", "orderIndex": 6, "word": "ship", "segments": ["sh", "i", "p"] },
+    { "id": "seg_007", "orderIndex": 7, "word": "rain", "segments": ["r", "ai", "n"] }
   ],
   "construction": [
     { "id": "con_001", "orderIndex": 1, "word": "cat", "segments": ["c", "a", "t"] },
     { "id": "con_002", "orderIndex": 2, "word": "dog", "segments": ["d", "o", "g"] },
     { "id": "con_003", "orderIndex": 3, "word": "sun", "segments": ["s", "u", "n"] },
     { "id": "con_004", "orderIndex": 4, "word": "hat", "segments": ["h", "a", "t"] },
-    { "id": "con_005", "orderIndex": 5, "word": "pen", "segments": ["p", "e", "n"] }
+    { "id": "con_005", "orderIndex": 5, "word": "pen", "segments": ["p", "e", "n"] },
+    { "id": "con_006", "orderIndex": 6, "word": "ship", "segments": ["sh", "i", "p"] },
+    { "id": "con_007", "orderIndex": 7, "word": "rain", "segments": ["r", "ai", "n"] }
   ]
 }

@@ -7,12 +7,15 @@
 
 import SwiftData
 import SwiftUI
+import UIKit
 
 @main
 struct FlashCardsApp: App {
     private let modelContainer: ModelContainer
 
     init() {
+        Self.configureTabBarUnselectedGrey()
+
         let schema = Schema([CardProgress.self, WordCard.self])
         let configuration = ModelConfiguration()
         do {
@@ -20,6 +23,19 @@ struct FlashCardsApp: App {
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
+    }
+
+    /// Unselected tab icons/labels: muted grey. (Custom `LabelStyle` is not supported inside tab bar items; use `Tab` + appearance.)
+    private static func configureTabBarUnselectedGrey() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithDefaultBackground()
+        let grey = UIColor.label.withAlphaComponent(0.45)
+        appearance.stackedLayoutAppearance.normal.iconColor = grey
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
+            .foregroundColor: grey,
+        ]
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
     }
 
     var body: some Scene {

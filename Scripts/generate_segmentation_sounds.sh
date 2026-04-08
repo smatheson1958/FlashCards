@@ -29,12 +29,16 @@ phrase_for() {
     h) echo "huh" ;;
     p) echo "puh" ;;
     e) echo "eh" ;;
+    sh) echo "shh" ;;
+    ai) echo "ay" ;;
+    r) echo "rrr" ;;
+    i) echo "ih" ;;
     *) echo "$1" ;;
   esac
 }
 
-# Unique graphemes from phonics_modules_poc.json segmentation (CVC POC).
-for g in c a t d o g s u n h p e; do
+# Unique graphemes from phonics_modules_poc.json segmentation (CVC + ship, rain, …).
+for g in c a t d o g s u n h p e sh ai r i; do
   phrase="$(phrase_for "$g")"
   say -v "$VOICE" -o "$TMP" "$phrase"
   afconvert -f WAVE -d LEI16@22050 "$TMP" "$OUT/${g}.wav" 1>/dev/null

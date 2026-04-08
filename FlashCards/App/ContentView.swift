@@ -17,38 +17,22 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-            NavigationStack {
-                FlashCardStudyView(session: session, isLibraryPreparing: isPreparingLibrary)
-                    .navigationTitle("Study")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .studyAppearanceToolbar()
-            }
-            .tabItem {
-                Label("Study", systemImage: "rectangle.on.rectangle.angled")
+            Tab("Exercises", systemImage: "square.grid.2x2") {
+                NavigationStack {
+                    ExerciseHomeView(session: session, isLibraryPreparing: isPreparingLibrary)
+                }
             }
 
-            NavigationStack {
-                CurrentDeckListView()
-            }
-            .tabItem {
-                Label("Current deck", systemImage: "square.stack")
-            }
-
-            NavigationStack {
-                SuccessfulListView()
-            }
-            .tabItem {
-                Label("Successful", systemImage: "checkmark.circle")
+            Tab("Current deck", systemImage: "square.stack") {
+                NavigationStack {
+                    CurrentDeckListView()
+                }
             }
 
-            NavigationStack {
-                WordStudyView(isLibraryPreparing: isPreparingLibrary)
-                    .navigationTitle("Words")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .studyAppearanceToolbar()
-            }
-            .tabItem {
-                Label("Words", systemImage: "text.bubble")
+            Tab("Successful", systemImage: "checkmark.circle") {
+                NavigationStack {
+                    SuccessfulListView()
+                }
             }
         }
         .task {

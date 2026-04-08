@@ -31,6 +31,33 @@ final class SegmentationSoundPlayer {
         lastPlaybackFailed = false
     }
 
+    /// Plays a single grapheme clip (e.g. tap on one segment block).
+    func playGrapheme(_ grapheme: String) {
+        stop()
+        lastPlaybackFailed = false
+        let g = grapheme.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !g.isEmpty else {
+            lastPlaybackFailed = true
+            return
+        }
+
+        activateSessionIfNeeded()
+
+        guard let url = Self.bundleURL(forGrapheme: g) else {
+            lastPlaybackFailed = true
+            return
+        }
+
+        do {
+            let p = try AVAudioPlayer(contentsOf: url)
+            p.prepareToPlay()
+            player = p
+            player?.play()
+        } catch {
+            lastPlaybackFailed = true
+        }
+    }
+
     /// Plays each grapheme’s WAV in order: play clip → wait until it ends → pause → next.
     func playSegments(_ segments: [String], pauseAfterEachClip: TimeInterval = defaultPauseAfterClip) {
         stop()

@@ -54,8 +54,9 @@ def write_tone_wav(path: str, word: str, framerate: int = 22050) -> None:
 def macos_say_wav(path: str, word: str) -> bool:
     tmp_aiff = path + ".tmp.aiff"
     try:
+        # Kate (en_GB female) matches segmentation WAVs / typical UK literacy TTS.
         subprocess.run(
-            ["say", "-o", tmp_aiff, word],
+            ["say", "-v", "Kate", "-o", tmp_aiff, word],
             check=True,
             capture_output=True,
         )

@@ -6,6 +6,7 @@
 import Observation
 import SwiftData
 import SwiftUI
+import UIKit
 
 struct WordStudyView: View {
     @Environment(\.modelContext) private var modelContext
@@ -97,8 +98,12 @@ struct WordStudyView: View {
                     .foregroundStyle(appearance.primaryTextColor)
                     .multilineTextAlignment(.center)
                     .minimumScaleFactor(0.5)
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        audio.play(stem: card.playbackStem)
+                    }
 
-                Label("Tap to hear", systemImage: "speaker.wave.2.fill")
+                Label("Tap word to hear", systemImage: "speaker.wave.2.fill")
                     .font(appearance.bodyFont(size: 13))
                     .foregroundStyle(appearance.surroundColor.opacity(0.7))
             }
@@ -106,10 +111,6 @@ struct WordStudyView: View {
         }
         .frame(maxWidth: 520)
         .frame(minHeight: 260)
-        .contentShape(Rectangle())
-        .onTapGesture {
-            audio.play(stem: card.playbackStem)
-        }
     }
 
     private var controls: some View {
@@ -117,32 +118,34 @@ struct WordStudyView: View {
             Button {
                 step(-1)
             } label: {
-                Image(systemName: "chevron.left.circle.fill")
-                    .font(.system(size: 44))
-                    .symbolRenderingMode(.palette)
-                    .foregroundStyle(appearance.surroundColor, appearance.surroundColor.opacity(0.35))
+                wordStudyNavCircleSymbol("chevron.left.circle.fill")
             }
             .disabled(index <= 0)
 
             Button {
                 audio.stop()
             } label: {
-                Label("Stop", systemImage: "stop.circle")
-                    .foregroundStyle(appearance.surroundColor)
+                wordStudyNavCircleSymbol("stop.circle")
             }
+            .accessibilityLabel("Stop")
 
             Button {
                 step(1)
             } label: {
-                Image(systemName: "chevron.right.circle.fill")
-                    .font(.system(size: 44))
-                    .symbolRenderingMode(.palette)
-                    .foregroundStyle(appearance.surroundColor, appearance.surroundColor.opacity(0.35))
+                wordStudyNavCircleSymbol("chevron.right.circle.fill")
             }
             .disabled(index >= wordCards.count - 1)
         }
-        .labelStyle(.iconOnly)
         .padding(.bottom, 8)
+    }
+
+    /// Prev/next/stop circle symbols use system dark gray so they stay readable on any study theme.
+    private func wordStudyNavCircleSymbol(_ systemName: String) -> some View {
+        let gray = Color(uiColor: .darkGray)
+        return Image(systemName: systemName)
+            .font(.system(size: 44))
+            .symbolRenderingMode(.palette)
+            .foregroundStyle(gray, gray.opacity(0.22))
     }
 
     private func step(_ delta: Int) {

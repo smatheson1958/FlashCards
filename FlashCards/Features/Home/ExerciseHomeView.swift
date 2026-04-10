@@ -24,7 +24,11 @@ struct ExerciseHomeView: View {
 
                 LazyVGrid(columns: columns, spacing: 16) {
                     NavigationLink {
-                        FlashCardStudyView(session: session, isLibraryPreparing: isLibraryPreparing)
+                        FlashCardStudyView(
+                            session: session,
+                            isLibraryPreparing: isLibraryPreparing,
+                            autoStartOnAppear: true
+                        )
                             .navigationTitle("Sounds")
                             .navigationBarTitleDisplayMode(.inline)
                             .studyAppearanceToolbar()
@@ -38,18 +42,15 @@ struct ExerciseHomeView: View {
                     .buttonStyle(.plain)
 
                     NavigationLink {
-                        ExerciseComingSoonView(
-                            title: "Spelling",
-                            message: "Spelling practice will be added here — structured spelling exercises separate from the word list."
-                        )
-                        .navigationTitle("Spelling")
-                        .navigationBarTitleDisplayMode(.inline)
-                        .studyAppearanceToolbar()
+                        WordStudyView(isLibraryPreparing: isLibraryPreparing)
+                            .navigationTitle("Words")
+                            .navigationBarTitleDisplayMode(.inline)
+                            .studyAppearanceToolbar()
                     } label: {
                         exerciseTile(
-                            title: "Spelling",
-                            subtitle: "Coming soon",
-                            systemImage: "character.cursor.ibeam"
+                            title: "Words",
+                            subtitle: "Listen and practice each word",
+                            systemImage: "text.bubble"
                         )
                     }
                     .buttonStyle(.plain)
@@ -75,29 +76,6 @@ struct ExerciseHomeView: View {
                         )
                     }
                     .buttonStyle(.plain)
-                }
-
-//                Text("Memory words")
-//                    .font(appearance.bodyFont(size: 15))
-//                    .foregroundStyle(appearance.primaryTextColor)
-//                    .padding(.horizontal, 4)
-//                    .padding(.top, 8)
-
-                LazyVGrid(columns: columns, spacing: 16) {
-                    NavigationLink {
-                        WordStudyView(isLibraryPreparing: isLibraryPreparing)
-                            .navigationTitle("Words")
-                            .navigationBarTitleDisplayMode(.inline)
-                            .studyAppearanceToolbar()
-                    } label: {
-                        exerciseTile(
-                            title: "Words",
-                            subtitle: "Listen and practice each word",
-                            systemImage: "text.bubble"
-                        )
-                    }
-                    .buttonStyle(.plain)
-                    .gridCellColumns(2)
                 }
             }
             .padding(.horizontal, 20)
@@ -142,25 +120,5 @@ struct ExerciseHomeView: View {
         )
         .shadow(color: appearance.surroundColor.opacity(0.2), radius: 10, y: 4)
         .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
-    }
-}
-
-struct ExerciseComingSoonView: View {
-    let title: String
-    let message: String
-
-    @Bindable private var appearance = StudyAppearanceSettings.shared
-
-    var body: some View {
-        ContentUnavailableView {
-            Label(title, systemImage: "hammer.fill")
-        } description: {
-            Text(message)
-                .font(appearance.bodyFont(size: 15))
-                .multilineTextAlignment(.center)
-                .padding(.horizontal)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(appearance.backgroundColor)
     }
 }

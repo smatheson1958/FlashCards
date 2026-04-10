@@ -14,14 +14,28 @@ struct FlashCardStudyView: View {
     @Bindable private var appearance = StudyAppearanceSettings.shared
     /// True while bundled JSON is imported into SwiftData on first launch.
     var isLibraryPreparing: Bool = false
+    /// When true, begins a session as soon as the library is ready (skips the Study / Start session screen).
+    var autoStartOnAppear: Bool = false
 
     @State private var showingBack = false
     @State private var dragOffset: CGSize = .zero
     @State private var flipDegrees: Double = 0
     @State private var isBuildingSession = false
     @State private var showEmptyDeckAlert = false
+    @State private var segmentationSound = SegmentationSoundPlayer()
+    @State private var wordAudio = WordAudioPlayer()
+    @State private var tapFlipSequenceTask: Task<Void, Never>?
+    @State private var autoPlayWordTask: Task<Void, Never>?
+    /// After the word WAV has played once on the back, any tap on the card replays it.
+    @State private var wordSoundHeardThisBack = false
+    /// While waiting for auto-play: countdown phase for `StandardDelayCountdownIndicator` (0…tick count).
+    @State private var wordAutoPlayCountdownPhase = 0
 
     private let swipeThreshold: CGFloat = 96
+    /// Pause after tap, before playing the letter sound.
+    private let tapPauseBeforeSound: TimeInterval = 0.5
+    /// Pause after the sound ends, before flipping the card.
+    private let tapPauseAfterSoundBeforeFlip: TimeInterval = 0.5
 
     var body: some View {
         VStack(spacing: 20) {
@@ -34,7 +48,12 @@ struct FlashCardStudyView: View {
                 progressHint(card: card, isReview: entry.isReview)
                 cardFace(card: card, isReview: entry.isReview)
                     .padding(.horizontal, 20)
-                hintRow
+                    .onChange(of: showingBack) { _, isBack in
+                        if isBack {
+                            wordSoundHeardThisBack = false
+                        }
+                        scheduleAutoPlayWordAfterFlip(isBack: isBack, card: card)
+                    }
             } else if isBuildingSession {
                 buildingSessionView
             } else if session.started {
@@ -48,18 +67,45 @@ struct FlashCardStudyView: View {
         .animation(.spring(duration: 0.45, bounce: 0.22), value: showingBack)
         .animation(.spring(duration: 0.45, bounce: 0.22), value: flipDegrees)
         .onChange(of: session.currentEntry?.id) { _, _ in
+            tapFlipSequenceTask?.cancel()
+            tapFlipSequenceTask = nil
+            autoPlayWordTask?.cancel()
+            autoPlayWordTask = nil
             isBuildingSession = false
             showingBack = false
             flipDegrees = 0
             dragOffset = .zero
+            wordSoundHeardThisBack = false
+            wordAutoPlayCountdownPhase = 0
+            wordAudio.clearPlaybackWarning()
         }
         .onChange(of: session.started) { _, started in
-            if !started { isBuildingSession = false }
+            if !started {
+                isBuildingSession = false
+                tapFlipSequenceTask?.cancel()
+                tapFlipSequenceTask = nil
+                autoPlayWordTask?.cancel()
+                autoPlayWordTask = nil
+                wordAutoPlayCountdownPhase = 0
+            }
+        }
+        .onDisappear {
+            tapFlipSequenceTask?.cancel()
+            tapFlipSequenceTask = nil
+            autoPlayWordTask?.cancel()
+            autoPlayWordTask = nil
+            wordAutoPlayCountdownPhase = 0
         }
         .alert("Nothing to study", isPresented: $showEmptyDeckAlert) {
             Button("OK", role: .cancel) {}
         } message: {
             Text("There are no cards in your current deck yet. Open the Current deck tab after the library finishes loading, or delete and reinstall if setup didn’t complete.")
+        }
+        .task(id: isLibraryPreparing) {
+            guard autoStartOnAppear else { return }
+            guard !isLibraryPreparing else { return }
+            guard !session.started else { return }
+            beginSession()
         }
     }
 
@@ -117,7 +163,7 @@ struct FlashCardStudyView: View {
             ContentUnavailableView(
                 "Study",
                 systemImage: "rectangle.on.rectangle.angled",
-                description: Text("Start a session to practise sounds. Tap to flip, then swipe right for correct or left for wrong.")
+                description: Text("Start a session to practise sounds. Tap the card for the sound, then it flips; swipe right for correct or left for wrong.")
             )
             Button("Start session") {
                 beginSession()
@@ -145,19 +191,6 @@ struct FlashCardStudyView: View {
         .padding()
     }
 
-    private var hintRow: some View {
-        HStack {
-            Label("Wrong", systemImage: "arrow.left")
-                .font(appearance.bodyFont(size: 15))
-                .foregroundStyle(appearance.surroundColor.opacity(0.95))
-            Spacer()
-            Label("Correct", systemImage: "arrow.right")
-                .font(appearance.bodyFont(size: 15))
-                .foregroundStyle(appearance.surroundColor.opacity(0.95))
-        }
-        .padding(.horizontal, 32)
-    }
-
     @ViewBuilder
     private func progressHint(card: CardProgress, isReview: Bool) -> some View {
         HStack {
@@ -180,6 +213,84 @@ struct FlashCardStudyView: View {
         .padding(.horizontal, 24)
     }
 
+    /// Tap strips at the card edges + arrow visuals when the answer face is visible (left = wrong, right = correct).
+    private var cardEdgeSwipeOverlay: some View {
+        ZStack {
+            GeometryReader { geo in
+                let w = geo.size.width
+                let h = geo.size.height
+                let side = min(max(w * 0.26, 72), 130)
+                HStack(spacing: 0) {
+                    Button {
+                        commitSwipe(correct: false)
+                    } label: {
+                        Color.clear
+                            .frame(width: side, height: h)
+                            .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Wrong")
+                    .accessibilityHint("Same as swiping left.")
+
+                    Color.clear
+                        .frame(width: max(w - 2 * side, 0), height: h)
+                        .allowsHitTesting(false)
+
+                    Button {
+                        commitSwipe(correct: true)
+                    } label: {
+                        Color.clear
+                            .frame(width: side, height: h)
+                            .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Correct")
+                    .accessibilityHint("Same as swiping right.")
+                }
+                .frame(width: w, height: h)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+            cardEdgeSwipeArrowIcons
+                .allowsHitTesting(false)
+        }
+    }
+
+    private var cardEdgeSwipeArrowIcons: some View {
+        let w = dragOffset.width
+        let dragBias: CGFloat = 14
+        let wrongTint = Color(red: 0.78, green: 0.22, blue: 0.24)
+        let correctTint = Color(red: 0.18, green: 0.55, blue: 0.34)
+        return HStack {
+            swipeEdgeArrow(
+                systemImage: "arrow.left",
+                accent: wrongTint,
+                emphasized: w < -dragBias,
+                dimmed: w > dragBias
+            )
+            Spacer(minLength: 0)
+            swipeEdgeArrow(
+                systemImage: "arrow.right",
+                accent: correctTint,
+                emphasized: w > dragBias,
+                dimmed: w < -dragBias
+            )
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+        .padding(.horizontal, 8)
+        .animation(.easeOut(duration: 0.14), value: w)
+        .accessibilityHidden(true)
+    }
+
+    private func swipeEdgeArrow(systemImage: String, accent: Color, emphasized: Bool, dimmed: Bool) -> some View {
+        Image(systemName: systemImage)
+            .font(.system(size: 28, weight: .semibold))
+            .symbolRenderingMode(.monochrome)
+            .foregroundStyle(accent)
+            .opacity(dimmed ? 0.38 : (emphasized ? 1 : 0.82))
+            .scaleEffect(emphasized ? 1.07 : 1)
+    }
+
     private func cardFace(card: CardProgress, isReview: Bool) -> some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -200,14 +311,35 @@ struct FlashCardStudyView: View {
             }
             .padding(28)
             .rotation3DEffect(.degrees(flipDegrees), axis: (x: 0, y: 1, z: 0))
+
+            if showingBack {
+                cardEdgeSwipeOverlay
+            }
         }
         .frame(maxWidth: 520)
         .frame(minHeight: 280)
+        .contentShape(Rectangle())
         .offset(dragOffset)
         .onTapGesture {
-            withAnimation(.spring(duration: 0.5, bounce: 0.18)) {
-                showingBack.toggle()
-                flipDegrees = showingBack ? 180 : 0
+            if showingBack {
+                guard wordSoundHeardThisBack else { return }
+                playWordAudio(card: card)
+                return
+            }
+            tapFlipSequenceTask?.cancel()
+            tapFlipSequenceTask = Task { @MainActor in
+                let preNs = UInt64((tapPauseBeforeSound * 1_000_000_000.0).rounded())
+                try? await Task.sleep(nanoseconds: preNs)
+                guard !Task.isCancelled else { return }
+                await segmentationSound.playGraphemeOrBeepAwaitFinish(card.sound)
+                guard !Task.isCancelled else { return }
+                let postNs = UInt64((tapPauseAfterSoundBeforeFlip * 1_000_000_000.0).rounded())
+                try? await Task.sleep(nanoseconds: postNs)
+                guard !Task.isCancelled else { return }
+                withAnimation(.spring(duration: 0.5, bounce: 0.18)) {
+                    showingBack.toggle()
+                    flipDegrees = showingBack ? 180 : 0
+                }
             }
         }
         .simultaneousGesture(swipeGesture)
@@ -235,7 +367,50 @@ struct FlashCardStudyView: View {
             }
     }
 
+    private func scheduleAutoPlayWordAfterFlip(isBack: Bool, card: CardProgress) {
+        autoPlayWordTask?.cancel()
+        autoPlayWordTask = nil
+        wordAutoPlayCountdownPhase = 0
+        guard isBack else { return }
+        autoPlayWordTask = Task { @MainActor in
+            wordAutoPlayCountdownPhase = 0
+            let nanosPerTick = FlashCardsConstants.StandardDelay.nanosecondsPerTick
+            for tick in 1...FlashCardsConstants.StandardDelay.tickCount {
+                do {
+                    try await Task.sleep(nanoseconds: nanosPerTick)
+                } catch {
+                    wordAutoPlayCountdownPhase = 0
+                    return
+                }
+                guard !Task.isCancelled else {
+                    wordAutoPlayCountdownPhase = 0
+                    return
+                }
+                withAnimation(.easeInOut(duration: 0.2)) {
+                    wordAutoPlayCountdownPhase = tick
+                }
+            }
+            guard !Task.isCancelled else {
+                wordAutoPlayCountdownPhase = 0
+                return
+            }
+            playWordAudio(card: card)
+        }
+    }
+
+    private func playWordAudio(card: CardProgress) {
+        autoPlayWordTask?.cancel()
+        autoPlayWordTask = nil
+        wordAutoPlayCountdownPhase = FlashCardsConstants.StandardDelay.tickCount
+        let stem = card.word.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+        wordAudio.play(stem: stem)
+        wordSoundHeardThisBack = true
+    }
+
     private func commitSwipe(correct: Bool) {
+        autoPlayWordTask?.cancel()
+        autoPlayWordTask = nil
+        wordAutoPlayCountdownPhase = 0
         withAnimation(.easeOut(duration: 0.2)) {
             dragOffset = CGSize(width: correct ? 500 : -500, height: 0)
         }
@@ -259,9 +434,10 @@ struct FlashCardStudyView: View {
                 .foregroundStyle(appearance.primaryTextColor)
                 .minimumScaleFactor(0.5)
                 .lineLimit(1)
-            Text("Tap to flip")
+            Text("Tap — pause, sound, then flip")
                 .font(appearance.bodyFont(size: 13))
                 .foregroundStyle(appearance.surroundColor.opacity(0.65))
+                .multilineTextAlignment(.center)
         }
     }
 
@@ -270,14 +446,36 @@ struct FlashCardStudyView: View {
             Text("Word")
                 .font(appearance.bodyFont(size: 12))
                 .foregroundStyle(appearance.surroundColor.opacity(0.85))
-            Text(card.word.capitalized)
-                .font(appearance.titleFont(size: 44, weight: .semibold))
-                .foregroundStyle(appearance.primaryTextColor)
-                .multilineTextAlignment(.center)
+            backWordText(card: card)
             cardImage(card: card)
-            Text("Swipe → correct, ← wrong")
-                .font(appearance.bodyFont(size: 13))
-                .foregroundStyle(appearance.surroundColor.opacity(0.65))
+            // Stays visible after the countdown and word audio; all dots lit once complete.
+            StandardDelayCountdownIndicator(
+                phase: wordAutoPlayCountdownPhase,
+                activeColor: appearance.primaryTextColor,
+                dotDiameter: 10,
+                inactiveOpacity: 0.38,
+                accessibilityDescription: "Seconds until word audio"
+            )
+            .padding(.top, 10)
+        }
+    }
+
+    @ViewBuilder
+    private func backWordText(card: CardProgress) -> some View {
+        let text = Text(card.word.capitalized)
+            .font(appearance.titleFont(size: 44, weight: .semibold))
+            .foregroundStyle(appearance.primaryTextColor)
+            .multilineTextAlignment(.center)
+        if wordSoundHeardThisBack {
+            text
+        } else {
+            text
+                .contentShape(Rectangle())
+                .highPriorityGesture(
+                    TapGesture().onEnded {
+                        playWordAudio(card: card)
+                    }
+                )
         }
     }
 

@@ -47,7 +47,7 @@ struct FlashCardStudyView: View {
                       let card = resolveCard(cardID: entry.cardID) {
                 progressHint(card: card, isReview: entry.isReview)
                 cardFace(card: card, isReview: entry.isReview)
-                    .padding(.horizontal, 20)
+                    .padding(20)
                     .onChange(of: showingBack) { _, isBack in
                         if isBack {
                             wordSoundHeardThisBack = false
@@ -210,7 +210,7 @@ struct FlashCardStudyView: View {
                     .foregroundStyle(appearance.surroundColor.opacity(0.9))
             }
         }
-        .padding(.horizontal, 24)
+        .padding(.horizontal, 20)
     }
 
     /// Tap strips at the card edges + arrow visuals when the answer face is visible (left = wrong, right = correct).

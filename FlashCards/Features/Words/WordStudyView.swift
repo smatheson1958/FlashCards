@@ -68,7 +68,7 @@ struct WordStudyView: View {
                 .foregroundStyle(appearance.surroundColor.opacity(0.9))
 
             wordFace(card: card)
-                .padding(.horizontal, 20)
+                .padding(20)
 
             if audio.lastPlaybackFailed {
                 Text("Audio file missing — add \(card.playbackStem).wav to the bundle (WordsAudio).")

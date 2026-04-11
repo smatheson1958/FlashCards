@@ -31,6 +31,11 @@ enum FlashCardsConstants {
     static let reviewCorrectDelta = 0.5
     static let reviewWrongDelta = 1.0
 
+    // MARK: Debug (UserDefaults; toggles only in Debug tab)
+
+    /// When true, Successful tab shows each card’s review-priority weight for Sounds review sampling.
+    static let userDefaultsKeyDebugShowSuccessfulReviewPriority = "debugShowSuccessfulReviewPriority"
+
     // MARK: Construction activity (POC from bundled JSON)
 
     /// Activities need at least this many ordered pieces to be worth showing.

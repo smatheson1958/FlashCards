@@ -12,6 +12,9 @@ import SwiftUI
 struct DebugTabView: View {
     @Environment(\.modelContext) private var modelContext
 
+    @AppStorage(FlashCardsConstants.userDefaultsKeyDebugShowSuccessfulReviewPriority)
+    private var showSuccessfulReviewPriority = false
+
     @State private var showRebuildDeckConfirm = false
     @State private var rebuildDeckErrorMessage: String?
     @State private var scoreAdjustErrorMessage: String?
@@ -83,7 +86,15 @@ struct DebugTabView: View {
                 Text("Teaching deck")
             }
 
-            // Future: rule toggles, logging, fixture loaders, etc.
+            Section {
+                Toggle("Show Priority", isOn: $showSuccessfulReviewPriority)
+                Text("When on, the Successful tab lists each mastered card’s review-priority weight (used when picking review cards in Sounds).")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            } header: {
+                Text("Successful screen")
+            }
         }
         .navigationTitle("Debug")
         .navigationBarTitleDisplayMode(.large)

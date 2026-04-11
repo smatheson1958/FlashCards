@@ -20,6 +20,10 @@ enum FlashCardsConstants {
     }
 
     static let masteryThreshold = 5
+
+    /// Correct swipes on Sound Cards toward mastery required before Construction / Segmentation unlock (while still in the teaching deck).
+    static let earlyProgressionCorrectCount = 2
+
     static let currentDeckTargetCount = 30
     static let maxReviewCardsPerSession = 5
     static let reviewPriorityMin = 0.25

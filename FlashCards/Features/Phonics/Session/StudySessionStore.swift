@@ -95,6 +95,7 @@ final class StudySessionStore {
             )
         } else {
             card.lifetimeWrongCount += 1
+            card.masteryCorrectCount = 0
         }
 
         let moved = queue.removeFirst()

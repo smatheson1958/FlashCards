@@ -34,9 +34,20 @@ struct ContentView: View {
                     SuccessfulListView()
                 }
             }
+
+            #if DEBUG
+            Tab("Debug", systemImage: "ladybug") {
+                NavigationStack {
+                    DebugTabView()
+                }
+            }
+            #endif
         }
         .task {
             await prepareLibrary()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .phonicsDeckDidRebuildFromSeed)) { _ in
+            session.resetSession()
         }
         .alert("Couldn’t load library", isPresented: $showLibraryLoadAlert) {
             Button("OK", role: .cancel) {}

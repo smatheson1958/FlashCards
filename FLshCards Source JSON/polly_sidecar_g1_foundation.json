@@ -1,0 +1,1078 @@
+{
+  "version": "1.0",
+  "title": "Sound Units Polly Sidecar - G1 Foundation",
+  "sectionId": "G1",
+  "sectionName": "Foundation",
+  "range": {
+    "startId": 1,
+    "endId": 30
+  },
+  "voices": [
+    {
+      "languageCode": "en-GB",
+      "voiceId": "Amy",
+      "engine": "neural",
+      "alphabet": "ipa",
+      "isPopulated": true
+    },
+    {
+      "languageCode": "en-US",
+      "voiceId": "Joanna",
+      "engine": "neural",
+      "alphabet": "ipa",
+      "isPopulated": false
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "soundUnit": "a",
+      "exampleWord": "cat",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "a",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"a\">a</phoneme></speak>",
+            "file": "001_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "cat",
+            "phoneme": "kat",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kat\">cat</phoneme></speak>",
+            "file": "001_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "",
+            "ssml": "",
+            "file": "001_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "cat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "001_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "soundUnit": "e",
+      "exampleWord": "bed",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "e",
+            "phoneme": "e",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"e\">e</phoneme></speak>",
+            "file": "002_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "bed",
+            "phoneme": "bɛd",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bɛd\">bed</phoneme></speak>",
+            "file": "002_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "e",
+            "phoneme": "",
+            "ssml": "",
+            "file": "002_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "bed",
+            "phoneme": "",
+            "ssml": "",
+            "file": "002_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "soundUnit": "i",
+      "exampleWord": "pin",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "i",
+            "phoneme": "ɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɪ\">i</phoneme></speak>",
+            "file": "003_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "pin",
+            "phoneme": "pɪn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"pɪn\">pin</phoneme></speak>",
+            "file": "003_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "i",
+            "phoneme": "",
+            "ssml": "",
+            "file": "003_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "pin",
+            "phoneme": "",
+            "ssml": "",
+            "file": "003_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "soundUnit": "o",
+      "exampleWord": "hot",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "ɒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɒ\">o</phoneme></speak>",
+            "file": "004_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "hot",
+            "phoneme": "hɒt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hɒt\">hot</phoneme></speak>",
+            "file": "004_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "",
+            "ssml": "",
+            "file": "004_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "hot",
+            "phoneme": "",
+            "ssml": "",
+            "file": "004_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "soundUnit": "u",
+      "exampleWord": "sun",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "u",
+            "phoneme": "ʌ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʌ\">u</phoneme></speak>",
+            "file": "005_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "sun",
+            "phoneme": "sʌn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"sʌn\">sun</phoneme></speak>",
+            "file": "005_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "u",
+            "phoneme": "",
+            "ssml": "",
+            "file": "005_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "sun",
+            "phoneme": "",
+            "ssml": "",
+            "file": "005_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "soundUnit": "b",
+      "exampleWord": "bat",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "b",
+            "phoneme": "b",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"b\">b</phoneme></speak>",
+            "file": "006_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "bat",
+            "phoneme": "bat",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bat\">bat</phoneme></speak>",
+            "file": "006_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "b",
+            "phoneme": "",
+            "ssml": "",
+            "file": "006_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "bat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "006_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 7,
+      "soundUnit": "c",
+      "exampleWord": "cat",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "c",
+            "phoneme": "k",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"k\">c</phoneme></speak>",
+            "file": "007_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "cat",
+            "phoneme": "kat",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kat\">cat</phoneme></speak>",
+            "file": "007_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "c",
+            "phoneme": "",
+            "ssml": "",
+            "file": "007_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "cat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "007_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 8,
+      "soundUnit": "d",
+      "exampleWord": "dog",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "d",
+            "phoneme": "d",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"d\">d</phoneme></speak>",
+            "file": "008_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "dog",
+            "phoneme": "dɒg",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dɒg\">dog</phoneme></speak>",
+            "file": "008_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "d",
+            "phoneme": "",
+            "ssml": "",
+            "file": "008_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "dog",
+            "phoneme": "",
+            "ssml": "",
+            "file": "008_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 9,
+      "soundUnit": "f",
+      "exampleWord": "fish",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "f",
+            "phoneme": "f",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"f\">f</phoneme></speak>",
+            "file": "009_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "fish",
+            "phoneme": "fɪʃ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fɪʃ\">fish</phoneme></speak>",
+            "file": "009_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "f",
+            "phoneme": "",
+            "ssml": "",
+            "file": "009_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "fish",
+            "phoneme": "",
+            "ssml": "",
+            "file": "009_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 10,
+      "soundUnit": "g",
+      "exampleWord": "gap",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "g",
+            "phoneme": "g",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"g\">g</phoneme></speak>",
+            "file": "010_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "gap",
+            "phoneme": "gæp",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"gæp\">gap</phoneme></speak>",
+            "file": "010_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "g",
+            "phoneme": "",
+            "ssml": "",
+            "file": "010_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "gap",
+            "phoneme": "",
+            "ssml": "",
+            "file": "010_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 11,
+      "soundUnit": "h",
+      "exampleWord": "hat",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "h",
+            "phoneme": "h",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"h\">h</phoneme></speak>",
+            "file": "011_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "hat",
+            "phoneme": "hat",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hat\">hat</phoneme></speak>",
+            "file": "011_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "h",
+            "phoneme": "",
+            "ssml": "",
+            "file": "011_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "hat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "011_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 12,
+      "soundUnit": "j",
+      "exampleWord": "jam",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "j",
+            "phoneme": "dʒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒ\">j</phoneme></speak>",
+            "file": "012_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "jam",
+            "phoneme": "dʒam",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒam\">jam</phoneme></speak>",
+            "file": "012_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "j",
+            "phoneme": "",
+            "ssml": "",
+            "file": "012_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "jam",
+            "phoneme": "",
+            "ssml": "",
+            "file": "012_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 13,
+      "soundUnit": "k",
+      "exampleWord": "kit",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "k",
+            "phoneme": "k",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"k\">k</phoneme></speak>",
+            "file": "013_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "kit",
+            "phoneme": "kɪt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kɪt\">kit</phoneme></speak>",
+            "file": "013_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "k",
+            "phoneme": "",
+            "ssml": "",
+            "file": "013_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "kit",
+            "phoneme": "",
+            "ssml": "",
+            "file": "013_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 14,
+      "soundUnit": "l",
+      "exampleWord": "leg",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "l",
+            "phoneme": "l",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"l\">l</phoneme></speak>",
+            "file": "014_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "leg",
+            "phoneme": "lɛg",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"lɛg\">leg</phoneme></speak>",
+            "file": "014_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "l",
+            "phoneme": "",
+            "ssml": "",
+            "file": "014_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "leg",
+            "phoneme": "",
+            "ssml": "",
+            "file": "014_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 15,
+      "soundUnit": "m",
+      "exampleWord": "man",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "m",
+            "phoneme": "m",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"m\">m</phoneme></speak>",
+            "file": "015_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "man",
+            "phoneme": "man",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"man\">man</phoneme></speak>",
+            "file": "015_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "m",
+            "phoneme": "",
+            "ssml": "",
+            "file": "015_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "man",
+            "phoneme": "",
+            "ssml": "",
+            "file": "015_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 16,
+      "soundUnit": "n",
+      "exampleWord": "net",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "n",
+            "phoneme": "n",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"n\">n</phoneme></speak>",
+            "file": "016_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "net",
+            "phoneme": "nɛt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"nɛt\">net</phoneme></speak>",
+            "file": "016_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "n",
+            "phoneme": "",
+            "ssml": "",
+            "file": "016_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "net",
+            "phoneme": "",
+            "ssml": "",
+            "file": "016_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 17,
+      "soundUnit": "p",
+      "exampleWord": "pen",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "p",
+            "phoneme": "p",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"p\">p</phoneme></speak>",
+            "file": "017_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "pen",
+            "phoneme": "pɛn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"pɛn\">pen</phoneme></speak>",
+            "file": "017_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "p",
+            "phoneme": "",
+            "ssml": "",
+            "file": "017_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "pen",
+            "phoneme": "",
+            "ssml": "",
+            "file": "017_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 18,
+      "soundUnit": "r",
+      "exampleWord": "rat",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "r",
+            "phoneme": "r",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"r\">r</phoneme></speak>",
+            "file": "018_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "rat",
+            "phoneme": "rat",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"rat\">rat</phoneme></speak>",
+            "file": "018_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "r",
+            "phoneme": "",
+            "ssml": "",
+            "file": "018_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "rat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "018_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 19,
+      "soundUnit": "s",
+      "exampleWord": "sun",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "s",
+            "phoneme": "s",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"s\">s</phoneme></speak>",
+            "file": "019_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "sun",
+            "phoneme": "sʌn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"sʌn\">sun</phoneme></speak>",
+            "file": "019_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "s",
+            "phoneme": "",
+            "ssml": "",
+            "file": "019_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "sun",
+            "phoneme": "",
+            "ssml": "",
+            "file": "019_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 20,
+      "soundUnit": "t",
+      "exampleWord": "tap",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "t",
+            "phoneme": "t",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"t\">t</phoneme></speak>",
+            "file": "020_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "tap",
+            "phoneme": "tap",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tap\">tap</phoneme></speak>",
+            "file": "020_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "t",
+            "phoneme": "",
+            "ssml": "",
+            "file": "020_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "tap",
+            "phoneme": "",
+            "ssml": "",
+            "file": "020_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 21,
+      "soundUnit": "v",
+      "exampleWord": "van",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "v",
+            "phoneme": "v",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"v\">v</phoneme></speak>",
+            "file": "021_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "van",
+            "phoneme": "van",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"van\">van</phoneme></speak>",
+            "file": "021_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "v",
+            "phoneme": "",
+            "ssml": "",
+            "file": "021_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "van",
+            "phoneme": "",
+            "ssml": "",
+            "file": "021_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 22,
+      "soundUnit": "w",
+      "exampleWord": "wet",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "w",
+            "phoneme": "w",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"w\">w</phoneme></speak>",
+            "file": "022_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "wet",
+            "phoneme": "wɛt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"wɛt\">wet</phoneme></speak>",
+            "file": "022_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "w",
+            "phoneme": "",
+            "ssml": "",
+            "file": "022_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "wet",
+            "phoneme": "",
+            "ssml": "",
+            "file": "022_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 23,
+      "soundUnit": "y",
+      "exampleWord": "yes",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "y",
+            "phoneme": "j",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"j\">y</phoneme></speak>",
+            "file": "023_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "yes",
+            "phoneme": "jɛs",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"jɛs\">yes</phoneme></speak>",
+            "file": "023_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "y",
+            "phoneme": "",
+            "ssml": "",
+            "file": "023_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "yes",
+            "phoneme": "",
+            "ssml": "",
+            "file": "023_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 24,
+      "soundUnit": "z",
+      "exampleWord": "zip",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "z",
+            "phoneme": "z",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"z\">z</phoneme></speak>",
+            "file": "024_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "zip",
+            "phoneme": "zɪp",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"zɪp\">zip</phoneme></speak>",
+            "file": "024_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "z",
+            "phoneme": "",
+            "ssml": "",
+            "file": "024_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "zip",
+            "phoneme": "",
+            "ssml": "",
+            "file": "024_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 25,
+      "soundUnit": "x",
+      "exampleWord": "fox",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "x",
+            "phoneme": "ks",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ks\">x</phoneme></speak>",
+            "file": "025_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "fox",
+            "phoneme": "fɒks",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fɒks\">fox</phoneme></speak>",
+            "file": "025_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "x",
+            "phoneme": "",
+            "ssml": "",
+            "file": "025_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "fox",
+            "phoneme": "",
+            "ssml": "",
+            "file": "025_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 26,
+      "soundUnit": "ff",
+      "exampleWord": "off",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ff",
+            "phoneme": "f",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"f\">ff</phoneme></speak>",
+            "file": "026_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "off",
+            "phoneme": "ɒf",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɒf\">off</phoneme></speak>",
+            "file": "026_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ff",
+            "phoneme": "",
+            "ssml": "",
+            "file": "026_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "off",
+            "phoneme": "",
+            "ssml": "",
+            "file": "026_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 27,
+      "soundUnit": "ll",
+      "exampleWord": "bell",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ll",
+            "phoneme": "l",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"l\">ll</phoneme></speak>",
+            "file": "027_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "bell",
+            "phoneme": "bɛl",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bɛl\">bell</phoneme></speak>",
+            "file": "027_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ll",
+            "phoneme": "",
+            "ssml": "",
+            "file": "027_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "bell",
+            "phoneme": "",
+            "ssml": "",
+            "file": "027_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 28,
+      "soundUnit": "ss",
+      "exampleWord": "hiss",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ss",
+            "phoneme": "s",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"s\">ss</phoneme></speak>",
+            "file": "028_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "hiss",
+            "phoneme": "hɪs",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hɪs\">hiss</phoneme></speak>",
+            "file": "028_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ss",
+            "phoneme": "",
+            "ssml": "",
+            "file": "028_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "hiss",
+            "phoneme": "",
+            "ssml": "",
+            "file": "028_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 29,
+      "soundUnit": "zz",
+      "exampleWord": "buzz",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "zz",
+            "phoneme": "z",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"z\">zz</phoneme></speak>",
+            "file": "029_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "buzz",
+            "phoneme": "bʌz",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bʌz\">buzz</phoneme></speak>",
+            "file": "029_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "zz",
+            "phoneme": "",
+            "ssml": "",
+            "file": "029_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "buzz",
+            "phoneme": "",
+            "ssml": "",
+            "file": "029_word_en-US.mp3"
+          }
+        }
+      }
+    },
+    {
+      "id": 30,
+      "soundUnit": "ck",
+      "exampleWord": "duck",
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ck",
+            "phoneme": "k",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"k\">ck</phoneme></speak>",
+            "file": "030_sound_en-GB.mp3"
+          },
+          "exampleWord": {
+            "text": "duck",
+            "phoneme": "dʌk",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʌk\">duck</phoneme></speak>",
+            "file": "030_word_en-GB.mp3"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ck",
+            "phoneme": "",
+            "ssml": "",
+            "file": "030_sound_en-US.mp3"
+          },
+          "exampleWord": {
+            "text": "duck",
+            "phoneme": "",
+            "ssml": "",
+            "file": "030_word_en-US.mp3"
+          }
+        }
+      }
+    }
+  ]
+}

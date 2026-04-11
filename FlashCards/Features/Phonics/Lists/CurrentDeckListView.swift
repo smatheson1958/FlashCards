@@ -48,19 +48,146 @@ struct CurrentDeckListView: View {
                 switch selectedExerciseTab {
                 case .sound:
                     CurrentDeckSoundListContent(cards: cards)
-                case .words, .segmentation, .construction:
-                    ContentUnavailableView(
-                        "Coming soon",
-                        systemImage: "square.dashed",
-                        description: Text("This exercise will be shown here.")
-                    )
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                case .words:
+                    CurrentDeckWordsTabContent(cards: cards)
+                case .segmentation:
+                    CurrentDeckSegmentationTabContent(cards: cards)
+                case .construction:
+                    CurrentDeckConstructionTabContent(cards: cards)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .navigationTitle("Current deck")
         .navigationBarTitleDisplayMode(.large)
+    }
+}
+
+// MARK: - Words (cumulative list from progression; grows with tiers later)
+
+private struct CurrentDeckWordsTabContent: View {
+    let cards: [CardProgress]
+
+    var body: some View {
+        Group {
+            if cards.isEmpty {
+                ContentUnavailableView(
+                    "No active cards",
+                    systemImage: "square.stack",
+                    description: Text("Add sounds from the teaching deck to see word practice.")
+                )
+            } else {
+                ScrollView {
+                    LazyVStack(alignment: .leading, spacing: 12) {
+                        Text("Practice words follow the same ordered curriculum as Sound Cards. New tiers add words without removing earlier ones.")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                            .padding(.bottom, 4)
+
+                        ForEach(cards, id: \.cardID) { card in
+                            let snap = SoundCardProgressSnapshot(card: card)
+                            let words = LearningProgressionEngine.wordsForMode(
+                                orderIndex: card.orderIndex,
+                                mode: .soundCards,
+                                snapshot: snap
+                            )
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(card.sound)
+                                    .font(.headline)
+                                Text(words.map(\.capitalized).joined(separator: ", "))
+                                    .font(.body)
+                                    .foregroundStyle(.primary)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(12)
+                            .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        }
+                    }
+                    .padding(16)
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+}
+
+// MARK: - Segmentation & Construction (gated by `LearningProgressionEngine`)
+
+private struct CurrentDeckSegmentationTabContent: View {
+    let cards: [CardProgress]
+
+    var body: some View {
+        Group {
+            if let card = cards.first(where: { LearningProgressionEngine.isSegmentationUnlocked(SoundCardProgressSnapshot(card: $0)) }) {
+                let snap = SoundCardProgressSnapshot(card: card)
+                if let word = LearningProgressionEngine.wordsForMode(
+                    orderIndex: card.orderIndex,
+                    mode: .segmentation,
+                    snapshot: snap
+                ).first {
+                    let segments = ConstructionDataSource.segments(forWord: word)
+                    SegmentationModeView(word: word, segments: segments)
+                } else {
+                    ContentUnavailableView(
+                        "No word available",
+                        systemImage: "waveform",
+                        description: Text("Curriculum data may be missing for this sound.")
+                    )
+                }
+            } else {
+                ContentUnavailableView(
+                    "Segmentation locked",
+                    systemImage: "lock.fill",
+                    description: Text(
+                        "Get at least \(FlashCardsConstants.earlyProgressionCorrectCount) correct swipes on Sound Cards for a sound in this deck, then return here."
+                    )
+                )
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+}
+
+private struct CurrentDeckConstructionTabContent: View {
+    let cards: [CardProgress]
+
+    var body: some View {
+        Group {
+            if let card = cards.first(where: { LearningProgressionEngine.isConstructionUnlocked(SoundCardProgressSnapshot(card: $0)) }) {
+                let snap = SoundCardProgressSnapshot(card: card)
+                if let word = LearningProgressionEngine.wordsForMode(
+                    orderIndex: card.orderIndex,
+                    mode: .construction,
+                    snapshot: snap
+                ).first {
+                    let segments = ConstructionDataSource.segments(forWord: word)
+                    if segments.count >= FlashCardsConstants.constructionMinimumSegmentCount {
+                        SimpleConstructionModeView(word: word, segments: segments)
+                    } else {
+                        ContentUnavailableView(
+                            "Word too short",
+                            systemImage: "character.cursor.ibeam",
+                            description: Text("Construction needs at least \(FlashCardsConstants.constructionMinimumSegmentCount) pieces for this word.")
+                        )
+                    }
+                } else {
+                    ContentUnavailableView(
+                        "No word available",
+                        systemImage: "hammer.fill",
+                        description: Text("Curriculum data may be missing for this sound.")
+                    )
+                }
+            } else {
+                ContentUnavailableView(
+                    "Construction locked",
+                    systemImage: "lock.fill",
+                    description: Text(
+                        "Get at least \(FlashCardsConstants.earlyProgressionCorrectCount) correct swipes on Sound Cards for a sound in this deck, then return here."
+                    )
+                )
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 

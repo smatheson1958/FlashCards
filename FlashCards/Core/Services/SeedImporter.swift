@@ -36,8 +36,7 @@ enum SeedImporter {
         }
         guard !hasSeeded else { return }
 
-        let data = try loadPhonicsSeedData()
-        let dtos = try JSONDecoder().decode([SeedCardDTO].self, from: data)
+        let dtos = try loadPhonicsSeedDTOs()
         guard !dtos.isEmpty else { throw SeedError.emptyJSON }
 
         let sorted = dtos.sorted { $0.orderIndex < $1.orderIndex }
@@ -62,7 +61,35 @@ enum SeedImporter {
         hasSeeded = true
     }
 
-    private static func loadPhonicsSeedData() throws -> Data {
+    /// Prefer the master `sound_units_primary_index_146.json` (ordered 1…N); fall back to `cards.json` or embedded JSON.
+    private static func loadPhonicsSeedDTOs() throws -> [SeedCardDTO] {
+        if let fromMaster = loadDTOsFromSoundUnitsPrimaryIndex() {
+            return fromMaster
+        }
+
+        let data = try loadPhonicsSeedDataLegacy()
+        return try JSONDecoder().decode([SeedCardDTO].self, from: data)
+    }
+
+    private static func loadDTOsFromSoundUnitsPrimaryIndex() -> [SeedCardDTO]? {
+        guard let root = try? SoundUnitsPrimaryIndexLoader.load() else { return nil }
+        let sorted = root.sounds.sorted { $0.orderIndex < $1.orderIndex }
+        guard !sorted.isEmpty else { return nil }
+        return sorted.map { entry in
+            SeedCardDTO(
+                id: phonicsCardID(orderIndex: entry.orderIndex),
+                orderIndex: entry.orderIndex,
+                sound: entry.soundUnit.trimmingCharacters(in: .whitespacesAndNewlines),
+                word: entry.exampleWord.trimmingCharacters(in: .whitespacesAndNewlines)
+            )
+        }
+    }
+
+    private static func phonicsCardID(orderIndex: Int) -> String {
+        String(format: "su_%03d", orderIndex)
+    }
+
+    private static func loadPhonicsSeedDataLegacy() throws -> Data {
         if let url = Bundle.main.url(forResource: "cards", withExtension: "json", subdirectory: "Seed")
             ?? Bundle.main.url(forResource: "cards", withExtension: "json") {
             return try Data(contentsOf: url)
@@ -103,4 +130,19 @@ enum SeedImporter {
         case missingBundleFile
         case emptyJSON
     }
+
+    #if DEBUG
+    /// Deletes all `CardProgress` rows and re-imports from the bundled phonics seed (same path as first launch).
+    static func rebuildPhonicsDeckFromSeed(context: ModelContext) throws {
+        let descriptor = FetchDescriptor<CardProgress>()
+        let all = (try? context.fetch(descriptor)) ?? []
+        for card in all {
+            context.delete(card)
+        }
+        try context.save()
+        hasSeeded = false
+        LearningProgressionEngine.clearCurriculumCacheForTesting()
+        try importIfNeeded(context: context)
+    }
+    #endif
 }

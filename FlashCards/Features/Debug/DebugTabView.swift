@@ -88,12 +88,12 @@ struct DebugTabView: View {
 
             Section {
                 Toggle("Show Priority", isOn: $showSuccessfulReviewPriority)
-                Text("When on, the Successful tab lists each mastered card’s review-priority weight (used when picking review cards in Sounds).")
+                Text("When on, the Current deck list shows each mastered card’s review-priority weight above the mastery indicators (used when picking review cards in Sounds).")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             } header: {
-                Text("Successful screen")
+                Text("Deck list")
             }
         }
         .navigationTitle("Debug")

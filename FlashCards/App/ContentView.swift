@@ -29,12 +29,6 @@ struct ContentView: View {
                 }
             }
 
-            Tab("Successful", systemImage: "checkmark.circle") {
-                NavigationStack {
-                    SuccessfulListView()
-                }
-            }
-
             #if DEBUG
             Tab("Debug", systemImage: "ladybug") {
                 NavigationStack {

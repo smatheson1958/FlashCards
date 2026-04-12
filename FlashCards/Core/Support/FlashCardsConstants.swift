@@ -33,7 +33,7 @@ enum FlashCardsConstants {
 
     // MARK: Debug (UserDefaults; toggles only in Debug tab)
 
-    /// When true, Successful tab shows each card’s review-priority weight for Sounds review sampling.
+    /// When true, the deck list shows each mastered card’s review-priority weight (Sounds review sampling).
     static let userDefaultsKeyDebugShowSuccessfulReviewPriority = "debugShowSuccessfulReviewPriority"
 
     // MARK: Construction activity (POC from bundled JSON)

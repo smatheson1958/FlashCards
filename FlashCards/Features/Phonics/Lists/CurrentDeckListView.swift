@@ -28,7 +28,9 @@ struct CurrentDeckListView: View {
     @State private var selectedExerciseTab: CurrentDeckExerciseTab = .sound
 
     @Query(
-        filter: #Predicate<CardProgress> { $0.deckStateRaw == "currentDeck" },
+        filter: #Predicate<CardProgress> {
+            $0.deckStateRaw == "currentDeck" || $0.deckStateRaw == "successful"
+        },
         sort: \CardProgress.orderIndex
     )
     private var cards: [CardProgress]
@@ -72,9 +74,9 @@ private struct CurrentDeckWordsTabContent: View {
         Group {
             if cards.isEmpty {
                 ContentUnavailableView(
-                    "No active cards",
+                    "No cards in your deck",
                     systemImage: "square.stack",
-                    description: Text("Add sounds from the teaching deck to see word practice.")
+                    description: Text("Introduce sounds from your library or complete a study session.")
                 )
             } else {
                 ScrollView {
@@ -199,7 +201,7 @@ private struct CurrentDeckSoundListContent: View {
         Group {
             if cards.isEmpty {
                 ContentUnavailableView(
-                    "No active cards",
+                    "No cards in your deck",
                     systemImage: "square.stack",
                     description: Text("Introduce more from your library or complete a study session.")
                 )
@@ -228,6 +230,11 @@ private struct CurrentDeckSoundListContent: View {
 }
 
 private struct CurrentDeckRow: View {
+    @Environment(\.modelContext) private var modelContext
+
+    @AppStorage(FlashCardsConstants.userDefaultsKeyDebugShowSuccessfulReviewPriority)
+    private var showSuccessfulReviewPriority = false
+
     let card: CardProgress
 
     /// Fixed width so every row’s sound and word columns line up.
@@ -248,12 +255,30 @@ private struct CurrentDeckRow: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .lineLimit(1)
 
-            MasteryFiveBoxes(
-                filledCount: min(max(card.masteryCorrectCount, 0), FlashCardsConstants.masteryThreshold)
-            )
-            .frame(width: Self.boxIndicatorWidth, alignment: .trailing)
+            VStack(alignment: .trailing, spacing: 4) {
+                if showSuccessfulReviewPriority, card.deckState == .successful {
+                    Text(String(format: "%.1f", card.reviewPriority))
+                        .font(.caption)
+                        .fontWeight(.medium)
+                        .monospacedDigit()
+                        .foregroundStyle(.primary)
+                        .accessibilityLabel("Review priority \(String(format: "%.1f", card.reviewPriority))")
+                }
+                MasteryFiveBoxes(
+                    filledCount: min(max(card.masteryCorrectCount, 0), FlashCardsConstants.masteryThreshold)
+                )
+            }
+            .frame(minWidth: Self.boxIndicatorWidth, alignment: .trailing)
         }
         .padding(.vertical, 10)
+        .contextMenu {
+            if card.deckState == .successful {
+                Button("Return to deck") {
+                    DeckManager.returnToTeachingDeck(card, resetMastery: true)
+                    try? modelContext.save()
+                }
+            }
+        }
     }
 }
 

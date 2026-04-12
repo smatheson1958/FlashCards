@@ -119,7 +119,11 @@ enum LearningProgressionEngine {
         return modes.memory && isInSuccessfulPool(snapshot)
     }
 
-    /// Cumulative word set for this sound at the current progress stage. Uses sound-units master when present; otherwise G1 construction index.
+    /// Cumulative word set for this sound at the current progress stage.
+    ///
+    /// When `ConstructionIndexG1Loader` has a row for `orderIndex`, Construction / Segmentation use
+    /// `stage4FirstFiveWords` (up to five words). Otherwise only the curriculum `exampleWord` is
+    /// returned — there is no bundled 146×(5–10) construction word list yet.
     static func wordsForMode(orderIndex: Int, mode: LearningPracticeMode, snapshot: SoundCardProgressSnapshot) -> [String] {
         let curriculumWord: String? = {
             guard let entry = curriculumEntry(forOrderIndex: orderIndex) else { return nil }

@@ -2,7 +2,7 @@
 //  PhonicsModulePOCDTO.swift
 //  FlashCards
 //
-//  Decodes `Resources/Seed/phonics_modules_poc.json` (POC for Segmentation + Construction).
+//  Decodes `Resources/Seed/segmentation.json` (segmentation + construction word lists).
 //  One exercise = one target word + ordered segments (letters for now; digraphs later as one segment, e.g. "sh").
 //
 
@@ -75,7 +75,7 @@ enum PhonicsModulePOCLoader {
 
     /// Loads and decodes the bundled POC file. Does not persist; safe to call from previews/tests.
     static func load(from bundle: Bundle = .main) throws -> PhonicsModulePOCRoot {
-        let name = "phonics_modules_poc"
+        let name = "segmentation"
         let ext = "json"
         guard let url = bundle.url(forResource: name, withExtension: ext, subdirectory: "Seed")
             ?? bundle.url(forResource: name, withExtension: ext) else {

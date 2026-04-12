@@ -11,6 +11,8 @@ import UIKit
 struct SimpleConstructionModeView: View {
     let word: String
     let segments: [String]
+    /// Matches `ConstructionIndexG1ItemDTO.id` / Sound Card `orderIndex` when opened from phonics; `nil` uses flat `WordsAudio/<stem>.wav` only.
+    var soundOrderIndex: Int?
     var isReminderSession: Bool
     var dismissAfterSuccess: Bool
     var onSuccessfulCompletion: (() -> Void)?
@@ -26,6 +28,7 @@ struct SimpleConstructionModeView: View {
     init(
         word: String,
         segments: [String],
+        soundOrderIndex: Int? = nil,
         isReminderSession: Bool = false,
         dismissAfterSuccess: Bool = true,
         onSuccessfulCompletion: (() -> Void)? = nil,
@@ -33,6 +36,7 @@ struct SimpleConstructionModeView: View {
     ) {
         self.word = word
         self.segments = segments
+        self.soundOrderIndex = soundOrderIndex
         self.isReminderSession = isReminderSession
         self.dismissAfterSuccess = dismissAfterSuccess
         self.onSuccessfulCompletion = onSuccessfulCompletion
@@ -91,7 +95,7 @@ struct SimpleConstructionModeView: View {
             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
             onSuccessfulCompletion?()
             let stem = ConstructionDataSource.normalizedWordKey(word)
-            audio.play(stem: stem)
+            audio.play(stem: stem, soundOrderIndex: soundOrderIndex)
             Task { @MainActor in
                 try? await Task.sleep(for: .seconds(1.15))
                 if dismissAfterSuccess {

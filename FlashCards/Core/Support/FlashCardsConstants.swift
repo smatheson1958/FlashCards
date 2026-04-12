@@ -27,7 +27,11 @@ enum FlashCardsConstants {
     /// Successful Construction or Segmentation completions required per word (same count as Sound Card mastery boxes).
     static let modeExerciseWordMasteryCount = 5
 
-    static let currentDeckTargetCount = 30
+    /// Teaching-deck size and phonics “working sounds” cap. Must match `totalSounds` in bundled `Seed/sound_units_primary_index_146.json` (see `SoundUnitsPrimaryIndexLoader`).
+    static let currentDeckTargetCount = 146
+
+    /// On first seed only: how many sounds start in the teaching deck (`currentDeck`), in `orderIndex` order. Additional sounds enter via `DeckManager.introduceNextCardsToReachTarget` as the learner progresses.
+    static let initialSoundDeckIntroLimit = 30
     static let maxReviewCardsPerSession = 5
     static let reviewPriorityMin = 0.25
     static let reviewPriorityMax = 50.0

@@ -45,7 +45,7 @@ phrase_for() {
   esac
 }
 
-# Unique graphemes from phonics_modules_poc.json segmentation (CVC + ship, rain, …).
+# Unique graphemes from segmentation.json segmentation (CVC + ship, rain, …).
 for g in c a t d o g s u n h p e sh ai r i; do
   if [[ "$g" == "s" ]]; then
     python3 "$ROOT/Scripts/generate_s_fricative_wav.py" -o "$OUT/s.wav"

@@ -7,10 +7,12 @@ import SwiftData
 import SwiftUI
 import UIKit
 
-/// Hear segment sounds and the whole word; segments come from `construction_index_g1_foundation.json` (`graphemeUnits`).
+/// Hear segment sounds and the whole word; segments come from `segmentation.json` first, then the G1 index / construction seed.
 struct SegmentationModeView: View {
     let word: String
     let segments: [String]
+    /// Matches `ConstructionIndexG1ItemDTO.id` / Sound Card `orderIndex` when opened from phonics; `nil` uses flat `WordsAudio/<stem>.wav` only.
+    var soundOrderIndex: Int?
     var isReminderSession: Bool
     var dismissAfterRecordingSuccess: Bool
     var onSuccessfulPracticeRecorded: (() -> Void)?
@@ -28,6 +30,7 @@ struct SegmentationModeView: View {
     init(
         word: String,
         segments: [String],
+        soundOrderIndex: Int? = nil,
         isReminderSession: Bool = false,
         dismissAfterRecordingSuccess: Bool = true,
         onSuccessfulPracticeRecorded: (() -> Void)? = nil,
@@ -35,6 +38,7 @@ struct SegmentationModeView: View {
     ) {
         self.word = word
         self.segments = segments
+        self.soundOrderIndex = soundOrderIndex
         self.isReminderSession = isReminderSession
         self.dismissAfterRecordingSuccess = dismissAfterRecordingSuccess
         self.onSuccessfulPracticeRecorded = onSuccessfulPracticeRecorded
@@ -53,7 +57,7 @@ struct SegmentationModeView: View {
                 UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                 segmentPlayer.stop()
                 let stem = ConstructionDataSource.normalizedWordKey(word)
-                wordPlayer.play(stem: stem)
+                wordPlayer.play(stem: stem, soundOrderIndex: soundOrderIndex)
                 didPlayWholeWord = true
             } label: {
                 Text(ConstructionDataSource.normalizedWordKey(word).uppercased())
@@ -198,8 +202,7 @@ private struct SegmentationExerciseHubView: View {
                 snapshot: snap
             )
             for word in words {
-                let segments = ConstructionIndexG1Loader.graphemeUnits(forSoundOrderIndex: card.orderIndex, word: word)
-                    ?? ConstructionDataSource.segments(forWord: word)
+                let segments = SegmentationDataSource.resolvedSegments(forWord: word, soundOrderIndex: card.orderIndex)
                 guard !segments.isEmpty else { continue }
                 let key = ModeWordProgressService.normalizedWordKey(word)
                 let id = "\(card.orderIndex)|\(key)"
@@ -308,8 +311,7 @@ private struct SegmentationExerciseHubView: View {
     @ViewBuilder
     private func segmentationReminderRow(row: ModeWordProgress) -> some View {
         let word = row.wordKey
-        let segments = ConstructionIndexG1Loader.graphemeUnits(forSoundOrderIndex: row.soundOrderIndex, word: word)
-            ?? ConstructionDataSource.segments(forWord: word)
+        let segments = SegmentationDataSource.resolvedSegments(forWord: word, soundOrderIndex: row.soundOrderIndex)
         if segments.isEmpty {
             Text(word.capitalized)
                 .font(appearance.bodyFont(size: 15, weight: .medium))

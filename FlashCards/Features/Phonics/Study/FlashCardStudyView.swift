@@ -403,7 +403,7 @@ struct FlashCardStudyView: View {
         autoPlayWordTask = nil
         wordAutoPlayCountdownPhase = FlashCardsConstants.StandardDelay.tickCount
         let stem = card.word.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
-        wordAudio.play(stem: stem)
+        wordAudio.play(stem: stem, soundOrderIndex: card.orderIndex)
         wordSoundHeardThisBack = true
     }
 

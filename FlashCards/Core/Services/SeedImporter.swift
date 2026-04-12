@@ -40,7 +40,11 @@ enum SeedImporter {
         guard !dtos.isEmpty else { throw SeedError.emptyJSON }
 
         let sorted = dtos.sorted { $0.orderIndex < $1.orderIndex }
-        let introLimit = min(FlashCardsConstants.currentDeckTargetCount, sorted.count)
+        let introLimit = min(
+            FlashCardsConstants.initialSoundDeckIntroLimit,
+            FlashCardsConstants.currentDeckTargetCount,
+            sorted.count
+        )
 
         for (idx, dto) in sorted.enumerated() {
             let state = DeckManager.bootstrapDeckState(zeroBasedIndex: idx, introLimit: introLimit)
@@ -151,6 +155,7 @@ enum SeedImporter {
         LearningProgressionEngine.clearCurriculumCacheForTesting()
         ConstructionIndexG1Loader.clearCacheForTesting()
         ConstructionDataSource.clearCacheForTesting()
+        SegmentationDataSource.clearCacheForTesting()
     }
     #endif
 }

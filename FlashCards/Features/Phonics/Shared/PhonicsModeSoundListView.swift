@@ -2,7 +2,7 @@
 //  PhonicsModeSoundListView.swift
 //  FlashCards
 //
-//  Working sounds (Sound Cards ≥ 3 correct, up to 30) with stage‑4 words from `construction_index_g1_foundation.json`,
+//  Working sounds (Sound Cards ≥ 3 correct, up to `FlashCardsConstants.currentDeckTargetCount`) with stage‑4 words from `construction_index_g1_foundation.json`,
 //  per‑word five‑box progress, and reminders for words mastered in this mode.
 //
 
@@ -66,7 +66,7 @@ struct PhonicsModeSoundListView: View {
     private var introFootnote: String {
         switch chrome {
         case .standalone:
-            return "Up to \(FlashCardsConstants.currentDeckTargetCount) sounds with enough Sound Card practice. Each sound lists the first five words from stage 4 (construction index). Segmentation uses the same grapheme units as construction."
+            return "Up to \(FlashCardsConstants.currentDeckTargetCount) sounds with enough Sound Card practice. Each sound lists the first five words from stage 4 when the foundation construction index includes that sound (typically sounds 1–30); otherwise the curriculum example word is used. Segmentation uses `segmentation.json` when a word is listed there; otherwise the same grapheme path as construction."
         case .embeddedSoundBrowser:
             return "Expand a sound to open a word, or go back and pick a word from the main list."
         }
@@ -150,8 +150,13 @@ struct PhonicsModeSoundListView: View {
     }
 
     private func wordRow(card: CardProgress, word: String) -> some View {
-        let segments = ConstructionIndexG1Loader.graphemeUnits(forSoundOrderIndex: card.orderIndex, word: word)
-            ?? ConstructionDataSource.segments(forWord: word)
+        let segments: [String] = {
+            if mode == .segmentation {
+                return SegmentationDataSource.resolvedSegments(forWord: word, soundOrderIndex: card.orderIndex)
+            }
+            return ConstructionIndexG1Loader.graphemeUnits(forSoundOrderIndex: card.orderIndex, word: word)
+                ?? ConstructionDataSource.segments(forWord: word)
+        }()
         let filled = modeProgressCount(soundOrderIndex: card.orderIndex, word: word)
         let canOpenExercise: Bool = {
             if mode == .segmentation { return !segments.isEmpty }
@@ -191,8 +196,13 @@ struct PhonicsModeSoundListView: View {
     private func reminderLink(row: ModeWordProgress) -> some View {
         let word = row.wordKey
         let display = word.isEmpty ? row.wordKey : word
-        let segments = ConstructionIndexG1Loader.graphemeUnits(forSoundOrderIndex: row.soundOrderIndex, word: word)
-            ?? ConstructionDataSource.segments(forWord: word)
+        let segments: [String] = {
+            if mode == .segmentation {
+                return SegmentationDataSource.resolvedSegments(forWord: word, soundOrderIndex: row.soundOrderIndex)
+            }
+            return ConstructionIndexG1Loader.graphemeUnits(forSoundOrderIndex: row.soundOrderIndex, word: word)
+                ?? ConstructionDataSource.segments(forWord: word)
+        }()
         let filled = row.correctCountTowardMastery
         let canOpenExercise: Bool = {
             if mode == .segmentation { return !segments.isEmpty }

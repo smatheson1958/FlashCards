@@ -141,7 +141,43 @@
       "groupSecondaryId": "SG01",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "a",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"a\">a</phoneme></speak>",
+            "file": "SoundUnitsTest/001_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cat",
+            "phoneme": "kat",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kat\">cat</phoneme></speak>",
+            "file": "SoundUnitsTest/001_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/001_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/001_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 2,
@@ -153,7 +189,43 @@
       "groupSecondaryId": "SG01",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "e",
+            "phoneme": "e",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"e\">e</phoneme></speak>",
+            "file": "SoundUnitsTest/002_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bed",
+            "phoneme": "bɛd",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bɛd\">bed</phoneme></speak>",
+            "file": "SoundUnitsTest/002_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "e",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/002_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bed",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/002_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 3,
@@ -165,7 +237,43 @@
       "groupSecondaryId": "SG01",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "i",
+            "phoneme": "ɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɪ\">i</phoneme></speak>",
+            "file": "SoundUnitsTest/003_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pin",
+            "phoneme": "pɪn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"pɪn\">pin</phoneme></speak>",
+            "file": "SoundUnitsTest/003_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "i",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/003_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pin",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/003_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 4,
@@ -177,7 +285,43 @@
       "groupSecondaryId": "SG01",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "ɒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɒ\">o</phoneme></speak>",
+            "file": "SoundUnitsTest/004_sound.wav"
+          },
+          "exampleWord": {
+            "text": "hot",
+            "phoneme": "hɒt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hɒt\">hot</phoneme></speak>",
+            "file": "SoundUnitsTest/004_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/004_sound.wav"
+          },
+          "exampleWord": {
+            "text": "hot",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/004_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 5,
@@ -189,7 +333,43 @@
       "groupSecondaryId": "SG01",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "u",
+            "phoneme": "ʌ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʌ\">u</phoneme></speak>",
+            "file": "SoundUnitsTest/005_sound.wav"
+          },
+          "exampleWord": {
+            "text": "sun",
+            "phoneme": "sʌn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"sʌn\">sun</phoneme></speak>",
+            "file": "SoundUnitsTest/005_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "u",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/005_sound.wav"
+          },
+          "exampleWord": {
+            "text": "sun",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/005_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 6,
@@ -201,7 +381,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "b",
+            "phoneme": "b",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"b\">b</phoneme></speak>",
+            "file": "SoundUnitsTest/006_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bat",
+            "phoneme": "bat",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bat\">bat</phoneme></speak>",
+            "file": "SoundUnitsTest/006_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "b",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/006_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/006_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 7,
@@ -213,7 +429,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "c",
+            "phoneme": "k",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"k\">c</phoneme></speak>",
+            "file": "SoundUnitsTest/007_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cat",
+            "phoneme": "kat",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kat\">cat</phoneme></speak>",
+            "file": "SoundUnitsTest/007_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "c",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/007_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/007_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 8,
@@ -225,7 +477,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "d",
+            "phoneme": "d",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"d\">d</phoneme></speak>",
+            "file": "SoundUnitsTest/008_sound.wav"
+          },
+          "exampleWord": {
+            "text": "dog",
+            "phoneme": "dɒg",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dɒg\">dog</phoneme></speak>",
+            "file": "SoundUnitsTest/008_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "d",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/008_sound.wav"
+          },
+          "exampleWord": {
+            "text": "dog",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/008_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 9,
@@ -237,7 +525,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "f",
+            "phoneme": "f",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"f\">f</phoneme></speak>",
+            "file": "SoundUnitsTest/009_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fish",
+            "phoneme": "fɪʃ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fɪʃ\">fish</phoneme></speak>",
+            "file": "SoundUnitsTest/009_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "f",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/009_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fish",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/009_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 10,
@@ -249,7 +573,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "g",
+            "phoneme": "g",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"g\">g</phoneme></speak>",
+            "file": "SoundUnitsTest/010_sound.wav"
+          },
+          "exampleWord": {
+            "text": "gap",
+            "phoneme": "gæp",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"gæp\">gap</phoneme></speak>",
+            "file": "SoundUnitsTest/010_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "g",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/010_sound.wav"
+          },
+          "exampleWord": {
+            "text": "gap",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/010_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 11,
@@ -261,7 +621,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "h",
+            "phoneme": "h",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"h\">h</phoneme></speak>",
+            "file": "SoundUnitsTest/011_sound.wav"
+          },
+          "exampleWord": {
+            "text": "hat",
+            "phoneme": "hat",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hat\">hat</phoneme></speak>",
+            "file": "SoundUnitsTest/011_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "h",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/011_sound.wav"
+          },
+          "exampleWord": {
+            "text": "hat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/011_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 12,
@@ -273,7 +669,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "j",
+            "phoneme": "dʒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒ\">j</phoneme></speak>",
+            "file": "SoundUnitsTest/012_sound.wav"
+          },
+          "exampleWord": {
+            "text": "jam",
+            "phoneme": "dʒam",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒam\">jam</phoneme></speak>",
+            "file": "SoundUnitsTest/012_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "j",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/012_sound.wav"
+          },
+          "exampleWord": {
+            "text": "jam",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/012_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 13,
@@ -285,7 +717,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "k",
+            "phoneme": "k",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"k\">k</phoneme></speak>",
+            "file": "SoundUnitsTest/013_sound.wav"
+          },
+          "exampleWord": {
+            "text": "kit",
+            "phoneme": "kɪt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kɪt\">kit</phoneme></speak>",
+            "file": "SoundUnitsTest/013_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "k",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/013_sound.wav"
+          },
+          "exampleWord": {
+            "text": "kit",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/013_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 14,
@@ -297,7 +765,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "l",
+            "phoneme": "l",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"l\">l</phoneme></speak>",
+            "file": "SoundUnitsTest/014_sound.wav"
+          },
+          "exampleWord": {
+            "text": "leg",
+            "phoneme": "lɛg",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"lɛg\">leg</phoneme></speak>",
+            "file": "SoundUnitsTest/014_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "l",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/014_sound.wav"
+          },
+          "exampleWord": {
+            "text": "leg",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/014_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 15,
@@ -309,7 +813,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "m",
+            "phoneme": "m",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"m\">m</phoneme></speak>",
+            "file": "SoundUnitsTest/015_sound.wav"
+          },
+          "exampleWord": {
+            "text": "man",
+            "phoneme": "man",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"man\">man</phoneme></speak>",
+            "file": "SoundUnitsTest/015_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "m",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/015_sound.wav"
+          },
+          "exampleWord": {
+            "text": "man",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/015_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 16,
@@ -321,7 +861,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "n",
+            "phoneme": "n",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"n\">n</phoneme></speak>",
+            "file": "SoundUnitsTest/016_sound.wav"
+          },
+          "exampleWord": {
+            "text": "net",
+            "phoneme": "nɛt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"nɛt\">net</phoneme></speak>",
+            "file": "SoundUnitsTest/016_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "n",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/016_sound.wav"
+          },
+          "exampleWord": {
+            "text": "net",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/016_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 17,
@@ -333,7 +909,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "p",
+            "phoneme": "p",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"p\">p</phoneme></speak>",
+            "file": "SoundUnitsTest/017_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pen",
+            "phoneme": "pɛn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"pɛn\">pen</phoneme></speak>",
+            "file": "SoundUnitsTest/017_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "p",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/017_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pen",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/017_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 18,
@@ -345,7 +957,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "r",
+            "phoneme": "r",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"r\">r</phoneme></speak>",
+            "file": "SoundUnitsTest/018_sound.wav"
+          },
+          "exampleWord": {
+            "text": "rat",
+            "phoneme": "rat",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"rat\">rat</phoneme></speak>",
+            "file": "SoundUnitsTest/018_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "r",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/018_sound.wav"
+          },
+          "exampleWord": {
+            "text": "rat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/018_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 19,
@@ -357,7 +1005,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "s",
+            "phoneme": "s",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"s\">s</phoneme></speak>",
+            "file": "SoundUnitsTest/019_sound.wav"
+          },
+          "exampleWord": {
+            "text": "sun",
+            "phoneme": "sʌn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"sʌn\">sun</phoneme></speak>",
+            "file": "SoundUnitsTest/019_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "s",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/019_sound.wav"
+          },
+          "exampleWord": {
+            "text": "sun",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/019_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 20,
@@ -369,7 +1053,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "t",
+            "phoneme": "t",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"t\">t</phoneme></speak>",
+            "file": "SoundUnitsTest/020_sound.wav"
+          },
+          "exampleWord": {
+            "text": "tap",
+            "phoneme": "tap",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tap\">tap</phoneme></speak>",
+            "file": "SoundUnitsTest/020_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "t",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/020_sound.wav"
+          },
+          "exampleWord": {
+            "text": "tap",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/020_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 21,
@@ -381,7 +1101,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "v",
+            "phoneme": "v",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"v\">v</phoneme></speak>",
+            "file": "SoundUnitsTest/021_sound.wav"
+          },
+          "exampleWord": {
+            "text": "van",
+            "phoneme": "van",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"van\">van</phoneme></speak>",
+            "file": "SoundUnitsTest/021_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "v",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/021_sound.wav"
+          },
+          "exampleWord": {
+            "text": "van",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/021_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 22,
@@ -393,7 +1149,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "w",
+            "phoneme": "w",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"w\">w</phoneme></speak>",
+            "file": "SoundUnitsTest/022_sound.wav"
+          },
+          "exampleWord": {
+            "text": "wet",
+            "phoneme": "wɛt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"wɛt\">wet</phoneme></speak>",
+            "file": "SoundUnitsTest/022_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "w",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/022_sound.wav"
+          },
+          "exampleWord": {
+            "text": "wet",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/022_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 23,
@@ -405,7 +1197,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "y",
+            "phoneme": "j",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"j\">y</phoneme></speak>",
+            "file": "SoundUnitsTest/023_sound.wav"
+          },
+          "exampleWord": {
+            "text": "yes",
+            "phoneme": "jɛs",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"jɛs\">yes</phoneme></speak>",
+            "file": "SoundUnitsTest/023_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "y",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/023_sound.wav"
+          },
+          "exampleWord": {
+            "text": "yes",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/023_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 24,
@@ -417,7 +1245,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "z",
+            "phoneme": "z",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"z\">z</phoneme></speak>",
+            "file": "SoundUnitsTest/024_sound.wav"
+          },
+          "exampleWord": {
+            "text": "zip",
+            "phoneme": "zɪp",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"zɪp\">zip</phoneme></speak>",
+            "file": "SoundUnitsTest/024_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "z",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/024_sound.wav"
+          },
+          "exampleWord": {
+            "text": "zip",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/024_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 25,
@@ -429,7 +1293,43 @@
       "groupSecondaryId": "SG02",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "x",
+            "phoneme": "ks",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ks\">x</phoneme></speak>",
+            "file": "SoundUnitsTest/025_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fox",
+            "phoneme": "fɒks",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fɒks\">fox</phoneme></speak>",
+            "file": "SoundUnitsTest/025_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "x",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/025_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fox",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/025_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 26,
@@ -441,7 +1341,43 @@
       "groupSecondaryId": "SG03",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ff",
+            "phoneme": "f",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"f\">ff</phoneme></speak>",
+            "file": "SoundUnitsTest/026_sound.wav"
+          },
+          "exampleWord": {
+            "text": "off",
+            "phoneme": "ɒf",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɒf\">off</phoneme></speak>",
+            "file": "SoundUnitsTest/026_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ff",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/026_sound.wav"
+          },
+          "exampleWord": {
+            "text": "off",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/026_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 27,
@@ -453,7 +1389,43 @@
       "groupSecondaryId": "SG03",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ll",
+            "phoneme": "l",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"l\">ll</phoneme></speak>",
+            "file": "SoundUnitsTest/027_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bell",
+            "phoneme": "bɛl",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bɛl\">bell</phoneme></speak>",
+            "file": "SoundUnitsTest/027_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ll",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/027_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bell",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/027_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 28,
@@ -465,7 +1437,43 @@
       "groupSecondaryId": "SG03",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ss",
+            "phoneme": "s",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"s\">ss</phoneme></speak>",
+            "file": "SoundUnitsTest/028_sound.wav"
+          },
+          "exampleWord": {
+            "text": "hiss",
+            "phoneme": "hɪs",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hɪs\">hiss</phoneme></speak>",
+            "file": "SoundUnitsTest/028_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ss",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/028_sound.wav"
+          },
+          "exampleWord": {
+            "text": "hiss",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/028_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 29,
@@ -477,7 +1485,43 @@
       "groupSecondaryId": "SG03",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "zz",
+            "phoneme": "z",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"z\">zz</phoneme></speak>",
+            "file": "SoundUnitsTest/029_sound.wav"
+          },
+          "exampleWord": {
+            "text": "buzz",
+            "phoneme": "bʌz",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bʌz\">buzz</phoneme></speak>",
+            "file": "SoundUnitsTest/029_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "zz",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/029_sound.wav"
+          },
+          "exampleWord": {
+            "text": "buzz",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/029_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 30,
@@ -489,7 +1533,43 @@
       "groupSecondaryId": "SG03",
       "teachingStage": 1,
       "difficulty": 1,
-      "memoryPhase": 1
+      "memoryPhase": 1,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ck",
+            "phoneme": "k",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"k\">ck</phoneme></speak>",
+            "file": "SoundUnitsTest/030_sound.wav"
+          },
+          "exampleWord": {
+            "text": "duck",
+            "phoneme": "dʌk",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʌk\">duck</phoneme></speak>",
+            "file": "SoundUnitsTest/030_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ck",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/030_sound.wav"
+          },
+          "exampleWord": {
+            "text": "duck",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/030_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 31,
@@ -501,7 +1581,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "sh",
+            "phoneme": "ʃ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʃ\">sh</phoneme></speak>",
+            "file": "SoundUnitsTest/031_sound.wav"
+          },
+          "exampleWord": {
+            "text": "ship",
+            "phoneme": "ʃɪp",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʃɪp\">ship</phoneme></speak>",
+            "file": "SoundUnitsTest/031_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "sh",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/031_sound.wav"
+          },
+          "exampleWord": {
+            "text": "ship",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/031_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 32,
@@ -513,7 +1629,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ch",
+            "phoneme": "tʃ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tʃ\">ch</phoneme></speak>",
+            "file": "SoundUnitsTest/032_sound.wav"
+          },
+          "exampleWord": {
+            "text": "chip",
+            "phoneme": "tʃɪp",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tʃɪp\">chip</phoneme></speak>",
+            "file": "SoundUnitsTest/032_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ch",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/032_sound.wav"
+          },
+          "exampleWord": {
+            "text": "chip",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/032_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 33,
@@ -525,7 +1677,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "th",
+            "phoneme": "θ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"θ\">th</phoneme></speak>",
+            "file": "SoundUnitsTest/033_sound.wav"
+          },
+          "exampleWord": {
+            "text": "thin",
+            "phoneme": "θɪn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"θɪn\">thin</phoneme></speak>",
+            "file": "SoundUnitsTest/033_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "th",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/033_sound.wav"
+          },
+          "exampleWord": {
+            "text": "thin",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/033_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 34,
@@ -537,7 +1725,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "th",
+            "phoneme": "ð",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ð\">th</phoneme></speak>",
+            "file": "SoundUnitsTest/034_sound.wav"
+          },
+          "exampleWord": {
+            "text": "this",
+            "phoneme": "ðɪs",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ðɪs\">this</phoneme></speak>",
+            "file": "SoundUnitsTest/034_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "th",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/034_sound.wav"
+          },
+          "exampleWord": {
+            "text": "this",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/034_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 35,
@@ -549,7 +1773,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ng",
+            "phoneme": "ŋ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ŋ\">ng</phoneme></speak>",
+            "file": "SoundUnitsTest/035_sound.wav"
+          },
+          "exampleWord": {
+            "text": "ring",
+            "phoneme": "rɪŋ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"rɪŋ\">ring</phoneme></speak>",
+            "file": "SoundUnitsTest/035_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ng",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/035_sound.wav"
+          },
+          "exampleWord": {
+            "text": "ring",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/035_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 36,
@@ -561,7 +1821,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "nk",
+            "phoneme": "ŋk",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ŋk\">nk</phoneme></speak>",
+            "file": "SoundUnitsTest/036_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bank",
+            "phoneme": "bæŋk",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bæŋk\">bank</phoneme></speak>",
+            "file": "SoundUnitsTest/036_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "nk",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/036_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bank",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/036_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 37,
@@ -573,7 +1869,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "qu",
+            "phoneme": "kw",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kw\">qu</phoneme></speak>",
+            "file": "SoundUnitsTest/037_sound.wav"
+          },
+          "exampleWord": {
+            "text": "queen",
+            "phoneme": "kwiːn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kwiːn\">queen</phoneme></speak>",
+            "file": "SoundUnitsTest/037_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "qu",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/037_sound.wav"
+          },
+          "exampleWord": {
+            "text": "queen",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/037_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 38,
@@ -585,7 +1917,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "wh",
+            "phoneme": "w",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"w\">wh</phoneme></speak>",
+            "file": "SoundUnitsTest/038_sound.wav"
+          },
+          "exampleWord": {
+            "text": "wheel",
+            "phoneme": "wiːl",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"wiːl\">wheel</phoneme></speak>",
+            "file": "SoundUnitsTest/038_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "wh",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/038_sound.wav"
+          },
+          "exampleWord": {
+            "text": "wheel",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/038_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 39,
@@ -597,7 +1965,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ph",
+            "phoneme": "f",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"f\">ph</phoneme></speak>",
+            "file": "SoundUnitsTest/039_sound.wav"
+          },
+          "exampleWord": {
+            "text": "phone",
+            "phoneme": "fəʊn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fəʊn\">phone</phoneme></speak>",
+            "file": "SoundUnitsTest/039_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ph",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/039_sound.wav"
+          },
+          "exampleWord": {
+            "text": "phone",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/039_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 40,
@@ -609,7 +2013,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "tch",
+            "phoneme": "tʃ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tʃ\">tch</phoneme></speak>",
+            "file": "SoundUnitsTest/040_sound.wav"
+          },
+          "exampleWord": {
+            "text": "match",
+            "phoneme": "mætʃ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"mætʃ\">match</phoneme></speak>",
+            "file": "SoundUnitsTest/040_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "tch",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/040_sound.wav"
+          },
+          "exampleWord": {
+            "text": "match",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/040_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 41,
@@ -621,7 +2061,43 @@
       "groupSecondaryId": "SG04",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "dge",
+            "phoneme": "dʒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒ\">dge</phoneme></speak>",
+            "file": "SoundUnitsTest/041_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bridge",
+            "phoneme": "brɪdʒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"brɪdʒ\">bridge</phoneme></speak>",
+            "file": "SoundUnitsTest/041_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "dge",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/041_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bridge",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/041_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 42,
@@ -633,7 +2109,43 @@
       "groupSecondaryId": "SG05",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ge",
+            "phoneme": "dʒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒ\">ge</phoneme></speak>",
+            "file": "SoundUnitsTest/042_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cage",
+            "phoneme": "keɪdʒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"keɪdʒ\">cage</phoneme></speak>",
+            "file": "SoundUnitsTest/042_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ge",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/042_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cage",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/042_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 43,
@@ -645,7 +2157,43 @@
       "groupSecondaryId": "SG05",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "gi",
+            "phoneme": "dʒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒ\">gi</phoneme></speak>",
+            "file": "SoundUnitsTest/043_sound.wav"
+          },
+          "exampleWord": {
+            "text": "giant",
+            "phoneme": "dʒaɪənt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒaɪənt\">giant</phoneme></speak>",
+            "file": "SoundUnitsTest/043_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "gi",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/043_sound.wav"
+          },
+          "exampleWord": {
+            "text": "giant",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/043_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 44,
@@ -657,7 +2205,43 @@
       "groupSecondaryId": "SG05",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "gy",
+            "phoneme": "dʒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒ\">gy</phoneme></speak>",
+            "file": "SoundUnitsTest/044_sound.wav"
+          },
+          "exampleWord": {
+            "text": "gym",
+            "phoneme": "dʒɪm",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒɪm\">gym</phoneme></speak>",
+            "file": "SoundUnitsTest/044_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "gy",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/044_sound.wav"
+          },
+          "exampleWord": {
+            "text": "gym",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/044_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 45,
@@ -669,7 +2253,43 @@
       "groupSecondaryId": "SG06",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ce",
+            "phoneme": "s",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"s\">ce</phoneme></speak>",
+            "file": "SoundUnitsTest/045_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fence",
+            "phoneme": "fɛns",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fɛns\">fence</phoneme></speak>",
+            "file": "SoundUnitsTest/045_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ce",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/045_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fence",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/045_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 46,
@@ -681,7 +2301,43 @@
       "groupSecondaryId": "SG06",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ci",
+            "phoneme": "s",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"s\">ci</phoneme></speak>",
+            "file": "SoundUnitsTest/046_sound.wav"
+          },
+          "exampleWord": {
+            "text": "city",
+            "phoneme": "sɪti",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"sɪti\">city</phoneme></speak>",
+            "file": "SoundUnitsTest/046_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ci",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/046_sound.wav"
+          },
+          "exampleWord": {
+            "text": "city",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/046_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 47,
@@ -693,7 +2349,43 @@
       "groupSecondaryId": "SG06",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "cy",
+            "phoneme": "s",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"s\">cy</phoneme></speak>",
+            "file": "SoundUnitsTest/047_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fancy",
+            "phoneme": "fænsi",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fænsi\">fancy</phoneme></speak>",
+            "file": "SoundUnitsTest/047_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "cy",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/047_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fancy",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/047_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 48,
@@ -705,7 +2397,43 @@
       "groupSecondaryId": "SG07",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "wr",
+            "phoneme": "r",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"r\">wr</phoneme></speak>",
+            "file": "SoundUnitsTest/048_sound.wav"
+          },
+          "exampleWord": {
+            "text": "write",
+            "phoneme": "raɪt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"raɪt\">write</phoneme></speak>",
+            "file": "SoundUnitsTest/048_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "wr",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/048_sound.wav"
+          },
+          "exampleWord": {
+            "text": "write",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/048_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 49,
@@ -717,7 +2445,43 @@
       "groupSecondaryId": "SG07",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "kn",
+            "phoneme": "n",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"n\">kn</phoneme></speak>",
+            "file": "SoundUnitsTest/049_sound.wav"
+          },
+          "exampleWord": {
+            "text": "knee",
+            "phoneme": "niː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"niː\">knee</phoneme></speak>",
+            "file": "SoundUnitsTest/049_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "kn",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/049_sound.wav"
+          },
+          "exampleWord": {
+            "text": "knee",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/049_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 50,
@@ -729,7 +2493,43 @@
       "groupSecondaryId": "SG07",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "gn",
+            "phoneme": "n",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"n\">gn</phoneme></speak>",
+            "file": "SoundUnitsTest/050_sound.wav"
+          },
+          "exampleWord": {
+            "text": "gnome",
+            "phoneme": "nəʊm",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"nəʊm\">gnome</phoneme></speak>",
+            "file": "SoundUnitsTest/050_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "gn",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/050_sound.wav"
+          },
+          "exampleWord": {
+            "text": "gnome",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/050_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 51,
@@ -741,7 +2541,43 @@
       "groupSecondaryId": "SG07",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "mb",
+            "phoneme": "m",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"m\">mb</phoneme></speak>",
+            "file": "SoundUnitsTest/051_sound.wav"
+          },
+          "exampleWord": {
+            "text": "lamb",
+            "phoneme": "læm",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"læm\">lamb</phoneme></speak>",
+            "file": "SoundUnitsTest/051_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "mb",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/051_sound.wav"
+          },
+          "exampleWord": {
+            "text": "lamb",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/051_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 52,
@@ -753,7 +2589,43 @@
       "groupSecondaryId": "SG06",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "sc",
+            "phoneme": "s",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"s\">sc</phoneme></speak>",
+            "file": "SoundUnitsTest/052_sound.wav"
+          },
+          "exampleWord": {
+            "text": "science",
+            "phoneme": "saɪəns",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"saɪəns\">science</phoneme></speak>",
+            "file": "SoundUnitsTest/052_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "sc",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/052_sound.wav"
+          },
+          "exampleWord": {
+            "text": "science",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/052_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 53,
@@ -765,7 +2637,43 @@
       "groupSecondaryId": "SG08",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ti",
+            "phoneme": "ʃ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʃ\">ti</phoneme></speak>",
+            "file": "SoundUnitsTest/053_sound.wav"
+          },
+          "exampleWord": {
+            "text": "station",
+            "phoneme": "steɪʃən",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"steɪʃən\">station</phoneme></speak>",
+            "file": "SoundUnitsTest/053_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ti",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/053_sound.wav"
+          },
+          "exampleWord": {
+            "text": "station",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/053_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 54,
@@ -777,7 +2685,43 @@
       "groupSecondaryId": "SG08",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ci",
+            "phoneme": "ʃ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʃ\">ci</phoneme></speak>",
+            "file": "SoundUnitsTest/054_sound.wav"
+          },
+          "exampleWord": {
+            "text": "special",
+            "phoneme": "speʃəl",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"speʃəl\">special</phoneme></speak>",
+            "file": "SoundUnitsTest/054_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ci",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/054_sound.wav"
+          },
+          "exampleWord": {
+            "text": "special",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/054_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 55,
@@ -789,7 +2733,43 @@
       "groupSecondaryId": "SG08",
       "teachingStage": 2,
       "difficulty": 2,
-      "memoryPhase": 2
+      "memoryPhase": 2,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "si",
+            "phoneme": "ʒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʒ\">si</phoneme></speak>",
+            "file": "SoundUnitsTest/055_sound.wav"
+          },
+          "exampleWord": {
+            "text": "vision",
+            "phoneme": "vɪʒən",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"vɪʒən\">vision</phoneme></speak>",
+            "file": "SoundUnitsTest/055_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "si",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/055_sound.wav"
+          },
+          "exampleWord": {
+            "text": "vision",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/055_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 56,
@@ -801,7 +2781,43 @@
       "groupSecondaryId": "SG09",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "a-e",
+            "phoneme": "eɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"eɪ\">a-e</phoneme></speak>",
+            "file": "SoundUnitsTest/056_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cake",
+            "phoneme": "keɪk",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"keɪk\">cake</phoneme></speak>",
+            "file": "SoundUnitsTest/056_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "a-e",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/056_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cake",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/056_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 57,
@@ -813,7 +2829,43 @@
       "groupSecondaryId": "SG09",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ai",
+            "phoneme": "eɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"eɪ\">ai</phoneme></speak>",
+            "file": "SoundUnitsTest/057_sound.wav"
+          },
+          "exampleWord": {
+            "text": "rain",
+            "phoneme": "reɪn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"reɪn\">rain</phoneme></speak>",
+            "file": "SoundUnitsTest/057_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ai",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/057_sound.wav"
+          },
+          "exampleWord": {
+            "text": "rain",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/057_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 58,
@@ -825,7 +2877,43 @@
       "groupSecondaryId": "SG09",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ay",
+            "phoneme": "eɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"eɪ\">ay</phoneme></speak>",
+            "file": "SoundUnitsTest/058_sound.wav"
+          },
+          "exampleWord": {
+            "text": "play",
+            "phoneme": "pleɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"pleɪ\">play</phoneme></speak>",
+            "file": "SoundUnitsTest/058_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ay",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/058_sound.wav"
+          },
+          "exampleWord": {
+            "text": "play",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/058_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 59,
@@ -837,7 +2925,43 @@
       "groupSecondaryId": "SG09",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "eɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"eɪ\">a</phoneme></speak>",
+            "file": "SoundUnitsTest/059_sound.wav"
+          },
+          "exampleWord": {
+            "text": "acorn",
+            "phoneme": "eɪkɔːn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"eɪkɔːn\">acorn</phoneme></speak>",
+            "file": "SoundUnitsTest/059_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/059_sound.wav"
+          },
+          "exampleWord": {
+            "text": "acorn",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/059_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 60,
@@ -849,7 +2973,43 @@
       "groupSecondaryId": "SG09",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ei",
+            "phoneme": "eɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"eɪ\">ei</phoneme></speak>",
+            "file": "SoundUnitsTest/060_sound.wav"
+          },
+          "exampleWord": {
+            "text": "vein",
+            "phoneme": "veɪn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"veɪn\">vein</phoneme></speak>",
+            "file": "SoundUnitsTest/060_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ei",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/060_sound.wav"
+          },
+          "exampleWord": {
+            "text": "vein",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/060_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 61,
@@ -861,7 +3021,43 @@
       "groupSecondaryId": "SG09",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "eigh",
+            "phoneme": "eɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"eɪ\">eigh</phoneme></speak>",
+            "file": "SoundUnitsTest/061_sound.wav"
+          },
+          "exampleWord": {
+            "text": "eight",
+            "phoneme": "eɪt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"eɪt\">eight</phoneme></speak>",
+            "file": "SoundUnitsTest/061_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "eigh",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/061_sound.wav"
+          },
+          "exampleWord": {
+            "text": "eight",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/061_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 62,
@@ -873,7 +3069,43 @@
       "groupSecondaryId": "SG09",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ey",
+            "phoneme": "eɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"eɪ\">ey</phoneme></speak>",
+            "file": "SoundUnitsTest/062_sound.wav"
+          },
+          "exampleWord": {
+            "text": "they",
+            "phoneme": "ðeɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ðeɪ\">they</phoneme></speak>",
+            "file": "SoundUnitsTest/062_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ey",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/062_sound.wav"
+          },
+          "exampleWord": {
+            "text": "they",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/062_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 63,
@@ -885,7 +3117,43 @@
       "groupSecondaryId": "SG09",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ea",
+            "phoneme": "eɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"eɪ\">ea</phoneme></speak>",
+            "file": "SoundUnitsTest/063_sound.wav"
+          },
+          "exampleWord": {
+            "text": "steak",
+            "phoneme": "steɪk",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"steɪk\">steak</phoneme></speak>",
+            "file": "SoundUnitsTest/063_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ea",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/063_sound.wav"
+          },
+          "exampleWord": {
+            "text": "steak",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/063_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 64,
@@ -897,7 +3165,43 @@
       "groupSecondaryId": "SG10",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "e-e",
+            "phoneme": "iː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"iː\">e-e</phoneme></speak>",
+            "file": "SoundUnitsTest/064_sound.wav"
+          },
+          "exampleWord": {
+            "text": "these",
+            "phoneme": "ðiːz",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ðiːz\">these</phoneme></speak>",
+            "file": "SoundUnitsTest/064_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "e-e",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/064_sound.wav"
+          },
+          "exampleWord": {
+            "text": "these",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/064_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 65,
@@ -909,7 +3213,43 @@
       "groupSecondaryId": "SG10",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ee",
+            "phoneme": "iː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"iː\">ee</phoneme></speak>",
+            "file": "SoundUnitsTest/065_sound.wav"
+          },
+          "exampleWord": {
+            "text": "tree",
+            "phoneme": "triː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"triː\">tree</phoneme></speak>",
+            "file": "SoundUnitsTest/065_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ee",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/065_sound.wav"
+          },
+          "exampleWord": {
+            "text": "tree",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/065_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 66,
@@ -921,7 +3261,43 @@
       "groupSecondaryId": "SG10",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ea",
+            "phoneme": "iː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"iː\">ea</phoneme></speak>",
+            "file": "SoundUnitsTest/066_sound.wav"
+          },
+          "exampleWord": {
+            "text": "beach",
+            "phoneme": "biːtʃ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"biːtʃ\">beach</phoneme></speak>",
+            "file": "SoundUnitsTest/066_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ea",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/066_sound.wav"
+          },
+          "exampleWord": {
+            "text": "beach",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/066_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 67,
@@ -933,7 +3309,43 @@
       "groupSecondaryId": "SG10",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "e",
+            "phoneme": "iː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"iː\">e</phoneme></speak>",
+            "file": "SoundUnitsTest/067_sound.wav"
+          },
+          "exampleWord": {
+            "text": "he",
+            "phoneme": "hiː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hiː\">he</phoneme></speak>",
+            "file": "SoundUnitsTest/067_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "e",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/067_sound.wav"
+          },
+          "exampleWord": {
+            "text": "he",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/067_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 68,
@@ -945,7 +3357,43 @@
       "groupSecondaryId": "SG10",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "y",
+            "phoneme": "i",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"i\">y</phoneme></speak>",
+            "file": "SoundUnitsTest/068_sound.wav"
+          },
+          "exampleWord": {
+            "text": "happy",
+            "phoneme": "hæpi",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hæpi\">happy</phoneme></speak>",
+            "file": "SoundUnitsTest/068_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "y",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/068_sound.wav"
+          },
+          "exampleWord": {
+            "text": "happy",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/068_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 69,
@@ -957,7 +3405,43 @@
       "groupSecondaryId": "SG10",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ie",
+            "phoneme": "iː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"iː\">ie</phoneme></speak>",
+            "file": "SoundUnitsTest/069_sound.wav"
+          },
+          "exampleWord": {
+            "text": "chief",
+            "phoneme": "tʃiːf",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tʃiːf\">chief</phoneme></speak>",
+            "file": "SoundUnitsTest/069_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ie",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/069_sound.wav"
+          },
+          "exampleWord": {
+            "text": "chief",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/069_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 70,
@@ -969,7 +3453,43 @@
       "groupSecondaryId": "SG10",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ei",
+            "phoneme": "iː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"iː\">ei</phoneme></speak>",
+            "file": "SoundUnitsTest/070_sound.wav"
+          },
+          "exampleWord": {
+            "text": "receive",
+            "phoneme": "rɪsiːv",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"rɪsiːv\">receive</phoneme></speak>",
+            "file": "SoundUnitsTest/070_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ei",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/070_sound.wav"
+          },
+          "exampleWord": {
+            "text": "receive",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/070_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 71,
@@ -981,7 +3501,43 @@
       "groupSecondaryId": "SG11",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "i-e",
+            "phoneme": "aɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"aɪ\">i-e</phoneme></speak>",
+            "file": "SoundUnitsTest/071_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bike",
+            "phoneme": "baɪk",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"baɪk\">bike</phoneme></speak>",
+            "file": "SoundUnitsTest/071_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "i-e",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/071_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bike",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/071_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 72,
@@ -993,7 +3549,43 @@
       "groupSecondaryId": "SG11",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "igh",
+            "phoneme": "aɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"aɪ\">igh</phoneme></speak>",
+            "file": "SoundUnitsTest/072_sound.wav"
+          },
+          "exampleWord": {
+            "text": "light",
+            "phoneme": "laɪt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"laɪt\">light</phoneme></speak>",
+            "file": "SoundUnitsTest/072_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "igh",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/072_sound.wav"
+          },
+          "exampleWord": {
+            "text": "light",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/072_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 73,
@@ -1005,7 +3597,43 @@
       "groupSecondaryId": "SG11",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "y",
+            "phoneme": "aɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"aɪ\">y</phoneme></speak>",
+            "file": "SoundUnitsTest/073_sound.wav"
+          },
+          "exampleWord": {
+            "text": "my",
+            "phoneme": "maɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"maɪ\">my</phoneme></speak>",
+            "file": "SoundUnitsTest/073_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "y",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/073_sound.wav"
+          },
+          "exampleWord": {
+            "text": "my",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/073_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 74,
@@ -1017,7 +3645,43 @@
       "groupSecondaryId": "SG11",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ie",
+            "phoneme": "aɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"aɪ\">ie</phoneme></speak>",
+            "file": "SoundUnitsTest/074_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pie",
+            "phoneme": "paɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"paɪ\">pie</phoneme></speak>",
+            "file": "SoundUnitsTest/074_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ie",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/074_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pie",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/074_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 75,
@@ -1029,7 +3693,43 @@
       "groupSecondaryId": "SG11",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "i",
+            "phoneme": "ə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ə\">i</phoneme></speak>",
+            "file": "SoundUnitsTest/075_sound.wav"
+          },
+          "exampleWord": {
+            "text": "tiger",
+            "phoneme": "taɪɡə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"taɪɡə\">tiger</phoneme></speak>",
+            "file": "SoundUnitsTest/075_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "i",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/075_sound.wav"
+          },
+          "exampleWord": {
+            "text": "tiger",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/075_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 76,
@@ -1041,7 +3741,43 @@
       "groupSecondaryId": "SG11",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "uy",
+            "phoneme": "aɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"aɪ\">uy</phoneme></speak>",
+            "file": "SoundUnitsTest/076_sound.wav"
+          },
+          "exampleWord": {
+            "text": "buy",
+            "phoneme": "baɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"baɪ\">buy</phoneme></speak>",
+            "file": "SoundUnitsTest/076_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "uy",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/076_sound.wav"
+          },
+          "exampleWord": {
+            "text": "buy",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/076_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 77,
@@ -1053,7 +3789,43 @@
       "groupSecondaryId": "SG12",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "o-e",
+            "phoneme": "əʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"əʊ\">o-e</phoneme></speak>",
+            "file": "SoundUnitsTest/077_sound.wav"
+          },
+          "exampleWord": {
+            "text": "home",
+            "phoneme": "həʊm",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"həʊm\">home</phoneme></speak>",
+            "file": "SoundUnitsTest/077_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "o-e",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/077_sound.wav"
+          },
+          "exampleWord": {
+            "text": "home",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/077_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 78,
@@ -1065,7 +3837,43 @@
       "groupSecondaryId": "SG12",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "oa",
+            "phoneme": "əʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"əʊ\">oa</phoneme></speak>",
+            "file": "SoundUnitsTest/078_sound.wav"
+          },
+          "exampleWord": {
+            "text": "boat",
+            "phoneme": "bəʊt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bəʊt\">boat</phoneme></speak>",
+            "file": "SoundUnitsTest/078_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "oa",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/078_sound.wav"
+          },
+          "exampleWord": {
+            "text": "boat",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/078_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 79,
@@ -1077,7 +3885,43 @@
       "groupSecondaryId": "SG12",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ow",
+            "phoneme": "əʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"əʊ\">ow</phoneme></speak>",
+            "file": "SoundUnitsTest/079_sound.wav"
+          },
+          "exampleWord": {
+            "text": "snow",
+            "phoneme": "snəʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"snəʊ\">snow</phoneme></speak>",
+            "file": "SoundUnitsTest/079_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ow",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/079_sound.wav"
+          },
+          "exampleWord": {
+            "text": "snow",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/079_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 80,
@@ -1089,7 +3933,43 @@
       "groupSecondaryId": "SG12",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "oe",
+            "phoneme": "əʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"əʊ\">oe</phoneme></speak>",
+            "file": "SoundUnitsTest/080_sound.wav"
+          },
+          "exampleWord": {
+            "text": "toe",
+            "phoneme": "təʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"təʊ\">toe</phoneme></speak>",
+            "file": "SoundUnitsTest/080_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "oe",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/080_sound.wav"
+          },
+          "exampleWord": {
+            "text": "toe",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/080_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 81,
@@ -1101,7 +3981,43 @@
       "groupSecondaryId": "SG12",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "əʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"əʊ\">o</phoneme></speak>",
+            "file": "SoundUnitsTest/081_sound.wav"
+          },
+          "exampleWord": {
+            "text": "go",
+            "phoneme": "ɡəʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɡəʊ\">go</phoneme></speak>",
+            "file": "SoundUnitsTest/081_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/081_sound.wav"
+          },
+          "exampleWord": {
+            "text": "go",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/081_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 82,
@@ -1113,7 +4029,43 @@
       "groupSecondaryId": "SG12",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ou",
+            "phoneme": "əʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"əʊ\">ou</phoneme></speak>",
+            "file": "SoundUnitsTest/082_sound.wav"
+          },
+          "exampleWord": {
+            "text": "soul",
+            "phoneme": "səʊl",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"səʊl\">soul</phoneme></speak>",
+            "file": "SoundUnitsTest/082_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ou",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/082_sound.wav"
+          },
+          "exampleWord": {
+            "text": "soul",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/082_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 83,
@@ -1125,7 +4077,43 @@
       "groupSecondaryId": "SG12",
       "teachingStage": 3,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "eau",
+            "phoneme": "əʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"əʊ\">eau</phoneme></speak>",
+            "file": "SoundUnitsTest/083_sound.wav"
+          },
+          "exampleWord": {
+            "text": "plateau",
+            "phoneme": "plætəʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"plætəʊ\">plateau</phoneme></speak>",
+            "file": "SoundUnitsTest/083_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "eau",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/083_sound.wav"
+          },
+          "exampleWord": {
+            "text": "plateau",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/083_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 84,
@@ -1137,7 +4125,43 @@
       "groupSecondaryId": "SG12",
       "teachingStage": 3,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ough",
+            "phoneme": "əʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"əʊ\">ough</phoneme></speak>",
+            "file": "SoundUnitsTest/084_sound.wav"
+          },
+          "exampleWord": {
+            "text": "though",
+            "phoneme": "ðəʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ðəʊ\">though</phoneme></speak>",
+            "file": "SoundUnitsTest/084_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ough",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/084_sound.wav"
+          },
+          "exampleWord": {
+            "text": "though",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/084_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 85,
@@ -1149,7 +4173,43 @@
       "groupSecondaryId": "SG13",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "oo",
+            "phoneme": "uː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"uː\">oo</phoneme></speak>",
+            "file": "SoundUnitsTest/085_sound.wav"
+          },
+          "exampleWord": {
+            "text": "moon",
+            "phoneme": "muːn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"muːn\">moon</phoneme></speak>",
+            "file": "SoundUnitsTest/085_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "oo",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/085_sound.wav"
+          },
+          "exampleWord": {
+            "text": "moon",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/085_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 86,
@@ -1161,7 +4221,43 @@
       "groupSecondaryId": "SG13",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "u-e",
+            "phoneme": "uː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"uː\">u-e</phoneme></speak>",
+            "file": "SoundUnitsTest/086_sound.wav"
+          },
+          "exampleWord": {
+            "text": "flute",
+            "phoneme": "fluːt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fluːt\">flute</phoneme></speak>",
+            "file": "SoundUnitsTest/086_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "u-e",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/086_sound.wav"
+          },
+          "exampleWord": {
+            "text": "flute",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/086_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 87,
@@ -1173,7 +4269,43 @@
       "groupSecondaryId": "SG13",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ue",
+            "phoneme": "uː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"uː\">ue</phoneme></speak>",
+            "file": "SoundUnitsTest/087_sound.wav"
+          },
+          "exampleWord": {
+            "text": "blue",
+            "phoneme": "bluː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bluː\">blue</phoneme></speak>",
+            "file": "SoundUnitsTest/087_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ue",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/087_sound.wav"
+          },
+          "exampleWord": {
+            "text": "blue",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/087_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 88,
@@ -1185,7 +4317,43 @@
       "groupSecondaryId": "SG13",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ew",
+            "phoneme": "uː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"uː\">ew</phoneme></speak>",
+            "file": "SoundUnitsTest/088_sound.wav"
+          },
+          "exampleWord": {
+            "text": "chew",
+            "phoneme": "tʃuː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tʃuː\">chew</phoneme></speak>",
+            "file": "SoundUnitsTest/088_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ew",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/088_sound.wav"
+          },
+          "exampleWord": {
+            "text": "chew",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/088_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 89,
@@ -1197,7 +4365,43 @@
       "groupSecondaryId": "SG13",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ui",
+            "phoneme": "uː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"uː\">ui</phoneme></speak>",
+            "file": "SoundUnitsTest/089_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fruit",
+            "phoneme": "fruːt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fruːt\">fruit</phoneme></speak>",
+            "file": "SoundUnitsTest/089_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ui",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/089_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fruit",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/089_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 90,
@@ -1209,7 +4413,43 @@
       "groupSecondaryId": "SG13",
       "teachingStage": 3,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ou",
+            "phoneme": "uː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"uː\">ou</phoneme></speak>",
+            "file": "SoundUnitsTest/090_sound.wav"
+          },
+          "exampleWord": {
+            "text": "soup",
+            "phoneme": "suːp",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"suːp\">soup</phoneme></speak>",
+            "file": "SoundUnitsTest/090_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ou",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/090_sound.wav"
+          },
+          "exampleWord": {
+            "text": "soup",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/090_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 91,
@@ -1221,7 +4461,43 @@
       "groupSecondaryId": "SG13",
       "teachingStage": 3,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "uː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"uː\">o</phoneme></speak>",
+            "file": "SoundUnitsTest/091_sound.wav"
+          },
+          "exampleWord": {
+            "text": "do",
+            "phoneme": "duː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"duː\">do</phoneme></speak>",
+            "file": "SoundUnitsTest/091_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/091_sound.wav"
+          },
+          "exampleWord": {
+            "text": "do",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/091_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 92,
@@ -1233,7 +4509,43 @@
       "groupSecondaryId": "SG13",
       "teachingStage": 3,
       "difficulty": 3,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "oo",
+            "phoneme": "ʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʊ\">oo</phoneme></speak>",
+            "file": "SoundUnitsTest/092_sound.wav"
+          },
+          "exampleWord": {
+            "text": "book",
+            "phoneme": "bʊk",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bʊk\">book</phoneme></speak>",
+            "file": "SoundUnitsTest/092_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "oo",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/092_sound.wav"
+          },
+          "exampleWord": {
+            "text": "book",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/092_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 93,
@@ -1245,7 +4557,43 @@
       "groupSecondaryId": "SG14",
       "teachingStage": 3,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "u-e",
+            "phoneme": "juː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"juː\">u-e</phoneme></speak>",
+            "file": "SoundUnitsTest/093_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cube",
+            "phoneme": "kjuːb",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kjuːb\">cube</phoneme></speak>",
+            "file": "SoundUnitsTest/093_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "u-e",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/093_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cube",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/093_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 94,
@@ -1257,7 +4605,43 @@
       "groupSecondaryId": "SG14",
       "teachingStage": 3,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "u",
+            "phoneme": "juː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"juː\">u</phoneme></speak>",
+            "file": "SoundUnitsTest/094_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pupil",
+            "phoneme": "pjuːpəl",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"pjuːpəl\">pupil</phoneme></speak>",
+            "file": "SoundUnitsTest/094_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "u",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/094_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pupil",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/094_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 95,
@@ -1269,7 +4653,43 @@
       "groupSecondaryId": "SG14",
       "teachingStage": 3,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ue",
+            "phoneme": "juː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"juː\">ue</phoneme></speak>",
+            "file": "SoundUnitsTest/095_sound.wav"
+          },
+          "exampleWord": {
+            "text": "rescue",
+            "phoneme": "reskjuː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"reskjuː\">rescue</phoneme></speak>",
+            "file": "SoundUnitsTest/095_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ue",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/095_sound.wav"
+          },
+          "exampleWord": {
+            "text": "rescue",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/095_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 96,
@@ -1281,7 +4701,43 @@
       "groupSecondaryId": "SG14",
       "teachingStage": 3,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ew",
+            "phoneme": "juː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"juː\">ew</phoneme></speak>",
+            "file": "SoundUnitsTest/096_sound.wav"
+          },
+          "exampleWord": {
+            "text": "few",
+            "phoneme": "fjuː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fjuː\">few</phoneme></speak>",
+            "file": "SoundUnitsTest/096_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ew",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/096_sound.wav"
+          },
+          "exampleWord": {
+            "text": "few",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/096_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 97,
@@ -1293,7 +4749,43 @@
       "groupSecondaryId": "SG14",
       "teachingStage": 3,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "eu",
+            "phoneme": "juː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"juː\">eu</phoneme></speak>",
+            "file": "SoundUnitsTest/097_sound.wav"
+          },
+          "exampleWord": {
+            "text": "Europe",
+            "phoneme": "jʊərəp",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"jʊərəp\">Europe</phoneme></speak>",
+            "file": "SoundUnitsTest/097_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "eu",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/097_sound.wav"
+          },
+          "exampleWord": {
+            "text": "Europe",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/097_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 98,
@@ -1305,7 +4797,43 @@
       "groupSecondaryId": "SG14",
       "teachingStage": 3,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "eau",
+            "phoneme": "juː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"juː\">eau</phoneme></speak>",
+            "file": "SoundUnitsTest/098_sound.wav"
+          },
+          "exampleWord": {
+            "text": "beauty",
+            "phoneme": "bjuːti",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bjuːti\">beauty</phoneme></speak>",
+            "file": "SoundUnitsTest/098_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "eau",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/098_sound.wav"
+          },
+          "exampleWord": {
+            "text": "beauty",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/098_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 99,
@@ -1317,7 +4845,43 @@
       "groupSecondaryId": "SG15",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ar",
+            "phoneme": "ɑː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɑː\">ar</phoneme></speak>",
+            "file": "SoundUnitsTest/099_sound.wav"
+          },
+          "exampleWord": {
+            "text": "car",
+            "phoneme": "kɑː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kɑː\">car</phoneme></speak>",
+            "file": "SoundUnitsTest/099_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ar",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/099_sound.wav"
+          },
+          "exampleWord": {
+            "text": "car",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/099_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 100,
@@ -1329,7 +4893,43 @@
       "groupSecondaryId": "SG15",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "ɑː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɑː\">a</phoneme></speak>",
+            "file": "SoundUnitsTest/100_sound.wav"
+          },
+          "exampleWord": {
+            "text": "father",
+            "phoneme": "fɑːðə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fɑːðə\">father</phoneme></speak>",
+            "file": "SoundUnitsTest/100_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/100_sound.wav"
+          },
+          "exampleWord": {
+            "text": "father",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/100_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 101,
@@ -1341,7 +4941,43 @@
       "groupSecondaryId": "SG15",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ear",
+            "phoneme": "ɑː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɑː\">ear</phoneme></speak>",
+            "file": "SoundUnitsTest/101_sound.wav"
+          },
+          "exampleWord": {
+            "text": "heart",
+            "phoneme": "hɑːt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hɑːt\">heart</phoneme></speak>",
+            "file": "SoundUnitsTest/101_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ear",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/101_sound.wav"
+          },
+          "exampleWord": {
+            "text": "heart",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/101_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 102,
@@ -1353,7 +4989,43 @@
       "groupSecondaryId": "SG16",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "or",
+            "phoneme": "ɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔː\">or</phoneme></speak>",
+            "file": "SoundUnitsTest/102_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fork",
+            "phoneme": "fɔːk",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fɔːk\">fork</phoneme></speak>",
+            "file": "SoundUnitsTest/102_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "or",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/102_sound.wav"
+          },
+          "exampleWord": {
+            "text": "fork",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/102_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 103,
@@ -1365,7 +5037,43 @@
       "groupSecondaryId": "SG16",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "aw",
+            "phoneme": "ɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔː\">aw</phoneme></speak>",
+            "file": "SoundUnitsTest/103_sound.wav"
+          },
+          "exampleWord": {
+            "text": "claw",
+            "phoneme": "klɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"klɔː\">claw</phoneme></speak>",
+            "file": "SoundUnitsTest/103_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "aw",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/103_sound.wav"
+          },
+          "exampleWord": {
+            "text": "claw",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/103_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 104,
@@ -1377,7 +5085,43 @@
       "groupSecondaryId": "SG16",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "au",
+            "phoneme": "ɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔː\">au</phoneme></speak>",
+            "file": "SoundUnitsTest/104_sound.wav"
+          },
+          "exampleWord": {
+            "text": "author",
+            "phoneme": "ɔːθə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔːθə\">author</phoneme></speak>",
+            "file": "SoundUnitsTest/104_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "au",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/104_sound.wav"
+          },
+          "exampleWord": {
+            "text": "author",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/104_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 105,
@@ -1389,7 +5133,43 @@
       "groupSecondaryId": "SG16",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "al",
+            "phoneme": "ɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔː\">al</phoneme></speak>",
+            "file": "SoundUnitsTest/105_sound.wav"
+          },
+          "exampleWord": {
+            "text": "talk",
+            "phoneme": "tɔːk",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tɔːk\">talk</phoneme></speak>",
+            "file": "SoundUnitsTest/105_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "al",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/105_sound.wav"
+          },
+          "exampleWord": {
+            "text": "talk",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/105_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 106,
@@ -1401,7 +5181,43 @@
       "groupSecondaryId": "SG16",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ore",
+            "phoneme": "ɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔː\">ore</phoneme></speak>",
+            "file": "SoundUnitsTest/106_sound.wav"
+          },
+          "exampleWord": {
+            "text": "shore",
+            "phoneme": "ʃɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʃɔː\">shore</phoneme></speak>",
+            "file": "SoundUnitsTest/106_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ore",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/106_sound.wav"
+          },
+          "exampleWord": {
+            "text": "shore",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/106_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 107,
@@ -1413,7 +5229,43 @@
       "groupSecondaryId": "SG16",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "oor",
+            "phoneme": "ɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔː\">oor</phoneme></speak>",
+            "file": "SoundUnitsTest/107_sound.wav"
+          },
+          "exampleWord": {
+            "text": "door",
+            "phoneme": "dɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dɔː\">door</phoneme></speak>",
+            "file": "SoundUnitsTest/107_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "oor",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/107_sound.wav"
+          },
+          "exampleWord": {
+            "text": "door",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/107_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 108,
@@ -1425,7 +5277,43 @@
       "groupSecondaryId": "SG16",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "our",
+            "phoneme": "ɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔː\">our</phoneme></speak>",
+            "file": "SoundUnitsTest/108_sound.wav"
+          },
+          "exampleWord": {
+            "text": "four",
+            "phoneme": "fɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"fɔː\">four</phoneme></speak>",
+            "file": "SoundUnitsTest/108_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "our",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/108_sound.wav"
+          },
+          "exampleWord": {
+            "text": "four",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/108_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 109,
@@ -1437,7 +5325,43 @@
       "groupSecondaryId": "SG17",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "er",
+            "phoneme": "ɜː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɜː\">er</phoneme></speak>",
+            "file": "SoundUnitsTest/109_sound.wav"
+          },
+          "exampleWord": {
+            "text": "her",
+            "phoneme": "hɜː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hɜː\">her</phoneme></speak>",
+            "file": "SoundUnitsTest/109_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "er",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/109_sound.wav"
+          },
+          "exampleWord": {
+            "text": "her",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/109_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 110,
@@ -1449,7 +5373,43 @@
       "groupSecondaryId": "SG17",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ir",
+            "phoneme": "ɜː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɜː\">ir</phoneme></speak>",
+            "file": "SoundUnitsTest/110_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bird",
+            "phoneme": "bɜːd",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bɜːd\">bird</phoneme></speak>",
+            "file": "SoundUnitsTest/110_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ir",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/110_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bird",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/110_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 111,
@@ -1461,7 +5421,43 @@
       "groupSecondaryId": "SG17",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ur",
+            "phoneme": "ɜː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɜː\">ur</phoneme></speak>",
+            "file": "SoundUnitsTest/111_sound.wav"
+          },
+          "exampleWord": {
+            "text": "turn",
+            "phoneme": "tɜːn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tɜːn\">turn</phoneme></speak>",
+            "file": "SoundUnitsTest/111_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ur",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/111_sound.wav"
+          },
+          "exampleWord": {
+            "text": "turn",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/111_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 112,
@@ -1473,7 +5469,43 @@
       "groupSecondaryId": "SG17",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ear",
+            "phoneme": "ɜː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɜː\">ear</phoneme></speak>",
+            "file": "SoundUnitsTest/112_sound.wav"
+          },
+          "exampleWord": {
+            "text": "learn",
+            "phoneme": "lɜːn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"lɜːn\">learn</phoneme></speak>",
+            "file": "SoundUnitsTest/112_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ear",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/112_sound.wav"
+          },
+          "exampleWord": {
+            "text": "learn",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/112_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 113,
@@ -1485,7 +5517,43 @@
       "groupSecondaryId": "SG17",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "or",
+            "phoneme": "ɜː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɜː\">or</phoneme></speak>",
+            "file": "SoundUnitsTest/113_sound.wav"
+          },
+          "exampleWord": {
+            "text": "word",
+            "phoneme": "wɜːd",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"wɜːd\">word</phoneme></speak>",
+            "file": "SoundUnitsTest/113_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "or",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/113_sound.wav"
+          },
+          "exampleWord": {
+            "text": "word",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/113_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 114,
@@ -1497,7 +5565,43 @@
       "groupSecondaryId": "SG17",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "wor",
+            "phoneme": "ɜː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɜː\">wor</phoneme></speak>",
+            "file": "SoundUnitsTest/114_sound.wav"
+          },
+          "exampleWord": {
+            "text": "worm",
+            "phoneme": "wɜːm",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"wɜːm\">worm</phoneme></speak>",
+            "file": "SoundUnitsTest/114_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "wor",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/114_sound.wav"
+          },
+          "exampleWord": {
+            "text": "worm",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/114_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 115,
@@ -1509,7 +5613,43 @@
       "groupSecondaryId": "SG18",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "air",
+            "phoneme": "ɛə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɛə\">air</phoneme></speak>",
+            "file": "SoundUnitsTest/115_sound.wav"
+          },
+          "exampleWord": {
+            "text": "chair",
+            "phoneme": "tʃɛə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tʃɛə\">chair</phoneme></speak>",
+            "file": "SoundUnitsTest/115_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "air",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/115_sound.wav"
+          },
+          "exampleWord": {
+            "text": "chair",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/115_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 116,
@@ -1521,7 +5661,43 @@
       "groupSecondaryId": "SG18",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "are",
+            "phoneme": "ɛə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɛə\">are</phoneme></speak>",
+            "file": "SoundUnitsTest/116_sound.wav"
+          },
+          "exampleWord": {
+            "text": "care",
+            "phoneme": "kɛə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kɛə\">care</phoneme></speak>",
+            "file": "SoundUnitsTest/116_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "are",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/116_sound.wav"
+          },
+          "exampleWord": {
+            "text": "care",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/116_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 117,
@@ -1533,7 +5709,43 @@
       "groupSecondaryId": "SG18",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ear",
+            "phoneme": "ɛə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɛə\">ear</phoneme></speak>",
+            "file": "SoundUnitsTest/117_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pear",
+            "phoneme": "pɛə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"pɛə\">pear</phoneme></speak>",
+            "file": "SoundUnitsTest/117_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ear",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/117_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pear",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/117_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 118,
@@ -1545,7 +5757,43 @@
       "groupSecondaryId": "SG18",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ere",
+            "phoneme": "ɛə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɛə\">ere</phoneme></speak>",
+            "file": "SoundUnitsTest/118_sound.wav"
+          },
+          "exampleWord": {
+            "text": "there",
+            "phoneme": "ðɛə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ðɛə\">there</phoneme></speak>",
+            "file": "SoundUnitsTest/118_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ere",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/118_sound.wav"
+          },
+          "exampleWord": {
+            "text": "there",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/118_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 119,
@@ -1557,7 +5805,43 @@
       "groupSecondaryId": "SG18",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "eir",
+            "phoneme": "ɛə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɛə\">eir</phoneme></speak>",
+            "file": "SoundUnitsTest/119_sound.wav"
+          },
+          "exampleWord": {
+            "text": "their",
+            "phoneme": "ðɛə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ðɛə\">their</phoneme></speak>",
+            "file": "SoundUnitsTest/119_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "eir",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/119_sound.wav"
+          },
+          "exampleWord": {
+            "text": "their",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/119_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 120,
@@ -1569,7 +5853,43 @@
       "groupSecondaryId": "SG19",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ear",
+            "phoneme": "ɪə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɪə\">ear</phoneme></speak>",
+            "file": "SoundUnitsTest/120_sound.wav"
+          },
+          "exampleWord": {
+            "text": "deer",
+            "phoneme": "dɪə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dɪə\">deer</phoneme></speak>",
+            "file": "SoundUnitsTest/120_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ear",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/120_sound.wav"
+          },
+          "exampleWord": {
+            "text": "deer",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/120_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 121,
@@ -1581,7 +5901,43 @@
       "groupSecondaryId": "SG19",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "eer",
+            "phoneme": "ɪə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɪə\">eer</phoneme></speak>",
+            "file": "SoundUnitsTest/121_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cheer",
+            "phoneme": "tʃɪə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"tʃɪə\">cheer</phoneme></speak>",
+            "file": "SoundUnitsTest/121_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "eer",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/121_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cheer",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/121_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 122,
@@ -1593,7 +5949,43 @@
       "groupSecondaryId": "SG19",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ere",
+            "phoneme": "ɪə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɪə\">ere</phoneme></speak>",
+            "file": "SoundUnitsTest/122_sound.wav"
+          },
+          "exampleWord": {
+            "text": "here",
+            "phoneme": "hɪə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"hɪə\">here</phoneme></speak>",
+            "file": "SoundUnitsTest/122_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ere",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/122_sound.wav"
+          },
+          "exampleWord": {
+            "text": "here",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/122_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 123,
@@ -1605,7 +5997,43 @@
       "groupSecondaryId": "SG20",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "oi",
+            "phoneme": "ɔɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔɪ\">oi</phoneme></speak>",
+            "file": "SoundUnitsTest/123_sound.wav"
+          },
+          "exampleWord": {
+            "text": "coin",
+            "phoneme": "kɔɪn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kɔɪn\">coin</phoneme></speak>",
+            "file": "SoundUnitsTest/123_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "oi",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/123_sound.wav"
+          },
+          "exampleWord": {
+            "text": "coin",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/123_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 124,
@@ -1617,7 +6045,43 @@
       "groupSecondaryId": "SG20",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "oy",
+            "phoneme": "ɔɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔɪ\">oy</phoneme></speak>",
+            "file": "SoundUnitsTest/124_sound.wav"
+          },
+          "exampleWord": {
+            "text": "boy",
+            "phoneme": "bɔɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"bɔɪ\">boy</phoneme></speak>",
+            "file": "SoundUnitsTest/124_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "oy",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/124_sound.wav"
+          },
+          "exampleWord": {
+            "text": "boy",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/124_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 125,
@@ -1629,7 +6093,43 @@
       "groupSecondaryId": "SG21",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ow",
+            "phoneme": "aʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"aʊ\">ow</phoneme></speak>",
+            "file": "SoundUnitsTest/125_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cow",
+            "phoneme": "kaʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"kaʊ\">cow</phoneme></speak>",
+            "file": "SoundUnitsTest/125_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ow",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/125_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cow",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/125_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 126,
@@ -1641,7 +6141,43 @@
       "groupSecondaryId": "SG21",
       "teachingStage": 4,
       "difficulty": 4,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ou",
+            "phoneme": "aʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"aʊ\">ou</phoneme></speak>",
+            "file": "SoundUnitsTest/126_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cloud",
+            "phoneme": "klaʊd",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"klaʊd\">cloud</phoneme></speak>",
+            "file": "SoundUnitsTest/126_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ou",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/126_sound.wav"
+          },
+          "exampleWord": {
+            "text": "cloud",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/126_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 127,
@@ -1653,7 +6189,43 @@
       "groupSecondaryId": "SG21",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ough",
+            "phoneme": "aʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"aʊ\">ough</phoneme></speak>",
+            "file": "SoundUnitsTest/127_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bough",
+            "phoneme": "baʊ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"baʊ\">bough</phoneme></speak>",
+            "file": "SoundUnitsTest/127_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ough",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/127_sound.wav"
+          },
+          "exampleWord": {
+            "text": "bough",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/127_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 128,
@@ -1665,7 +6237,43 @@
       "groupSecondaryId": "SG16",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ough",
+            "phoneme": "ɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔː\">ough</phoneme></speak>",
+            "file": "SoundUnitsTest/128_sound.wav"
+          },
+          "exampleWord": {
+            "text": "thought",
+            "phoneme": "θɔːt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"θɔːt\">thought</phoneme></speak>",
+            "file": "SoundUnitsTest/128_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ough",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/128_sound.wav"
+          },
+          "exampleWord": {
+            "text": "thought",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/128_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 129,
@@ -1677,7 +6285,43 @@
       "groupSecondaryId": "SG23",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ough",
+            "phoneme": "ʌf",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʌf\">ough</phoneme></speak>",
+            "file": "SoundUnitsTest/129_sound.wav"
+          },
+          "exampleWord": {
+            "text": "rough",
+            "phoneme": "rʌf",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"rʌf\">rough</phoneme></speak>",
+            "file": "SoundUnitsTest/129_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ough",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/129_sound.wav"
+          },
+          "exampleWord": {
+            "text": "rough",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/129_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 130,
@@ -1689,7 +6333,43 @@
       "groupSecondaryId": "SG16",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "augh",
+            "phoneme": "ɔː",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɔː\">augh</phoneme></speak>",
+            "file": "SoundUnitsTest/130_sound.wav"
+          },
+          "exampleWord": {
+            "text": "daughter",
+            "phoneme": "dɔːtə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dɔːtə\">daughter</phoneme></speak>",
+            "file": "SoundUnitsTest/130_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "augh",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/130_sound.wav"
+          },
+          "exampleWord": {
+            "text": "daughter",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/130_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 131,
@@ -1701,7 +6381,43 @@
       "groupSecondaryId": "SG22",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "al",
+            "phoneme": "ə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ə\">al</phoneme></speak>",
+            "file": "SoundUnitsTest/131_sound.wav"
+          },
+          "exampleWord": {
+            "text": "water",
+            "phoneme": "wɔːtə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"wɔːtə\">water</phoneme></speak>",
+            "file": "SoundUnitsTest/131_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "al",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/131_sound.wav"
+          },
+          "exampleWord": {
+            "text": "water",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/131_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 132,
@@ -1713,7 +6429,43 @@
       "groupSecondaryId": "SG22",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "ɒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɒ\">a</phoneme></speak>",
+            "file": "SoundUnitsTest/132_sound.wav"
+          },
+          "exampleWord": {
+            "text": "was",
+            "phoneme": "wɒz",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"wɒz\">was</phoneme></speak>",
+            "file": "SoundUnitsTest/132_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/132_sound.wav"
+          },
+          "exampleWord": {
+            "text": "was",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/132_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 133,
@@ -1725,7 +6477,43 @@
       "groupSecondaryId": "SG23",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "ʌ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʌ\">o</phoneme></speak>",
+            "file": "SoundUnitsTest/133_sound.wav"
+          },
+          "exampleWord": {
+            "text": "son",
+            "phoneme": "sʌn",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"sʌn\">son</phoneme></speak>",
+            "file": "SoundUnitsTest/133_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/133_sound.wav"
+          },
+          "exampleWord": {
+            "text": "son",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/133_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 134,
@@ -1737,7 +6525,43 @@
       "groupSecondaryId": "SG23",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ou",
+            "phoneme": "ʌ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʌ\">ou</phoneme></speak>",
+            "file": "SoundUnitsTest/134_sound.wav"
+          },
+          "exampleWord": {
+            "text": "young",
+            "phoneme": "jʌŋ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"jʌŋ\">young</phoneme></speak>",
+            "file": "SoundUnitsTest/134_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ou",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/134_sound.wav"
+          },
+          "exampleWord": {
+            "text": "young",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/134_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 135,
@@ -1749,7 +6573,43 @@
       "groupSecondaryId": "SG23",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "oo",
+            "phoneme": "ʌ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʌ\">oo</phoneme></speak>",
+            "file": "SoundUnitsTest/135_sound.wav"
+          },
+          "exampleWord": {
+            "text": "blood",
+            "phoneme": "blʌd",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"blʌd\">blood</phoneme></speak>",
+            "file": "SoundUnitsTest/135_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "oo",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/135_sound.wav"
+          },
+          "exampleWord": {
+            "text": "blood",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/135_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 136,
@@ -1761,7 +6621,43 @@
       "groupSecondaryId": "SG24",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "ə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ə\">a</phoneme></speak>",
+            "file": "SoundUnitsTest/136_sound.wav"
+          },
+          "exampleWord": {
+            "text": "about",
+            "phoneme": "əbaʊt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"əbaʊt\">about</phoneme></speak>",
+            "file": "SoundUnitsTest/136_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "a",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/136_sound.wav"
+          },
+          "exampleWord": {
+            "text": "about",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/136_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 137,
@@ -1773,7 +6669,43 @@
       "groupSecondaryId": "SG24",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "e",
+            "phoneme": "ə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ə\">e</phoneme></speak>",
+            "file": "SoundUnitsTest/137_sound.wav"
+          },
+          "exampleWord": {
+            "text": "problem",
+            "phoneme": "prɒbləm",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"prɒbləm\">problem</phoneme></speak>",
+            "file": "SoundUnitsTest/137_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "e",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/137_sound.wav"
+          },
+          "exampleWord": {
+            "text": "problem",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/137_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 138,
@@ -1785,7 +6717,43 @@
       "groupSecondaryId": "SG24",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "i",
+            "phoneme": "ə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ə\">i</phoneme></speak>",
+            "file": "SoundUnitsTest/138_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pencil",
+            "phoneme": "pensəl",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"pensəl\">pencil</phoneme></speak>",
+            "file": "SoundUnitsTest/138_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "i",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/138_sound.wav"
+          },
+          "exampleWord": {
+            "text": "pencil",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/138_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 139,
@@ -1797,7 +6765,43 @@
       "groupSecondaryId": "SG24",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "ə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ə\">o</phoneme></speak>",
+            "file": "SoundUnitsTest/139_sound.wav"
+          },
+          "exampleWord": {
+            "text": "lemon",
+            "phoneme": "lemən",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"lemən\">lemon</phoneme></speak>",
+            "file": "SoundUnitsTest/139_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "o",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/139_sound.wav"
+          },
+          "exampleWord": {
+            "text": "lemon",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/139_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 140,
@@ -1809,7 +6813,43 @@
       "groupSecondaryId": "SG24",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "u",
+            "phoneme": "ə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ə\">u</phoneme></speak>",
+            "file": "SoundUnitsTest/140_sound.wav"
+          },
+          "exampleWord": {
+            "text": "supply",
+            "phoneme": "səplaɪ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"səplaɪ\">supply</phoneme></speak>",
+            "file": "SoundUnitsTest/140_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "u",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/140_sound.wav"
+          },
+          "exampleWord": {
+            "text": "supply",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/140_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 141,
@@ -1821,7 +6861,43 @@
       "groupSecondaryId": "SG25",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ch",
+            "phoneme": "k",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"k\">ch</phoneme></speak>",
+            "file": "SoundUnitsTest/141_sound.wav"
+          },
+          "exampleWord": {
+            "text": "school",
+            "phoneme": "skuːl",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"skuːl\">school</phoneme></speak>",
+            "file": "SoundUnitsTest/141_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ch",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/141_sound.wav"
+          },
+          "exampleWord": {
+            "text": "school",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/141_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 142,
@@ -1833,7 +6909,43 @@
       "groupSecondaryId": "SG25",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ch",
+            "phoneme": "ʃ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʃ\">ch</phoneme></speak>",
+            "file": "SoundUnitsTest/142_sound.wav"
+          },
+          "exampleWord": {
+            "text": "chef",
+            "phoneme": "ʃef",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʃef\">chef</phoneme></speak>",
+            "file": "SoundUnitsTest/142_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ch",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/142_sound.wav"
+          },
+          "exampleWord": {
+            "text": "chef",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/142_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 143,
@@ -1845,7 +6957,43 @@
       "groupSecondaryId": "SG25",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "s",
+            "phoneme": "ʒ",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ʒ\">s</phoneme></speak>",
+            "file": "SoundUnitsTest/143_sound.wav"
+          },
+          "exampleWord": {
+            "text": "measure",
+            "phoneme": "meʒə",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"meʒə\">measure</phoneme></speak>",
+            "file": "SoundUnitsTest/143_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "s",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/143_sound.wav"
+          },
+          "exampleWord": {
+            "text": "measure",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/143_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 144,
@@ -1857,7 +7005,43 @@
       "groupSecondaryId": "SG25",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "x",
+            "phoneme": "ɡz",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɡz\">x</phoneme></speak>",
+            "file": "SoundUnitsTest/144_sound.wav"
+          },
+          "exampleWord": {
+            "text": "exam",
+            "phoneme": "ɪɡzæm",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɪɡzæm\">exam</phoneme></speak>",
+            "file": "SoundUnitsTest/144_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "x",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/144_sound.wav"
+          },
+          "exampleWord": {
+            "text": "exam",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/144_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 145,
@@ -1869,7 +7053,43 @@
       "groupSecondaryId": "SG26",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ed",
+            "phoneme": "t",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"t\">ed</phoneme></speak>",
+            "file": "SoundUnitsTest/145_sound.wav"
+          },
+          "exampleWord": {
+            "text": "jumped",
+            "phoneme": "dʒʌmpt",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"dʒʌmpt\">jumped</phoneme></speak>",
+            "file": "SoundUnitsTest/145_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ed",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/145_sound.wav"
+          },
+          "exampleWord": {
+            "text": "jumped",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/145_word.wav"
+          }
+        }
+      }
     },
     {
       "id": 146,
@@ -1881,7 +7101,62 @@
       "groupSecondaryId": "SG26",
       "teachingStage": 5,
       "difficulty": 5,
-      "memoryPhase": 3
+      "memoryPhase": 3,
+      "supportsModes": {
+        "soundCards": true,
+        "memory": true,
+        "construction": true,
+        "segmentation": true
+      },
+      "audio": {
+        "en-GB": {
+          "soundUnit": {
+            "text": "ed",
+            "phoneme": "ɪd",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"ɪd\">ed</phoneme></speak>",
+            "file": "SoundUnitsTest/146_sound.wav"
+          },
+          "exampleWord": {
+            "text": "wanted",
+            "phoneme": "wɒntɪd",
+            "ssml": "<speak><phoneme alphabet=\"ipa\" ph=\"wɒntɪd\">wanted</phoneme></speak>",
+            "file": "SoundUnitsTest/146_word.wav"
+          }
+        },
+        "en-US": {
+          "soundUnit": {
+            "text": "ed",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/146_sound.wav"
+          },
+          "exampleWord": {
+            "text": "wanted",
+            "phoneme": "",
+            "ssml": "",
+            "file": "SoundUnitsTest/146_word.wav"
+          }
+        }
+      }
     }
-  ]
+  ],
+  "polly": {
+    "schemaNote": "Bundled offline test WAVs: run `python3 Scripts/generate_sound_units_test_wavs.py` (Kate, 22050 Hz). Replace with higher-quality phonics or Polly exports later; keep paths under SoundUnitsTest/ if filenames stay the same.",
+    "voices": [
+      {
+        "languageCode": "en-GB",
+        "voiceId": "Amy",
+        "engine": "neural",
+        "alphabet": "ipa",
+        "isPopulated": true
+      },
+      {
+        "languageCode": "en-US",
+        "voiceId": "Joanna",
+        "engine": "neural",
+        "alphabet": "ipa",
+        "isPopulated": false
+      }
+    ]
+  }
 }

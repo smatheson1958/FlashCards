@@ -18,7 +18,13 @@ final class WordAudioPlayer {
     /// Subfolder under the app bundle resources where `.wav` files live.
     static let wavSubdirectory = "WordsAudio"
 
-    func play(stem: String) {
+    /// Whole-word clips grouped by construction-index sound id (`WordsAudio/sound_<id>/<stem>.wav`), when present.
+    static func soundSubdirectory(soundOrderIndex: Int) -> String {
+        "\(wavSubdirectory)/sound_\(soundOrderIndex)"
+    }
+
+    /// - Parameter soundOrderIndex: When set (Sound Card / construction-index order), prefers `WordsAudio/sound_<id>/<stem>.wav`, then flat `WordsAudio/<stem>.wav`.
+    func play(stem: String, soundOrderIndex: Int? = nil) {
         lastPlaybackFailed = false
         let normalized = stem.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         guard !normalized.isEmpty else {
@@ -28,10 +34,15 @@ final class WordAudioPlayer {
             return
         }
 
-        guard let url = Self.bundleURL(forWavStem: normalized) else {
+        guard let url = Self.bundleURL(forWavStem: normalized, soundOrderIndex: soundOrderIndex) else {
             lastPlaybackFailed = true
+            let hint = if let n = soundOrderIndex {
+                "\(Self.soundSubdirectory(soundOrderIndex: n))/\(normalized).wav or \(Self.wavSubdirectory)/\(normalized).wav"
+            } else {
+                "\(Self.wavSubdirectory)/\(normalized).wav (or \(normalized).wav at bundle root)"
+            }
             print(
-                "WordAudioPlayer: no WAV for stem \"\(normalized)\" — add \(Self.wavSubdirectory)/\(normalized).wav to the app bundle (or \(normalized).wav at bundle root)."
+                "WordAudioPlayer: no WAV for stem \"\(normalized)\" — add \(hint)."
             )
             activatePlaybackSessionIgnoringErrors()
             Self.playSystemBeep()
@@ -69,8 +80,17 @@ final class WordAudioPlayer {
         lastPlaybackFailed = false
     }
 
-    static func bundleURL(forWavStem stem: String) -> URL? {
-        Bundle.main.url(
+    static func bundleURL(forWavStem stem: String, soundOrderIndex: Int? = nil) -> URL? {
+        if let n = soundOrderIndex, n > 0 {
+            if let nested = Bundle.main.url(
+                forResource: stem,
+                withExtension: "wav",
+                subdirectory: soundSubdirectory(soundOrderIndex: n)
+            ) {
+                return nested
+            }
+        }
+        return Bundle.main.url(
             forResource: stem,
             withExtension: "wav",
             subdirectory: wavSubdirectory

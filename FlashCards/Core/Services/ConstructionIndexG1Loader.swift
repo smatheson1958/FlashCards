@@ -2,6 +2,12 @@
 //  ConstructionIndexG1Loader.swift
 //  FlashCards
 //
+//  Bundled `construction_index_g1_foundation.json` defines **foundation** construction/segmentation
+//  word lists and grapheme units (sound ids 1…30 in that file). The master curriculum has 146
+//  sounds (`sound_units_primary_index_146.json`); for order indices **without** a row here,
+//  `LearningProgressionEngine` falls back to each sound’s single `exampleWord` until a full
+//  construction index exists for all sounds.
+//
 
 import Foundation
 

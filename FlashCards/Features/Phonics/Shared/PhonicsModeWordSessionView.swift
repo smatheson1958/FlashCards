@@ -23,6 +23,7 @@ struct PhonicsModeWordSessionView: View {
                 SimpleConstructionModeView(
                     word: word,
                     segments: segments,
+                    soundOrderIndex: soundOrderIndex,
                     isReminderSession: isReminder,
                     dismissAfterSuccess: true,
                     onSuccessfulCompletion: {
@@ -46,6 +47,7 @@ struct PhonicsModeWordSessionView: View {
                 SegmentationModeView(
                     word: word,
                     segments: segments,
+                    soundOrderIndex: soundOrderIndex,
                     isReminderSession: isReminder,
                     dismissAfterRecordingSuccess: true,
                     onSuccessfulPracticeRecorded: {

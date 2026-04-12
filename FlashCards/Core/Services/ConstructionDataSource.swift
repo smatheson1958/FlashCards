@@ -5,7 +5,7 @@
 
 import Foundation
 
-/// Resolves ordered chunks for building a word from bundled `phonics_modules_poc.json` (`construction` entries), with grapheme fallback.
+/// Resolves ordered chunks for building a word from bundled `segmentation.json` (`construction` entries), with grapheme fallback.
 enum ConstructionDataSource {
     private static var cachedMap: [String: [String]]?
     private static let lock = NSLock()
@@ -14,7 +14,7 @@ enum ConstructionDataSource {
         word.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
-    /// Clears the in-memory map from `phonics_modules_poc.json` (e.g. after a DEBUG deck rebuild or bundle swap).
+    /// Clears the in-memory map from `segmentation.json` (e.g. after a DEBUG deck rebuild or bundle swap).
     static func clearCacheForTesting() {
         lock.lock()
         defer { lock.unlock() }

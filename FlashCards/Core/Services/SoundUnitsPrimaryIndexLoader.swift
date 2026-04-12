@@ -12,6 +12,7 @@ enum SoundUnitsPrimaryIndexLoader {
         case decodeFailed
     }
 
+    /// Canonical curriculum file (`sound_units_primary_index_146_v1.json` is merge-input only; not loaded by the app).
     private static let fileName = "sound_units_primary_index_146"
     private static let fileExtension = "json"
 

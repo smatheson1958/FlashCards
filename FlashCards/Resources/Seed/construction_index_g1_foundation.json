@@ -1,0 +1,4776 @@
+{
+  "version": "1.0",
+  "title": "Construction Index - G1 Foundation",
+  "sectionId": "G1",
+  "sectionName": "Foundation",
+  "range": {
+    "startId": 1,
+    "endId": 30
+  },
+  "notes": {
+    "purpose": "Word building activities aligned to the sound-unit master index.",
+    "progression": "Stage 1 uses the anchor word only. Later stages unlock wider word sets for the same sound."
+  },
+  "items": [
+    {
+      "id": 1,
+      "soundUnit": "a",
+      "anchorWord": "cat",
+      "alternativeWords": [
+        "cat",
+        "bag",
+        "man",
+        "hat",
+        "map",
+        "jam",
+        "rat",
+        "van",
+        "cap",
+        "tap"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "cat"
+          ],
+          "stage2": [
+            "cat",
+            "bag",
+            "man"
+          ],
+          "stage3": [
+            "cat",
+            "bag",
+            "man",
+            "hat",
+            "map",
+            "jam"
+          ],
+          "stage4": [
+            "cat",
+            "bag",
+            "man",
+            "hat",
+            "map",
+            "jam",
+            "rat",
+            "van",
+            "cap",
+            "tap"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "cat",
+          "graphemeUnits": [
+            "c",
+            "a",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "bag",
+          "graphemeUnits": [
+            "b",
+            "a",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "man",
+          "graphemeUnits": [
+            "m",
+            "a",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "hat",
+          "graphemeUnits": [
+            "h",
+            "a",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "map",
+          "graphemeUnits": [
+            "m",
+            "a",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "jam",
+          "graphemeUnits": [
+            "j",
+            "a",
+            "m"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "rat",
+          "graphemeUnits": [
+            "r",
+            "a",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "van",
+          "graphemeUnits": [
+            "v",
+            "a",
+            "n"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "cap",
+          "graphemeUnits": [
+            "c",
+            "a",
+            "p"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "tap",
+          "graphemeUnits": [
+            "t",
+            "a",
+            "p"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "soundUnit": "e",
+      "anchorWord": "bed",
+      "alternativeWords": [
+        "bed",
+        "pen",
+        "leg",
+        "net",
+        "red",
+        "hen",
+        "men",
+        "vet",
+        "ten",
+        "peg"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "bed"
+          ],
+          "stage2": [
+            "bed",
+            "pen",
+            "leg"
+          ],
+          "stage3": [
+            "bed",
+            "pen",
+            "leg",
+            "net",
+            "red",
+            "hen"
+          ],
+          "stage4": [
+            "bed",
+            "pen",
+            "leg",
+            "net",
+            "red",
+            "hen",
+            "men",
+            "vet",
+            "ten",
+            "peg"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "bed",
+          "graphemeUnits": [
+            "b",
+            "e",
+            "d"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "pen",
+          "graphemeUnits": [
+            "p",
+            "e",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "leg",
+          "graphemeUnits": [
+            "l",
+            "e",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "net",
+          "graphemeUnits": [
+            "n",
+            "e",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "red",
+          "graphemeUnits": [
+            "r",
+            "e",
+            "d"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "hen",
+          "graphemeUnits": [
+            "h",
+            "e",
+            "n"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "men",
+          "graphemeUnits": [
+            "m",
+            "e",
+            "n"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "vet",
+          "graphemeUnits": [
+            "v",
+            "e",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "ten",
+          "graphemeUnits": [
+            "t",
+            "e",
+            "n"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "peg",
+          "graphemeUnits": [
+            "p",
+            "e",
+            "g"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "soundUnit": "i",
+      "anchorWord": "pin",
+      "alternativeWords": [
+        "pin",
+        "sit",
+        "pig",
+        "fin",
+        "lid",
+        "kit",
+        "rip",
+        "win",
+        "lip",
+        "dig"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "pin"
+          ],
+          "stage2": [
+            "pin",
+            "sit",
+            "pig"
+          ],
+          "stage3": [
+            "pin",
+            "sit",
+            "pig",
+            "fin",
+            "lid",
+            "kit"
+          ],
+          "stage4": [
+            "pin",
+            "sit",
+            "pig",
+            "fin",
+            "lid",
+            "kit",
+            "rip",
+            "win",
+            "lip",
+            "dig"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "pin",
+          "graphemeUnits": [
+            "p",
+            "i",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "sit",
+          "graphemeUnits": [
+            "s",
+            "i",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "pig",
+          "graphemeUnits": [
+            "p",
+            "i",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "fin",
+          "graphemeUnits": [
+            "f",
+            "i",
+            "n"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "lid",
+          "graphemeUnits": [
+            "l",
+            "i",
+            "d"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "kit",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "rip",
+          "graphemeUnits": [
+            "r",
+            "i",
+            "p"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "win",
+          "graphemeUnits": [
+            "w",
+            "i",
+            "n"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "lip",
+          "graphemeUnits": [
+            "l",
+            "i",
+            "p"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "dig",
+          "graphemeUnits": [
+            "d",
+            "i",
+            "g"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "soundUnit": "o",
+      "anchorWord": "hot",
+      "alternativeWords": [
+        "hot",
+        "dog",
+        "pot",
+        "fox",
+        "log",
+        "mop",
+        "top",
+        "box",
+        "hop",
+        "rock"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "hot"
+          ],
+          "stage2": [
+            "hot",
+            "dog",
+            "pot"
+          ],
+          "stage3": [
+            "hot",
+            "dog",
+            "pot",
+            "fox",
+            "log",
+            "mop"
+          ],
+          "stage4": [
+            "hot",
+            "dog",
+            "pot",
+            "fox",
+            "log",
+            "mop",
+            "top",
+            "box",
+            "hop",
+            "rock"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "hot",
+          "graphemeUnits": [
+            "h",
+            "o",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "dog",
+          "graphemeUnits": [
+            "d",
+            "o",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "pot",
+          "graphemeUnits": [
+            "p",
+            "o",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "fox",
+          "graphemeUnits": [
+            "f",
+            "o",
+            "x"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "log",
+          "graphemeUnits": [
+            "l",
+            "o",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "mop",
+          "graphemeUnits": [
+            "m",
+            "o",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "top",
+          "graphemeUnits": [
+            "t",
+            "o",
+            "p"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "box",
+          "graphemeUnits": [
+            "b",
+            "o",
+            "x"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "hop",
+          "graphemeUnits": [
+            "h",
+            "o",
+            "p"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "rock",
+          "graphemeUnits": [
+            "r",
+            "o",
+            "c",
+            "k"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "soundUnit": "u",
+      "anchorWord": "sun",
+      "alternativeWords": [
+        "sun",
+        "cup",
+        "bus",
+        "mug",
+        "duck",
+        "run",
+        "hut",
+        "nut",
+        "bug",
+        "mud"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "sun"
+          ],
+          "stage2": [
+            "sun",
+            "cup",
+            "bus"
+          ],
+          "stage3": [
+            "sun",
+            "cup",
+            "bus",
+            "mug",
+            "duck",
+            "run"
+          ],
+          "stage4": [
+            "sun",
+            "cup",
+            "bus",
+            "mug",
+            "duck",
+            "run",
+            "hut",
+            "nut",
+            "bug",
+            "mud"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "sun",
+          "graphemeUnits": [
+            "s",
+            "u",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "cup",
+          "graphemeUnits": [
+            "c",
+            "u",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "bus",
+          "graphemeUnits": [
+            "b",
+            "u",
+            "s"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "mug",
+          "graphemeUnits": [
+            "m",
+            "u",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "duck",
+          "graphemeUnits": [
+            "d",
+            "u",
+            "c",
+            "k"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "run",
+          "graphemeUnits": [
+            "r",
+            "u",
+            "n"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "hut",
+          "graphemeUnits": [
+            "h",
+            "u",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "nut",
+          "graphemeUnits": [
+            "n",
+            "u",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "bug",
+          "graphemeUnits": [
+            "b",
+            "u",
+            "g"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "mud",
+          "graphemeUnits": [
+            "m",
+            "u",
+            "d"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "soundUnit": "b",
+      "anchorWord": "bat",
+      "alternativeWords": [
+        "bat",
+        "bed",
+        "big",
+        "box",
+        "bus",
+        "bag",
+        "bun",
+        "bell",
+        "belt",
+        "boat"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "bat"
+          ],
+          "stage2": [
+            "bat",
+            "bed",
+            "big"
+          ],
+          "stage3": [
+            "bat",
+            "bed",
+            "big",
+            "box",
+            "bus",
+            "bag"
+          ],
+          "stage4": [
+            "bat",
+            "bed",
+            "big",
+            "box",
+            "bus",
+            "bag",
+            "bun",
+            "bell",
+            "belt",
+            "boat"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "bat",
+          "graphemeUnits": [
+            "b",
+            "a",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "bed",
+          "graphemeUnits": [
+            "b",
+            "e",
+            "d"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "big",
+          "graphemeUnits": [
+            "b",
+            "i",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "box",
+          "graphemeUnits": [
+            "b",
+            "o",
+            "x"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "bus",
+          "graphemeUnits": [
+            "b",
+            "u",
+            "s"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "bag",
+          "graphemeUnits": [
+            "b",
+            "a",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "bun",
+          "graphemeUnits": [
+            "b",
+            "u",
+            "n"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "bell",
+          "graphemeUnits": [
+            "b",
+            "e",
+            "l",
+            "l"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "belt",
+          "graphemeUnits": [
+            "b",
+            "e",
+            "l",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "boat",
+          "graphemeUnits": [
+            "b",
+            "o",
+            "a",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "soundUnit": "c",
+      "anchorWord": "cat",
+      "alternativeWords": [
+        "cat",
+        "cap",
+        "cup",
+        "cot",
+        "cut",
+        "can",
+        "cod",
+        "kid",
+        "kit",
+        "cash"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "cat"
+          ],
+          "stage2": [
+            "cat",
+            "cap",
+            "cup"
+          ],
+          "stage3": [
+            "cat",
+            "cap",
+            "cup",
+            "cot",
+            "cut",
+            "can"
+          ],
+          "stage4": [
+            "cat",
+            "cap",
+            "cup",
+            "cot",
+            "cut",
+            "can",
+            "cod",
+            "kid",
+            "kit",
+            "cash"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "cat",
+          "graphemeUnits": [
+            "c",
+            "a",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "cap",
+          "graphemeUnits": [
+            "c",
+            "a",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "cup",
+          "graphemeUnits": [
+            "c",
+            "u",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "cot",
+          "graphemeUnits": [
+            "c",
+            "o",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "cut",
+          "graphemeUnits": [
+            "c",
+            "u",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "can",
+          "graphemeUnits": [
+            "c",
+            "a",
+            "n"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "cod",
+          "graphemeUnits": [
+            "c",
+            "o",
+            "d"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "kid",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "d"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "kit",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "cash",
+          "graphemeUnits": [
+            "c",
+            "a",
+            "s",
+            "h"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "soundUnit": "d",
+      "anchorWord": "dog",
+      "alternativeWords": [
+        "dog",
+        "dig",
+        "dip",
+        "dot",
+        "duck",
+        "dad",
+        "den",
+        "dish",
+        "dock",
+        "drum"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "dog"
+          ],
+          "stage2": [
+            "dog",
+            "dig",
+            "dip"
+          ],
+          "stage3": [
+            "dog",
+            "dig",
+            "dip",
+            "dot",
+            "duck",
+            "dad"
+          ],
+          "stage4": [
+            "dog",
+            "dig",
+            "dip",
+            "dot",
+            "duck",
+            "dad",
+            "den",
+            "dish",
+            "dock",
+            "drum"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "dog",
+          "graphemeUnits": [
+            "d",
+            "o",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "dig",
+          "graphemeUnits": [
+            "d",
+            "i",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "dip",
+          "graphemeUnits": [
+            "d",
+            "i",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "dot",
+          "graphemeUnits": [
+            "d",
+            "o",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "duck",
+          "graphemeUnits": [
+            "d",
+            "u",
+            "c",
+            "k"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "dad",
+          "graphemeUnits": [
+            "d",
+            "a",
+            "d"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "den",
+          "graphemeUnits": [
+            "d",
+            "e",
+            "n"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "dish",
+          "graphemeUnits": [
+            "d",
+            "i",
+            "s",
+            "h"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "dock",
+          "graphemeUnits": [
+            "d",
+            "o",
+            "c",
+            "k"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "drum",
+          "graphemeUnits": [
+            "d",
+            "r",
+            "u",
+            "m"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "soundUnit": "f",
+      "anchorWord": "fish",
+      "alternativeWords": [
+        "fish",
+        "fin",
+        "fan",
+        "fog",
+        "fun",
+        "fat",
+        "fed",
+        "fox",
+        "fizz",
+        "flag"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "fish"
+          ],
+          "stage2": [
+            "fish",
+            "fin",
+            "fan"
+          ],
+          "stage3": [
+            "fish",
+            "fin",
+            "fan",
+            "fog",
+            "fun",
+            "fat"
+          ],
+          "stage4": [
+            "fish",
+            "fin",
+            "fan",
+            "fog",
+            "fun",
+            "fat",
+            "fed",
+            "fox",
+            "fizz",
+            "flag"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "fish",
+          "graphemeUnits": [
+            "f",
+            "i",
+            "s",
+            "h"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "fin",
+          "graphemeUnits": [
+            "f",
+            "i",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "fan",
+          "graphemeUnits": [
+            "f",
+            "a",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "fog",
+          "graphemeUnits": [
+            "f",
+            "o",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "fun",
+          "graphemeUnits": [
+            "f",
+            "u",
+            "n"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "fat",
+          "graphemeUnits": [
+            "f",
+            "a",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "fed",
+          "graphemeUnits": [
+            "f",
+            "e",
+            "d"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "fox",
+          "graphemeUnits": [
+            "f",
+            "o",
+            "x"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "fizz",
+          "graphemeUnits": [
+            "f",
+            "i",
+            "z",
+            "z"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "flag",
+          "graphemeUnits": [
+            "f",
+            "l",
+            "a",
+            "g"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "soundUnit": "g",
+      "anchorWord": "gap",
+      "alternativeWords": [
+        "gap",
+        "get",
+        "gig",
+        "got",
+        "gum",
+        "gas",
+        "gift",
+        "gull",
+        "glad",
+        "grin"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "gap"
+          ],
+          "stage2": [
+            "gap",
+            "get",
+            "gig"
+          ],
+          "stage3": [
+            "gap",
+            "get",
+            "gig",
+            "got",
+            "gum",
+            "gas"
+          ],
+          "stage4": [
+            "gap",
+            "get",
+            "gig",
+            "got",
+            "gum",
+            "gas",
+            "gift",
+            "gull",
+            "glad",
+            "grin"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "gap",
+          "graphemeUnits": [
+            "g",
+            "a",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "get",
+          "graphemeUnits": [
+            "g",
+            "e",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "gig",
+          "graphemeUnits": [
+            "g",
+            "i",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "got",
+          "graphemeUnits": [
+            "g",
+            "o",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "gum",
+          "graphemeUnits": [
+            "g",
+            "u",
+            "m"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "gas",
+          "graphemeUnits": [
+            "g",
+            "a",
+            "s"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "gift",
+          "graphemeUnits": [
+            "g",
+            "i",
+            "f",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "gull",
+          "graphemeUnits": [
+            "g",
+            "u",
+            "l",
+            "l"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "glad",
+          "graphemeUnits": [
+            "g",
+            "l",
+            "a",
+            "d"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "grin",
+          "graphemeUnits": [
+            "g",
+            "r",
+            "i",
+            "n"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "soundUnit": "h",
+      "anchorWord": "hat",
+      "alternativeWords": [
+        "hat",
+        "hen",
+        "hit",
+        "hop",
+        "hug",
+        "ham",
+        "hill",
+        "hot",
+        "hut",
+        "hand"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "hat"
+          ],
+          "stage2": [
+            "hat",
+            "hen",
+            "hit"
+          ],
+          "stage3": [
+            "hat",
+            "hen",
+            "hit",
+            "hop",
+            "hug",
+            "ham"
+          ],
+          "stage4": [
+            "hat",
+            "hen",
+            "hit",
+            "hop",
+            "hug",
+            "ham",
+            "hill",
+            "hot",
+            "hut",
+            "hand"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "hat",
+          "graphemeUnits": [
+            "h",
+            "a",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "hen",
+          "graphemeUnits": [
+            "h",
+            "e",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "hit",
+          "graphemeUnits": [
+            "h",
+            "i",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "hop",
+          "graphemeUnits": [
+            "h",
+            "o",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "hug",
+          "graphemeUnits": [
+            "h",
+            "u",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "ham",
+          "graphemeUnits": [
+            "h",
+            "a",
+            "m"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "hill",
+          "graphemeUnits": [
+            "h",
+            "i",
+            "l",
+            "l"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "hot",
+          "graphemeUnits": [
+            "h",
+            "o",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "hut",
+          "graphemeUnits": [
+            "h",
+            "u",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "hand",
+          "graphemeUnits": [
+            "h",
+            "a",
+            "n",
+            "d"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "soundUnit": "j",
+      "anchorWord": "jam",
+      "alternativeWords": [
+        "jam",
+        "jet",
+        "jig",
+        "job",
+        "jug",
+        "jog",
+        "jot",
+        "jump",
+        "just",
+        "jelly"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "jam"
+          ],
+          "stage2": [
+            "jam",
+            "jet",
+            "jig"
+          ],
+          "stage3": [
+            "jam",
+            "jet",
+            "jig",
+            "job",
+            "jug",
+            "jog"
+          ],
+          "stage4": [
+            "jam",
+            "jet",
+            "jig",
+            "job",
+            "jug",
+            "jog",
+            "jot",
+            "jump",
+            "just",
+            "jelly"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "jam",
+          "graphemeUnits": [
+            "j",
+            "a",
+            "m"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "jet",
+          "graphemeUnits": [
+            "j",
+            "e",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "jig",
+          "graphemeUnits": [
+            "j",
+            "i",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "job",
+          "graphemeUnits": [
+            "j",
+            "o",
+            "b"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "jug",
+          "graphemeUnits": [
+            "j",
+            "u",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "jog",
+          "graphemeUnits": [
+            "j",
+            "o",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "jot",
+          "graphemeUnits": [
+            "j",
+            "o",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "jump",
+          "graphemeUnits": [
+            "j",
+            "u",
+            "m",
+            "p"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "just",
+          "graphemeUnits": [
+            "j",
+            "u",
+            "s",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "jelly",
+          "graphemeUnits": [
+            "j",
+            "e",
+            "l",
+            "l",
+            "y"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "soundUnit": "k",
+      "anchorWord": "kit",
+      "alternativeWords": [
+        "kit",
+        "kid",
+        "kick",
+        "kept",
+        "king",
+        "kiss",
+        "kettle",
+        "kite",
+        "kangaroo",
+        "kingfisher"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "kit"
+          ],
+          "stage2": [
+            "kit",
+            "kid",
+            "kick"
+          ],
+          "stage3": [
+            "kit",
+            "kid",
+            "kick",
+            "kept",
+            "king",
+            "kiss"
+          ],
+          "stage4": [
+            "kit",
+            "kid",
+            "kick",
+            "kept",
+            "king",
+            "kiss",
+            "kettle",
+            "kite",
+            "kangaroo",
+            "kingfisher"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "kit",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "kid",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "d"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "kick",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "c",
+            "k"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "kept",
+          "graphemeUnits": [
+            "k",
+            "e",
+            "p",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "king",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "n",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "kiss",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "s",
+            "s"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "kettle",
+          "graphemeUnits": [
+            "k",
+            "e",
+            "t",
+            "t",
+            "l",
+            "e"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "kite",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "t",
+            "e"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "kangaroo",
+          "graphemeUnits": [
+            "k",
+            "a",
+            "n",
+            "g",
+            "a",
+            "r",
+            "o",
+            "o"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "kingfisher",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "n",
+            "g",
+            "f",
+            "i",
+            "s",
+            "h",
+            "e",
+            "r"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "soundUnit": "l",
+      "anchorWord": "leg",
+      "alternativeWords": [
+        "leg",
+        "lid",
+        "log",
+        "lip",
+        "lap",
+        "lot",
+        "luck",
+        "lamp",
+        "lift",
+        "long"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "leg"
+          ],
+          "stage2": [
+            "leg",
+            "lid",
+            "log"
+          ],
+          "stage3": [
+            "leg",
+            "lid",
+            "log",
+            "lip",
+            "lap",
+            "lot"
+          ],
+          "stage4": [
+            "leg",
+            "lid",
+            "log",
+            "lip",
+            "lap",
+            "lot",
+            "luck",
+            "lamp",
+            "lift",
+            "long"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "leg",
+          "graphemeUnits": [
+            "l",
+            "e",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "lid",
+          "graphemeUnits": [
+            "l",
+            "i",
+            "d"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "log",
+          "graphemeUnits": [
+            "l",
+            "o",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "lip",
+          "graphemeUnits": [
+            "l",
+            "i",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "lap",
+          "graphemeUnits": [
+            "l",
+            "a",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "lot",
+          "graphemeUnits": [
+            "l",
+            "o",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "luck",
+          "graphemeUnits": [
+            "l",
+            "u",
+            "c",
+            "k"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "lamp",
+          "graphemeUnits": [
+            "l",
+            "a",
+            "m",
+            "p"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "lift",
+          "graphemeUnits": [
+            "l",
+            "i",
+            "f",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "long",
+          "graphemeUnits": [
+            "l",
+            "o",
+            "n",
+            "g"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "soundUnit": "m",
+      "anchorWord": "man",
+      "alternativeWords": [
+        "man",
+        "met",
+        "mix",
+        "mop",
+        "mud",
+        "map",
+        "mat",
+        "milk",
+        "mint",
+        "much"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "man"
+          ],
+          "stage2": [
+            "man",
+            "met",
+            "mix"
+          ],
+          "stage3": [
+            "man",
+            "met",
+            "mix",
+            "mop",
+            "mud",
+            "map"
+          ],
+          "stage4": [
+            "man",
+            "met",
+            "mix",
+            "mop",
+            "mud",
+            "map",
+            "mat",
+            "milk",
+            "mint",
+            "much"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "man",
+          "graphemeUnits": [
+            "m",
+            "a",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "met",
+          "graphemeUnits": [
+            "m",
+            "e",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "mix",
+          "graphemeUnits": [
+            "m",
+            "i",
+            "x"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "mop",
+          "graphemeUnits": [
+            "m",
+            "o",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "mud",
+          "graphemeUnits": [
+            "m",
+            "u",
+            "d"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "map",
+          "graphemeUnits": [
+            "m",
+            "a",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "mat",
+          "graphemeUnits": [
+            "m",
+            "a",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "milk",
+          "graphemeUnits": [
+            "m",
+            "i",
+            "l",
+            "k"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "mint",
+          "graphemeUnits": [
+            "m",
+            "i",
+            "n",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "much",
+          "graphemeUnits": [
+            "m",
+            "u",
+            "c",
+            "h"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "soundUnit": "n",
+      "anchorWord": "net",
+      "alternativeWords": [
+        "net",
+        "nip",
+        "not",
+        "nut",
+        "nap",
+        "nod",
+        "neck",
+        "nest",
+        "next",
+        "name"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "net"
+          ],
+          "stage2": [
+            "net",
+            "nip",
+            "not"
+          ],
+          "stage3": [
+            "net",
+            "nip",
+            "not",
+            "nut",
+            "nap",
+            "nod"
+          ],
+          "stage4": [
+            "net",
+            "nip",
+            "not",
+            "nut",
+            "nap",
+            "nod",
+            "neck",
+            "nest",
+            "next",
+            "name"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "net",
+          "graphemeUnits": [
+            "n",
+            "e",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "nip",
+          "graphemeUnits": [
+            "n",
+            "i",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "not",
+          "graphemeUnits": [
+            "n",
+            "o",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "nut",
+          "graphemeUnits": [
+            "n",
+            "u",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "nap",
+          "graphemeUnits": [
+            "n",
+            "a",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "nod",
+          "graphemeUnits": [
+            "n",
+            "o",
+            "d"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "neck",
+          "graphemeUnits": [
+            "n",
+            "e",
+            "c",
+            "k"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "nest",
+          "graphemeUnits": [
+            "n",
+            "e",
+            "s",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "next",
+          "graphemeUnits": [
+            "n",
+            "e",
+            "x",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "name",
+          "graphemeUnits": [
+            "n",
+            "a",
+            "m",
+            "e"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "soundUnit": "p",
+      "anchorWord": "pen",
+      "alternativeWords": [
+        "pen",
+        "pig",
+        "pot",
+        "pan",
+        "pat",
+        "pup",
+        "pet",
+        "pick",
+        "pack",
+        "pump"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "pen"
+          ],
+          "stage2": [
+            "pen",
+            "pig",
+            "pot"
+          ],
+          "stage3": [
+            "pen",
+            "pig",
+            "pot",
+            "pan",
+            "pat",
+            "pup"
+          ],
+          "stage4": [
+            "pen",
+            "pig",
+            "pot",
+            "pan",
+            "pat",
+            "pup",
+            "pet",
+            "pick",
+            "pack",
+            "pump"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "pen",
+          "graphemeUnits": [
+            "p",
+            "e",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "pig",
+          "graphemeUnits": [
+            "p",
+            "i",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "pot",
+          "graphemeUnits": [
+            "p",
+            "o",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "pan",
+          "graphemeUnits": [
+            "p",
+            "a",
+            "n"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "pat",
+          "graphemeUnits": [
+            "p",
+            "a",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "pup",
+          "graphemeUnits": [
+            "p",
+            "u",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "pet",
+          "graphemeUnits": [
+            "p",
+            "e",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "pick",
+          "graphemeUnits": [
+            "p",
+            "i",
+            "c",
+            "k"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "pack",
+          "graphemeUnits": [
+            "p",
+            "a",
+            "c",
+            "k"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "pump",
+          "graphemeUnits": [
+            "p",
+            "u",
+            "m",
+            "p"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "soundUnit": "r",
+      "anchorWord": "rat",
+      "alternativeWords": [
+        "rat",
+        "red",
+        "rip",
+        "rock",
+        "run",
+        "rug",
+        "ram",
+        "ring",
+        "rest",
+        "rocket"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "rat"
+          ],
+          "stage2": [
+            "rat",
+            "red",
+            "rip"
+          ],
+          "stage3": [
+            "rat",
+            "red",
+            "rip",
+            "rock",
+            "run",
+            "rug"
+          ],
+          "stage4": [
+            "rat",
+            "red",
+            "rip",
+            "rock",
+            "run",
+            "rug",
+            "ram",
+            "ring",
+            "rest",
+            "rocket"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "rat",
+          "graphemeUnits": [
+            "r",
+            "a",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "red",
+          "graphemeUnits": [
+            "r",
+            "e",
+            "d"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "rip",
+          "graphemeUnits": [
+            "r",
+            "i",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "rock",
+          "graphemeUnits": [
+            "r",
+            "o",
+            "c",
+            "k"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "run",
+          "graphemeUnits": [
+            "r",
+            "u",
+            "n"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "rug",
+          "graphemeUnits": [
+            "r",
+            "u",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "ram",
+          "graphemeUnits": [
+            "r",
+            "a",
+            "m"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "ring",
+          "graphemeUnits": [
+            "r",
+            "i",
+            "n",
+            "g"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "rest",
+          "graphemeUnits": [
+            "r",
+            "e",
+            "s",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "rocket",
+          "graphemeUnits": [
+            "r",
+            "o",
+            "c",
+            "k",
+            "e",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "soundUnit": "s",
+      "anchorWord": "sun",
+      "alternativeWords": [
+        "sun",
+        "sit",
+        "sock",
+        "sad",
+        "sip",
+        "sell",
+        "sand",
+        "sing",
+        "stop",
+        "set"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "sun"
+          ],
+          "stage2": [
+            "sun",
+            "sit",
+            "sock"
+          ],
+          "stage3": [
+            "sun",
+            "sit",
+            "sock",
+            "sad",
+            "sip",
+            "sell"
+          ],
+          "stage4": [
+            "sun",
+            "sit",
+            "sock",
+            "sad",
+            "sip",
+            "sell",
+            "sand",
+            "sing",
+            "stop",
+            "set"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "sun",
+          "graphemeUnits": [
+            "s",
+            "u",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "sit",
+          "graphemeUnits": [
+            "s",
+            "i",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "sock",
+          "graphemeUnits": [
+            "s",
+            "o",
+            "c",
+            "k"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "sad",
+          "graphemeUnits": [
+            "s",
+            "a",
+            "d"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "sip",
+          "graphemeUnits": [
+            "s",
+            "i",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "sell",
+          "graphemeUnits": [
+            "s",
+            "e",
+            "l",
+            "l"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "sand",
+          "graphemeUnits": [
+            "s",
+            "a",
+            "n",
+            "d"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "sing",
+          "graphemeUnits": [
+            "s",
+            "i",
+            "n",
+            "g"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "stop",
+          "graphemeUnits": [
+            "s",
+            "t",
+            "o",
+            "p"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "set",
+          "graphemeUnits": [
+            "s",
+            "e",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "soundUnit": "t",
+      "anchorWord": "tap",
+      "alternativeWords": [
+        "tap",
+        "ten",
+        "tip",
+        "top",
+        "tub",
+        "tag",
+        "tick",
+        "tank",
+        "tent",
+        "track"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "tap"
+          ],
+          "stage2": [
+            "tap",
+            "ten",
+            "tip"
+          ],
+          "stage3": [
+            "tap",
+            "ten",
+            "tip",
+            "top",
+            "tub",
+            "tag"
+          ],
+          "stage4": [
+            "tap",
+            "ten",
+            "tip",
+            "top",
+            "tub",
+            "tag",
+            "tick",
+            "tank",
+            "tent",
+            "track"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "tap",
+          "graphemeUnits": [
+            "t",
+            "a",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "ten",
+          "graphemeUnits": [
+            "t",
+            "e",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "tip",
+          "graphemeUnits": [
+            "t",
+            "i",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "top",
+          "graphemeUnits": [
+            "t",
+            "o",
+            "p"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "tub",
+          "graphemeUnits": [
+            "t",
+            "u",
+            "b"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "tag",
+          "graphemeUnits": [
+            "t",
+            "a",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "tick",
+          "graphemeUnits": [
+            "t",
+            "i",
+            "c",
+            "k"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "tank",
+          "graphemeUnits": [
+            "t",
+            "a",
+            "n",
+            "k"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "tent",
+          "graphemeUnits": [
+            "t",
+            "e",
+            "n",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "track",
+          "graphemeUnits": [
+            "t",
+            "r",
+            "a",
+            "c",
+            "k"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "soundUnit": "v",
+      "anchorWord": "van",
+      "alternativeWords": [
+        "van",
+        "vet",
+        "vivid",
+        "vase",
+        "vest",
+        "visit",
+        "viper",
+        "very",
+        "vowel",
+        "village"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "van"
+          ],
+          "stage2": [
+            "van",
+            "vet",
+            "vivid"
+          ],
+          "stage3": [
+            "van",
+            "vet",
+            "vivid",
+            "vase",
+            "vest",
+            "visit"
+          ],
+          "stage4": [
+            "van",
+            "vet",
+            "vivid",
+            "vase",
+            "vest",
+            "visit",
+            "viper",
+            "very",
+            "vowel",
+            "village"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "van",
+          "graphemeUnits": [
+            "v",
+            "a",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "vet",
+          "graphemeUnits": [
+            "v",
+            "e",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "vivid",
+          "graphemeUnits": [
+            "v",
+            "i",
+            "v",
+            "i",
+            "d"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "vase",
+          "graphemeUnits": [
+            "v",
+            "a",
+            "s",
+            "e"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "vest",
+          "graphemeUnits": [
+            "v",
+            "e",
+            "s",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "visit",
+          "graphemeUnits": [
+            "v",
+            "i",
+            "s",
+            "i",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "viper",
+          "graphemeUnits": [
+            "v",
+            "i",
+            "p",
+            "e",
+            "r"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "very",
+          "graphemeUnits": [
+            "v",
+            "e",
+            "r",
+            "y"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "vowel",
+          "graphemeUnits": [
+            "v",
+            "o",
+            "w",
+            "e",
+            "l"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "village",
+          "graphemeUnits": [
+            "v",
+            "i",
+            "l",
+            "l",
+            "a",
+            "g",
+            "e"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "soundUnit": "w",
+      "anchorWord": "wet",
+      "alternativeWords": [
+        "wet",
+        "win",
+        "wag",
+        "web",
+        "wig",
+        "wax",
+        "wind",
+        "will",
+        "went",
+        "wonder"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "wet"
+          ],
+          "stage2": [
+            "wet",
+            "win",
+            "wag"
+          ],
+          "stage3": [
+            "wet",
+            "win",
+            "wag",
+            "web",
+            "wig",
+            "wax"
+          ],
+          "stage4": [
+            "wet",
+            "win",
+            "wag",
+            "web",
+            "wig",
+            "wax",
+            "wind",
+            "will",
+            "went",
+            "wonder"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "wet",
+          "graphemeUnits": [
+            "w",
+            "e",
+            "t"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "win",
+          "graphemeUnits": [
+            "w",
+            "i",
+            "n"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "wag",
+          "graphemeUnits": [
+            "w",
+            "a",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "web",
+          "graphemeUnits": [
+            "w",
+            "e",
+            "b"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "wig",
+          "graphemeUnits": [
+            "w",
+            "i",
+            "g"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "wax",
+          "graphemeUnits": [
+            "w",
+            "a",
+            "x"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "wind",
+          "graphemeUnits": [
+            "w",
+            "i",
+            "n",
+            "d"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "will",
+          "graphemeUnits": [
+            "w",
+            "i",
+            "l",
+            "l"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "went",
+          "graphemeUnits": [
+            "w",
+            "e",
+            "n",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "wonder",
+          "graphemeUnits": [
+            "w",
+            "o",
+            "n",
+            "d",
+            "e",
+            "r"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "soundUnit": "y",
+      "anchorWord": "yes",
+      "alternativeWords": [
+        "yes",
+        "yam",
+        "yap",
+        "yak",
+        "yell",
+        "yarn",
+        "yawn",
+        "yellow",
+        "yard",
+        "young"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "yes"
+          ],
+          "stage2": [
+            "yes",
+            "yam",
+            "yap"
+          ],
+          "stage3": [
+            "yes",
+            "yam",
+            "yap",
+            "yak",
+            "yell",
+            "yarn"
+          ],
+          "stage4": [
+            "yes",
+            "yam",
+            "yap",
+            "yak",
+            "yell",
+            "yarn",
+            "yawn",
+            "yellow",
+            "yard",
+            "young"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "yes",
+          "graphemeUnits": [
+            "y",
+            "e",
+            "s"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "yam",
+          "graphemeUnits": [
+            "y",
+            "a",
+            "m"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "yap",
+          "graphemeUnits": [
+            "y",
+            "a",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "yak",
+          "graphemeUnits": [
+            "y",
+            "a",
+            "k"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "yell",
+          "graphemeUnits": [
+            "y",
+            "e",
+            "l",
+            "l"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "yarn",
+          "graphemeUnits": [
+            "y",
+            "a",
+            "r",
+            "n"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "yawn",
+          "graphemeUnits": [
+            "y",
+            "a",
+            "w",
+            "n"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "yellow",
+          "graphemeUnits": [
+            "y",
+            "e",
+            "l",
+            "l",
+            "o",
+            "w"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "yard",
+          "graphemeUnits": [
+            "y",
+            "a",
+            "r",
+            "d"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "young",
+          "graphemeUnits": [
+            "y",
+            "o",
+            "u",
+            "n",
+            "g"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "soundUnit": "z",
+      "anchorWord": "zip",
+      "alternativeWords": [
+        "zip",
+        "zig",
+        "zag",
+        "zoo",
+        "zero",
+        "zest",
+        "zone",
+        "zebra",
+        "zoom",
+        "zany"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "zip"
+          ],
+          "stage2": [
+            "zip",
+            "zig",
+            "zag"
+          ],
+          "stage3": [
+            "zip",
+            "zig",
+            "zag",
+            "zoo",
+            "zero",
+            "zest"
+          ],
+          "stage4": [
+            "zip",
+            "zig",
+            "zag",
+            "zoo",
+            "zero",
+            "zest",
+            "zone",
+            "zebra",
+            "zoom",
+            "zany"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "zip",
+          "graphemeUnits": [
+            "z",
+            "i",
+            "p"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "zig",
+          "graphemeUnits": [
+            "z",
+            "i",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "zag",
+          "graphemeUnits": [
+            "z",
+            "a",
+            "g"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "zoo",
+          "graphemeUnits": [
+            "z",
+            "o",
+            "o"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "zero",
+          "graphemeUnits": [
+            "z",
+            "e",
+            "r",
+            "o"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "zest",
+          "graphemeUnits": [
+            "z",
+            "e",
+            "s",
+            "t"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "zone",
+          "graphemeUnits": [
+            "z",
+            "o",
+            "n",
+            "e"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "zebra",
+          "graphemeUnits": [
+            "z",
+            "e",
+            "b",
+            "r",
+            "a"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "zoom",
+          "graphemeUnits": [
+            "z",
+            "o",
+            "o",
+            "m"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "zany",
+          "graphemeUnits": [
+            "z",
+            "a",
+            "n",
+            "y"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "soundUnit": "x",
+      "anchorWord": "fox",
+      "alternativeWords": [
+        "fox",
+        "box",
+        "six",
+        "mix",
+        "wax",
+        "tax",
+        "fix",
+        "next",
+        "exit",
+        "extra"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "fox"
+          ],
+          "stage2": [
+            "fox",
+            "box",
+            "six"
+          ],
+          "stage3": [
+            "fox",
+            "box",
+            "six",
+            "mix",
+            "wax",
+            "tax"
+          ],
+          "stage4": [
+            "fox",
+            "box",
+            "six",
+            "mix",
+            "wax",
+            "tax",
+            "fix",
+            "next",
+            "exit",
+            "extra"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "fox",
+          "graphemeUnits": [
+            "f",
+            "o",
+            "x"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "box",
+          "graphemeUnits": [
+            "b",
+            "o",
+            "x"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "six",
+          "graphemeUnits": [
+            "s",
+            "i",
+            "x"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "mix",
+          "graphemeUnits": [
+            "m",
+            "i",
+            "x"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "wax",
+          "graphemeUnits": [
+            "w",
+            "a",
+            "x"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "tax",
+          "graphemeUnits": [
+            "t",
+            "a",
+            "x"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "fix",
+          "graphemeUnits": [
+            "f",
+            "i",
+            "x"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "next",
+          "graphemeUnits": [
+            "n",
+            "e",
+            "x",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "exit",
+          "graphemeUnits": [
+            "e",
+            "x",
+            "i",
+            "t"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "extra",
+          "graphemeUnits": [
+            "e",
+            "x",
+            "t",
+            "r",
+            "a"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "soundUnit": "ff",
+      "anchorWord": "off",
+      "alternativeWords": [
+        "off",
+        "huff",
+        "puff",
+        "cliff",
+        "staff",
+        "sniff",
+        "fluff",
+        "stuff",
+        "stiff",
+        "scoff"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "off"
+          ],
+          "stage2": [
+            "off",
+            "huff",
+            "puff"
+          ],
+          "stage3": [
+            "off",
+            "huff",
+            "puff",
+            "cliff",
+            "staff",
+            "sniff"
+          ],
+          "stage4": [
+            "off",
+            "huff",
+            "puff",
+            "cliff",
+            "staff",
+            "sniff",
+            "fluff",
+            "stuff",
+            "stiff",
+            "scoff"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "off",
+          "graphemeUnits": [
+            "o",
+            "ff"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "huff",
+          "graphemeUnits": [
+            "h",
+            "u",
+            "ff"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "puff",
+          "graphemeUnits": [
+            "p",
+            "u",
+            "ff"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "cliff",
+          "graphemeUnits": [
+            "c",
+            "l",
+            "i",
+            "ff"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "staff",
+          "graphemeUnits": [
+            "s",
+            "t",
+            "a",
+            "ff"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "sniff",
+          "graphemeUnits": [
+            "s",
+            "n",
+            "i",
+            "ff"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "fluff",
+          "graphemeUnits": [
+            "f",
+            "l",
+            "u",
+            "ff"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "stuff",
+          "graphemeUnits": [
+            "s",
+            "t",
+            "u",
+            "ff"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "stiff",
+          "graphemeUnits": [
+            "s",
+            "t",
+            "i",
+            "ff"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "scoff",
+          "graphemeUnits": [
+            "s",
+            "c",
+            "o",
+            "ff"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "soundUnit": "ll",
+      "anchorWord": "bell",
+      "alternativeWords": [
+        "bell",
+        "hill",
+        "fill",
+        "well",
+        "doll",
+        "mill",
+        "spill",
+        "still",
+        "shell",
+        "small"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "bell"
+          ],
+          "stage2": [
+            "bell",
+            "hill",
+            "fill"
+          ],
+          "stage3": [
+            "bell",
+            "hill",
+            "fill",
+            "well",
+            "doll",
+            "mill"
+          ],
+          "stage4": [
+            "bell",
+            "hill",
+            "fill",
+            "well",
+            "doll",
+            "mill",
+            "spill",
+            "still",
+            "shell",
+            "small"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "bell",
+          "graphemeUnits": [
+            "b",
+            "e",
+            "ll"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "hill",
+          "graphemeUnits": [
+            "h",
+            "i",
+            "ll"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "fill",
+          "graphemeUnits": [
+            "f",
+            "i",
+            "ll"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "well",
+          "graphemeUnits": [
+            "w",
+            "e",
+            "ll"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "doll",
+          "graphemeUnits": [
+            "d",
+            "o",
+            "ll"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "mill",
+          "graphemeUnits": [
+            "m",
+            "i",
+            "ll"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "spill",
+          "graphemeUnits": [
+            "s",
+            "p",
+            "i",
+            "ll"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "still",
+          "graphemeUnits": [
+            "s",
+            "t",
+            "i",
+            "ll"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "shell",
+          "graphemeUnits": [
+            "s",
+            "h",
+            "e",
+            "ll"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "small",
+          "graphemeUnits": [
+            "s",
+            "m",
+            "a",
+            "ll"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "soundUnit": "ss",
+      "anchorWord": "hiss",
+      "alternativeWords": [
+        "hiss",
+        "miss",
+        "pass",
+        "mess",
+        "kiss",
+        "less",
+        "dress",
+        "chess",
+        "class",
+        "glass"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "hiss"
+          ],
+          "stage2": [
+            "hiss",
+            "miss",
+            "pass"
+          ],
+          "stage3": [
+            "hiss",
+            "miss",
+            "pass",
+            "mess",
+            "kiss",
+            "less"
+          ],
+          "stage4": [
+            "hiss",
+            "miss",
+            "pass",
+            "mess",
+            "kiss",
+            "less",
+            "dress",
+            "chess",
+            "class",
+            "glass"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "hiss",
+          "graphemeUnits": [
+            "h",
+            "i",
+            "ss"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "miss",
+          "graphemeUnits": [
+            "m",
+            "i",
+            "ss"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "pass",
+          "graphemeUnits": [
+            "p",
+            "a",
+            "ss"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "mess",
+          "graphemeUnits": [
+            "m",
+            "e",
+            "ss"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "kiss",
+          "graphemeUnits": [
+            "k",
+            "i",
+            "ss"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "less",
+          "graphemeUnits": [
+            "l",
+            "e",
+            "ss"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "dress",
+          "graphemeUnits": [
+            "d",
+            "r",
+            "e",
+            "ss"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "chess",
+          "graphemeUnits": [
+            "c",
+            "h",
+            "e",
+            "ss"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "class",
+          "graphemeUnits": [
+            "c",
+            "l",
+            "a",
+            "ss"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "glass",
+          "graphemeUnits": [
+            "g",
+            "l",
+            "a",
+            "ss"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "soundUnit": "zz",
+      "anchorWord": "buzz",
+      "alternativeWords": [
+        "buzz",
+        "fizz",
+        "jazz",
+        "fuzz",
+        "dizzy",
+        "puzzle",
+        "razzle",
+        "drizzle",
+        "buzzing",
+        "fizzy"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "buzz"
+          ],
+          "stage2": [
+            "buzz",
+            "fizz",
+            "jazz"
+          ],
+          "stage3": [
+            "buzz",
+            "fizz",
+            "jazz",
+            "fuzz",
+            "dizzy",
+            "puzzle"
+          ],
+          "stage4": [
+            "buzz",
+            "fizz",
+            "jazz",
+            "fuzz",
+            "dizzy",
+            "puzzle",
+            "razzle",
+            "drizzle",
+            "buzzing",
+            "fizzy"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "buzz",
+          "graphemeUnits": [
+            "b",
+            "u",
+            "zz"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "fizz",
+          "graphemeUnits": [
+            "f",
+            "i",
+            "zz"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "jazz",
+          "graphemeUnits": [
+            "j",
+            "a",
+            "zz"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "fuzz",
+          "graphemeUnits": [
+            "f",
+            "u",
+            "zz"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "dizzy",
+          "graphemeUnits": [
+            "d",
+            "i",
+            "zz",
+            "y"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "puzzle",
+          "graphemeUnits": [
+            "p",
+            "u",
+            "zz",
+            "l",
+            "e"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "razzle",
+          "graphemeUnits": [
+            "r",
+            "a",
+            "zz",
+            "l",
+            "e"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "drizzle",
+          "graphemeUnits": [
+            "d",
+            "r",
+            "i",
+            "zz",
+            "l",
+            "e"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "buzzing",
+          "graphemeUnits": [
+            "b",
+            "u",
+            "zz",
+            "i",
+            "n",
+            "g"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "fizzy",
+          "graphemeUnits": [
+            "f",
+            "i",
+            "zz",
+            "y"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "soundUnit": "ck",
+      "anchorWord": "duck",
+      "alternativeWords": [
+        "duck",
+        "back",
+        "neck",
+        "sick",
+        "sock",
+        "pack",
+        "peck",
+        "luck",
+        "lick",
+        "rock"
+      ],
+      "progression": {
+        "currentCourseStage": "foundation",
+        "unlocks": {
+          "stage1": [
+            "duck"
+          ],
+          "stage2": [
+            "duck",
+            "back",
+            "neck"
+          ],
+          "stage3": [
+            "duck",
+            "back",
+            "neck",
+            "sick",
+            "sock",
+            "pack"
+          ],
+          "stage4": [
+            "duck",
+            "back",
+            "neck",
+            "sick",
+            "sock",
+            "pack",
+            "peck",
+            "luck",
+            "lick",
+            "rock"
+          ]
+        },
+        "recommendedStartAfterSoundCardsCorrect": 3,
+        "recommendedFullSetAfterSoundCardsCorrect": 5
+      },
+      "constructionSets": [
+        {
+          "word": "duck",
+          "graphemeUnits": [
+            "d",
+            "u",
+            "ck"
+          ],
+          "difficulty": 1,
+          "unlockStage": 1
+        },
+        {
+          "word": "back",
+          "graphemeUnits": [
+            "b",
+            "a",
+            "ck"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "neck",
+          "graphemeUnits": [
+            "n",
+            "e",
+            "ck"
+          ],
+          "difficulty": 1,
+          "unlockStage": 2
+        },
+        {
+          "word": "sick",
+          "graphemeUnits": [
+            "s",
+            "i",
+            "ck"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "sock",
+          "graphemeUnits": [
+            "s",
+            "o",
+            "ck"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "pack",
+          "graphemeUnits": [
+            "p",
+            "a",
+            "ck"
+          ],
+          "difficulty": 2,
+          "unlockStage": 3
+        },
+        {
+          "word": "peck",
+          "graphemeUnits": [
+            "p",
+            "e",
+            "ck"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "luck",
+          "graphemeUnits": [
+            "l",
+            "u",
+            "ck"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "lick",
+          "graphemeUnits": [
+            "l",
+            "i",
+            "ck"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        },
+        {
+          "word": "rock",
+          "graphemeUnits": [
+            "r",
+            "o",
+            "ck"
+          ],
+          "difficulty": 3,
+          "unlockStage": 4
+        }
+      ]
+    }
+  ]
+}

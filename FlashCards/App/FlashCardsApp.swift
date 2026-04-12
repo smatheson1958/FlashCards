@@ -16,7 +16,7 @@ struct FlashCardsApp: App {
     init() {
         Self.configureTabBarUnselectedGrey()
 
-        let schema = Schema([CardProgress.self, WordCard.self])
+        let schema = Schema([CardProgress.self, WordCard.self, ModeWordProgress.self])
         let configuration = ModelConfiguration()
         do {
             modelContainer = try ModelContainer(for: schema, configurations: [configuration])

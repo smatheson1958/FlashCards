@@ -53,9 +53,9 @@ struct CurrentDeckListView: View {
                 case .words:
                     CurrentDeckWordsTabContent(cards: cards)
                 case .segmentation:
-                    CurrentDeckSegmentationTabContent(cards: cards)
+                    PhonicsModeSoundListView(mode: .segmentation)
                 case .construction:
-                    CurrentDeckConstructionTabContent(cards: cards)
+                    PhonicsModeSoundListView(mode: .construction)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -107,86 +107,6 @@ private struct CurrentDeckWordsTabContent: View {
                     }
                     .padding(16)
                 }
-            }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-    }
-}
-
-// MARK: - Segmentation & Construction (gated by `LearningProgressionEngine`)
-
-private struct CurrentDeckSegmentationTabContent: View {
-    let cards: [CardProgress]
-
-    var body: some View {
-        Group {
-            if let card = cards.first(where: { LearningProgressionEngine.isSegmentationUnlocked(SoundCardProgressSnapshot(card: $0)) }) {
-                let snap = SoundCardProgressSnapshot(card: card)
-                if let word = LearningProgressionEngine.wordsForMode(
-                    orderIndex: card.orderIndex,
-                    mode: .segmentation,
-                    snapshot: snap
-                ).first {
-                    let segments = ConstructionDataSource.segments(forWord: word)
-                    SegmentationModeView(word: word, segments: segments)
-                } else {
-                    ContentUnavailableView(
-                        "No word available",
-                        systemImage: "waveform",
-                        description: Text("Curriculum data may be missing for this sound.")
-                    )
-                }
-            } else {
-                ContentUnavailableView(
-                    "Segmentation locked",
-                    systemImage: "lock.fill",
-                    description: Text(
-                        "Get at least \(FlashCardsConstants.earlyProgressionCorrectCount) correct swipes on Sound Cards for a sound in this deck, then return here."
-                    )
-                )
-            }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-    }
-}
-
-private struct CurrentDeckConstructionTabContent: View {
-    let cards: [CardProgress]
-
-    var body: some View {
-        Group {
-            if let card = cards.first(where: { LearningProgressionEngine.isConstructionUnlocked(SoundCardProgressSnapshot(card: $0)) }) {
-                let snap = SoundCardProgressSnapshot(card: card)
-                if let word = LearningProgressionEngine.wordsForMode(
-                    orderIndex: card.orderIndex,
-                    mode: .construction,
-                    snapshot: snap
-                ).first {
-                    let segments = ConstructionDataSource.segments(forWord: word)
-                    if segments.count >= FlashCardsConstants.constructionMinimumSegmentCount {
-                        SimpleConstructionModeView(word: word, segments: segments)
-                    } else {
-                        ContentUnavailableView(
-                            "Word too short",
-                            systemImage: "character.cursor.ibeam",
-                            description: Text("Construction needs at least \(FlashCardsConstants.constructionMinimumSegmentCount) pieces for this word.")
-                        )
-                    }
-                } else {
-                    ContentUnavailableView(
-                        "No word available",
-                        systemImage: "hammer.fill",
-                        description: Text("Curriculum data may be missing for this sound.")
-                    )
-                }
-            } else {
-                ContentUnavailableView(
-                    "Construction locked",
-                    systemImage: "lock.fill",
-                    description: Text(
-                        "Get at least \(FlashCardsConstants.earlyProgressionCorrectCount) correct swipes on Sound Cards for a sound in this deck, then return here."
-                    )
-                )
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -311,8 +231,11 @@ private struct MasteryFiveBoxes: View {
 }
 
 #Preview {
-    NavigationStack {
+    let schema = Schema([CardProgress.self, ModeWordProgress.self])
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: schema, configurations: config)
+    return NavigationStack {
         CurrentDeckListView()
     }
-    .modelContainer(for: CardProgress.self, inMemory: true)
+    .modelContainer(container)
 }

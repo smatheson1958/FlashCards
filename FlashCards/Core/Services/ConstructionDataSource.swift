@@ -14,6 +14,13 @@ enum ConstructionDataSource {
         word.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
+    /// Clears the in-memory map from `phonics_modules_poc.json` (e.g. after a DEBUG deck rebuild or bundle swap).
+    static func clearCacheForTesting() {
+        lock.lock()
+        defer { lock.unlock() }
+        cachedMap = nil
+    }
+
     static func segments(forWord word: String) -> [String] {
         let key = normalizedWordKey(word)
         guard !key.isEmpty else { return [] }

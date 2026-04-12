@@ -21,8 +21,11 @@ enum FlashCardsConstants {
 
     static let masteryThreshold = 5
 
-    /// Correct swipes on Sound Cards toward mastery required before Construction / Segmentation unlock (while still in the teaching deck).
-    static let earlyProgressionCorrectCount = 2
+    /// Sound Card correct count required before Construction / Segmentation exercises unlock for that sound (teaching or successful pool).
+    static let constructionSegmentationMinSoundCardCorrect = 3
+
+    /// Successful Construction or Segmentation completions required per word (same count as Sound Card mastery boxes).
+    static let modeExerciseWordMasteryCount = 5
 
     static let currentDeckTargetCount = 30
     static let maxReviewCardsPerSession = 5

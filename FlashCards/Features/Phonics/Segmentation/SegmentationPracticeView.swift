@@ -3,18 +3,47 @@
 //  FlashCards
 //
 
+import SwiftData
 import SwiftUI
 import UIKit
 
-/// Hear segment sounds and the whole word; uses bundled `segmentation` entries in phonics_modules_poc.json.
+/// Hear segment sounds and the whole word; segments come from `construction_index_g1_foundation.json` (`graphemeUnits`).
 struct SegmentationModeView: View {
     let word: String
     let segments: [String]
+    var isReminderSession: Bool
+    var dismissAfterRecordingSuccess: Bool
+    var onSuccessfulPracticeRecorded: (() -> Void)?
+    var onReminderMissed: (() -> Void)?
 
     @Bindable private var appearance = StudyAppearanceSettings.shared
+    @Environment(\.dismiss) private var dismiss
 
     @State private var segmentPlayer = SegmentationSoundPlayer()
     @State private var wordPlayer = WordAudioPlayer()
+    @State private var didPlayWholeWord = false
+    @State private var playedSegmentIndices: Set<Int> = []
+    @State private var didRecordSuccessThisVisit = false
+
+    init(
+        word: String,
+        segments: [String],
+        isReminderSession: Bool = false,
+        dismissAfterRecordingSuccess: Bool = true,
+        onSuccessfulPracticeRecorded: (() -> Void)? = nil,
+        onReminderMissed: (() -> Void)? = nil
+    ) {
+        self.word = word
+        self.segments = segments
+        self.isReminderSession = isReminderSession
+        self.dismissAfterRecordingSuccess = dismissAfterRecordingSuccess
+        self.onSuccessfulPracticeRecorded = onSuccessfulPracticeRecorded
+        self.onReminderMissed = onReminderMissed
+    }
+
+    private var canRecordSuccess: Bool {
+        didPlayWholeWord && playedSegmentIndices.count == segments.count && segments.count > 0 && !didRecordSuccessThisVisit
+    }
 
     var body: some View {
         VStack(spacing: 36) {
@@ -25,6 +54,7 @@ struct SegmentationModeView: View {
                 segmentPlayer.stop()
                 let stem = ConstructionDataSource.normalizedWordKey(word)
                 wordPlayer.play(stem: stem)
+                didPlayWholeWord = true
             } label: {
                 Text(ConstructionDataSource.normalizedWordKey(word).uppercased())
                     .font(appearance.titleFont(size: 40, weight: .semibold))
@@ -49,6 +79,7 @@ struct SegmentationModeView: View {
                         UIImpactFeedbackGenerator(style: .light).impactOccurred()
                         wordPlayer.stop()
                         segmentPlayer.playGrapheme(segment)
+                        _ = playedSegmentIndices.insert(index)
                     } label: {
                         Text(segment.uppercased())
                             .font(appearance.titleFont(size: 26, weight: .semibold))
@@ -67,6 +98,43 @@ struct SegmentationModeView: View {
             }
             .frame(maxWidth: .infinity)
 
+            Button {
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                onSuccessfulPracticeRecorded?()
+                didRecordSuccessThisVisit = true
+                if dismissAfterRecordingSuccess {
+                    Task { @MainActor in
+                        try? await Task.sleep(for: .milliseconds(350))
+                        dismiss()
+                    }
+                }
+            } label: {
+                Text("Record successful practice")
+                    .font(appearance.bodyFont(size: 17, weight: .semibold))
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 14)
+            }
+            .buttonStyle(.borderedProminent)
+            .disabled(!canRecordSuccess)
+
+            Text("Listen to the whole word, then each segment at least once. Then tap the button above to count one success toward five.")
+                .font(appearance.bodyFont(size: 13))
+                .foregroundStyle(appearance.primaryTextColor.opacity(0.7))
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 8)
+
+            if isReminderSession {
+                Button(role: .destructive) {
+                    UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+                    onReminderMissed?()
+                    dismiss()
+                } label: {
+                    Text("Missed reminder — reset progress")
+                        .font(appearance.bodyFont(size: 15, weight: .medium))
+                }
+                .buttonStyle(.bordered)
+            }
+
             Spacer(minLength: 0)
         }
         .padding(.horizontal, 24)
@@ -76,41 +144,158 @@ struct SegmentationModeView: View {
     }
 }
 
-/// Word list for Segmentation: tap a word to explore its segments (POC `segmentation` data).
+/// Entry from **Exercises**: word-first list (classic segmentation flow), plus “Browse by sound” for the grouped list.
 struct SegmentationPracticeListView: View {
+    var body: some View {
+        SegmentationExerciseHubView()
+            .navigationTitle("Segmentation")
+            .navigationBarTitleDisplayMode(.inline)
+            .studyAppearanceToolbar()
+    }
+}
+
+// MARK: - Hub (words) + optional sound browser
+
+private struct SegmentationFlatPracticeRow: Identifiable, Hashable {
+    let id: String
+    let soundLabel: String
+    let orderIndex: Int
+    let word: String
+    let segments: [String]
+}
+
+private struct SegmentationExerciseHubView: View {
     @Bindable private var appearance = StudyAppearanceSettings.shared
 
-    @State private var exercises: [PhonicsModuleExerciseDTO] = []
-    @State private var loadError: String?
-    @State private var isLoading = true
+    @Query(
+        filter: #Predicate<CardProgress> { card in
+            card.deckStateRaw != "notIntroduced" && card.masteryCorrectCount >= 3
+        },
+        sort: \CardProgress.orderIndex
+    )
+    private var qualifyingSoundCards: [CardProgress]
+
+    @Query(sort: \ModeWordProgress.progressID)
+    private var allModeProgress: [ModeWordProgress]
+
+    private var workingSounds: [CardProgress] {
+        let cap = FlashCardsConstants.currentDeckTargetCount
+        let slice = Array(qualifyingSoundCards.prefix(cap))
+        return slice.filter { card in
+            let snap = SoundCardProgressSnapshot(card: card)
+            return LearningProgressionEngine.isSegmentationUnlocked(snap)
+        }
+    }
+
+    private var flatRows: [SegmentationFlatPracticeRow] {
+        var rows: [SegmentationFlatPracticeRow] = []
+        rows.reserveCapacity(workingSounds.count * 5)
+        for card in workingSounds {
+            let snap = SoundCardProgressSnapshot(card: card)
+            let words = LearningProgressionEngine.wordsForMode(
+                orderIndex: card.orderIndex,
+                mode: .segmentation,
+                snapshot: snap
+            )
+            for word in words {
+                let segments = ConstructionIndexG1Loader.graphemeUnits(forSoundOrderIndex: card.orderIndex, word: word)
+                    ?? ConstructionDataSource.segments(forWord: word)
+                guard !segments.isEmpty else { continue }
+                let key = ModeWordProgressService.normalizedWordKey(word)
+                let id = "\(card.orderIndex)|\(key)"
+                rows.append(
+                    SegmentationFlatPracticeRow(
+                        id: id,
+                        soundLabel: card.sound,
+                        orderIndex: card.orderIndex,
+                        word: word,
+                        segments: segments
+                    )
+                )
+            }
+        }
+        return rows
+    }
+
+    private var segmentationReminders: [ModeWordProgress] {
+        let cap = FlashCardsConstants.modeExerciseWordMasteryCount
+        return allModeProgress.filter { row in
+            row.mode == .segmentation && row.correctCountTowardMastery >= cap
+        }
+        .sorted { $0.progressID < $1.progressID }
+    }
 
     var body: some View {
         Group {
-            if let loadError {
+            if flatRows.isEmpty && segmentationReminders.isEmpty {
                 ContentUnavailableView(
-                    "Can’t load activities",
-                    systemImage: "exclamationmark.triangle",
-                    description: Text(loadError)
-                )
-            } else if isLoading {
-                ProgressView()
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-            } else if exercises.isEmpty {
-                ContentUnavailableView(
-                    "No practice words",
+                    "No segmentation yet",
                     systemImage: "rectangle.split.3x1",
-                    description: Text("Add entries under `segmentation` in phonics_modules_poc.json.")
+                    description: Text(
+                        "Get at least \(FlashCardsConstants.constructionSegmentationMinSoundCardCorrect) correct swipes on Sound Cards for a sound (and introduce it), then words appear here. Use Browse by sound (when unlocked) for the grouped list."
+                    )
                 )
             } else {
-                List(exercises) { exercise in
-                    NavigationLink {
-                        SegmentationModeView(word: exercise.word, segments: exercise.segments)
-                            .navigationTitle(exercise.word.capitalized)
-                            .navigationBarTitleDisplayMode(.inline)
-                            .studyAppearanceToolbar()
-                    } label: {
-                        Text(exercise.word.capitalized)
-                            .font(appearance.bodyFont(size: 17, weight: .medium))
+                List {
+                    Section {
+                        Text(
+                            "Tap a word to open the segmentation activity: hear the whole word, then each grapheme. Record a successful practice when you’ve played them all."
+                        )
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .listRowBackground(Color.clear)
+                    }
+
+                    if !flatRows.isEmpty {
+                        Section("Words") {
+                            ForEach(flatRows) { row in
+                                NavigationLink {
+                                    PhonicsModeWordSessionView(
+                                        mode: .segmentation,
+                                        soundOrderIndex: row.orderIndex,
+                                        word: row.word,
+                                        segments: row.segments,
+                                        isReminder: false
+                                    )
+                                } label: {
+                                    HStack(alignment: .center, spacing: 12) {
+                                        VStack(alignment: .leading, spacing: 4) {
+                                            Text(row.word.capitalized)
+                                                .font(appearance.bodyFont(size: 17, weight: .semibold))
+                                            Text("Sound \(row.soundLabel)")
+                                                .font(appearance.bodyFont(size: 13, weight: .medium))
+                                                .foregroundStyle(.secondary)
+                                        }
+                                        Spacer(minLength: 8)
+                                        SegmentationHubFiveBoxes(
+                                            filledCount: segmentationProgressCount(
+                                                soundOrderIndex: row.orderIndex,
+                                                word: row.word
+                                            )
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    if !segmentationReminders.isEmpty {
+                        Section("Reminders (mastered words)") {
+                            ForEach(segmentationReminders, id: \.progressID) { row in
+                                segmentationReminderRow(row: row)
+                            }
+                        }
+                    }
+
+                    Section {
+                        NavigationLink {
+                            PhonicsModeSoundListView(mode: .segmentation, chrome: .embeddedSoundBrowser)
+                        } label: {
+                            Label("Browse by sound", systemImage: "list.bullet.indent")
+                                .font(appearance.bodyFont(size: 16, weight: .medium))
+                        }
+                    } header: {
+                        Text("More")
                     }
                 }
                 .listStyle(.insetGrouped)
@@ -118,32 +303,81 @@ struct SegmentationPracticeListView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(appearance.backgroundColor)
-        .navigationTitle("Segmentation")
-        .navigationBarTitleDisplayMode(.inline)
-        .studyAppearanceToolbar()
-        .task { loadExercises() }
     }
 
-    @MainActor
-    private func loadExercises() {
-        isLoading = true
-        loadError = nil
-        defer { isLoading = false }
-        do {
-            let root = try PhonicsModulePOCLoader.load()
-            exercises = root.segmentation
-                .sorted { $0.orderIndex < $1.orderIndex }
-                .filter { !$0.segments.isEmpty }
-        } catch {
-            loadError = error.localizedDescription
+    @ViewBuilder
+    private func segmentationReminderRow(row: ModeWordProgress) -> some View {
+        let word = row.wordKey
+        let segments = ConstructionIndexG1Loader.graphemeUnits(forSoundOrderIndex: row.soundOrderIndex, word: word)
+            ?? ConstructionDataSource.segments(forWord: word)
+        if segments.isEmpty {
+            Text(word.capitalized)
+                .font(appearance.bodyFont(size: 15, weight: .medium))
+                .foregroundStyle(.secondary)
+        } else {
+            NavigationLink {
+                PhonicsModeWordSessionView(
+                    mode: .segmentation,
+                    soundOrderIndex: row.soundOrderIndex,
+                    word: word,
+                    segments: segments,
+                    isReminder: true
+                )
+            } label: {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(word.capitalized)
+                        .font(appearance.bodyFont(size: 17, weight: .medium))
+                    Text("Sound #\(row.soundOrderIndex) · reminder")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
         }
+    }
+
+    private func segmentationProgressCount(soundOrderIndex: Int, word: String) -> Int {
+        let key = ModeWordProgressService.normalizedWordKey(word)
+        if let row = allModeProgress.first(where: {
+            $0.soundOrderIndex == soundOrderIndex && $0.mode == .segmentation && $0.wordKey == key
+        }) {
+            return row.correctCountTowardMastery
+        }
+        return 0
+    }
+}
+
+private struct SegmentationHubFiveBoxes: View {
+    let filledCount: Int
+
+    private static let boxSize: CGFloat = 10
+    private static let boxSpacing: CGFloat = 3
+
+    private var cap: Int { FlashCardsConstants.modeExerciseWordMasteryCount }
+
+    var body: some View {
+        HStack(spacing: Self.boxSpacing) {
+            ForEach(0..<cap, id: \.self) { index in
+                RoundedRectangle(cornerRadius: 2, style: .continuous)
+                    .fill(index < filledCount ? Color.green : Color.clear)
+                    .frame(width: Self.boxSize, height: Self.boxSize)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 2, style: .continuous)
+                            .stroke(Color.secondary.opacity(0.5), lineWidth: 1)
+                    }
+            }
+        }
+        .accessibilityLabel("\(min(filledCount, cap)) of \(cap) for this word")
     }
 }
 
 #Preview("Segmentation list") {
-    NavigationStack {
+    let schema = Schema([CardProgress.self, ModeWordProgress.self])
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: schema, configurations: config)
+    return NavigationStack {
         SegmentationPracticeListView()
     }
+    .modelContainer(container)
 }
 
 #Preview("Segmentation word") {

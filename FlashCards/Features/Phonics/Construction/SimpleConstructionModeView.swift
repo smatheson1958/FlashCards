@@ -3,13 +3,18 @@
 //  FlashCards
 //
 
+import SwiftData
 import SwiftUI
 import UIKit
 
-/// Tap tiles in order to build the target word; no scoring or timers.
+/// Tap tiles in order to build the target word; optional hooks for per-word mode progress and reminder resets.
 struct SimpleConstructionModeView: View {
     let word: String
     let segments: [String]
+    var isReminderSession: Bool
+    var dismissAfterSuccess: Bool
+    var onSuccessfulCompletion: (() -> Void)?
+    var onReminderWrongTap: (() -> Void)?
 
     @Bindable private var appearance = StudyAppearanceSettings.shared
     @Environment(\.dismiss) private var dismiss
@@ -18,9 +23,20 @@ struct SimpleConstructionModeView: View {
     @State private var didRunSuccessFlow = false
     @State private var audio = WordAudioPlayer()
 
-    init(word: String, segments: [String]) {
+    init(
+        word: String,
+        segments: [String],
+        isReminderSession: Bool = false,
+        dismissAfterSuccess: Bool = true,
+        onSuccessfulCompletion: (() -> Void)? = nil,
+        onReminderWrongTap: (() -> Void)? = nil
+    ) {
         self.word = word
         self.segments = segments
+        self.isReminderSession = isReminderSession
+        self.dismissAfterSuccess = dismissAfterSuccess
+        self.onSuccessfulCompletion = onSuccessfulCompletion
+        self.onReminderWrongTap = onReminderWrongTap
         let count = ConstructionTilePoolBuilder.distractorCount(forSegmentCount: segments.count)
         let distractors = ConstructionTilePoolBuilder.distractorLabels(forTargetSegments: segments, count: count)
         _engine = State(
@@ -51,7 +67,9 @@ struct SimpleConstructionModeView: View {
                 tileGrid
 
                 Button("Start over") {
-                    engine.reset()
+                    var next = engine
+                    next.reset()
+                    engine = next
                     didRunSuccessFlow = false
                     audio.stop()
                 }
@@ -71,11 +89,19 @@ struct SimpleConstructionModeView: View {
             guard complete, !didRunSuccessFlow else { return }
             didRunSuccessFlow = true
             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+            onSuccessfulCompletion?()
             let stem = ConstructionDataSource.normalizedWordKey(word)
             audio.play(stem: stem)
             Task { @MainActor in
                 try? await Task.sleep(for: .seconds(1.15))
-                dismiss()
+                if dismissAfterSuccess {
+                    dismiss()
+                } else {
+                    var nextEngine = engine
+                    nextEngine.reset()
+                    engine = nextEngine
+                    didRunSuccessFlow = false
+                }
             }
         }
     }
@@ -141,6 +167,13 @@ struct SimpleConstructionModeView: View {
         switch result {
         case .wrong:
             UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            if isReminderSession {
+                onReminderWrongTap?()
+                var cleared = engine
+                cleared.reset()
+                engine = cleared
+                didRunSuccessFlow = false
+            }
         case .accepted:
             UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
         default:
@@ -149,76 +182,23 @@ struct SimpleConstructionModeView: View {
     }
 }
 
-// MARK: - Word list (same module as `SimpleConstructionModeView` so `ExerciseHomeView` always resolves the type)
+// MARK: - Word list
 
-/// Word list for the Construction exercise: tap a word, then build it from pieces (POC `construction` data).
+/// Construction practice: working sounds from Sound Cards + `construction_index_g1_foundation.json`.
 struct ConstructionPracticeListView: View {
-    @Bindable private var appearance = StudyAppearanceSettings.shared
-
-    @State private var exercises: [PhonicsModuleExerciseDTO] = []
-    @State private var loadError: String?
-    @State private var isLoading = true
-
     var body: some View {
-        Group {
-            if let loadError {
-                ContentUnavailableView(
-                    "Can’t load activities",
-                    systemImage: "exclamationmark.triangle",
-                    description: Text(loadError)
-                )
-            } else if isLoading {
-                ProgressView()
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-            } else if exercises.isEmpty {
-                ContentUnavailableView(
-                    "No practice words",
-                    systemImage: "square.grid.3x3",
-                    description: Text("Add entries under `construction` in phonics_modules_poc.json.")
-                )
-            } else {
-                List(exercises) { exercise in
-                    NavigationLink {
-                        SimpleConstructionModeView(word: exercise.word, segments: exercise.segments)
-                            .navigationTitle(exercise.word.capitalized)
-                            .navigationBarTitleDisplayMode(.inline)
-                            .studyAppearanceToolbar()
-                    } label: {
-                        Text(exercise.word.capitalized)
-                            .font(appearance.bodyFont(size: 17, weight: .medium))
-                    }
-                }
-                .listStyle(.insetGrouped)
-            }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(appearance.backgroundColor)
-        .navigationTitle("Construction")
-        .navigationBarTitleDisplayMode(.inline)
-        .studyAppearanceToolbar()
-        .task { loadExercises() }
-    }
-
-    @MainActor
-    private func loadExercises() {
-        isLoading = true
-        loadError = nil
-        defer { isLoading = false }
-        do {
-            let root = try PhonicsModulePOCLoader.load()
-            exercises = root.construction
-                .sorted { $0.orderIndex < $1.orderIndex }
-                .filter { $0.segments.count >= FlashCardsConstants.constructionMinimumSegmentCount }
-        } catch {
-            loadError = error.localizedDescription
-        }
+        PhonicsModeSoundListView(mode: .construction)
     }
 }
 
 #Preview("Construction list") {
-    NavigationStack {
+    let schema = Schema([CardProgress.self, ModeWordProgress.self])
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: schema, configurations: config)
+    return NavigationStack {
         ConstructionPracticeListView()
     }
+    .modelContainer(container)
 }
 
 #Preview("Build word") {

@@ -64,13 +64,38 @@ enum LearningProgressionEngine {
         return root.sounds.first { $0.orderIndex == orderIndex }
     }
 
-    /// Whether the learner has reached “early success” on Sound Cards (unlocks Construction + Segmentation when curriculum allows).
-    static func hasEarlySoundCardSuccess(_ snapshot: SoundCardProgressSnapshot) -> Bool {
+    /// Example / anchor word when sound-units JSON is missing or has no row (fallback to G1 construction index).
+    private static func fallbackExampleWord(forOrderIndex orderIndex: Int) -> String? {
+        guard let item = ConstructionIndexG1Loader.item(forSoundOrderIndex: orderIndex) else { return nil }
+        let anchor = item.anchorWord?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        if !anchor.isEmpty { return anchor }
+        let first = item.constructionSets.first?.word.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        return first.isEmpty ? nil : first
+    }
+
+    /// Whether construction exercises are defined for this sound (master `supportsModes`, else G1 construction index row).
+    private static func curriculumAllowsConstruction(at orderIndex: Int) -> Bool {
+        if let modes = curriculumEntry(forOrderIndex: orderIndex)?.supportsModes {
+            return modes.construction
+        }
+        return ConstructionIndexG1Loader.item(forSoundOrderIndex: orderIndex) != nil
+    }
+
+    /// Whether segmentation exercises are defined for this sound (master `supportsModes`, else G1 index — same `graphemeUnits`).
+    private static func curriculumAllowsSegmentation(at orderIndex: Int) -> Bool {
+        if let modes = curriculumEntry(forOrderIndex: orderIndex)?.supportsModes {
+            return modes.segmentation
+        }
+        return ConstructionIndexG1Loader.item(forSoundOrderIndex: orderIndex) != nil
+    }
+
+    /// Sound Cards have enough correct swipes (or are mastered) to unlock Construction / Segmentation for that sound.
+    static func hasUnlockedConstructionOrSegmentationSoundWork(_ snapshot: SoundCardProgressSnapshot) -> Bool {
         switch snapshot.deckState {
         case .successful:
             return true
         case .currentDeck:
-            return snapshot.masteryCorrectCount >= FlashCardsConstants.earlyProgressionCorrectCount
+            return snapshot.masteryCorrectCount >= FlashCardsConstants.constructionSegmentationMinSoundCardCorrect
         case .notIntroduced:
             return false
         }
@@ -82,13 +107,11 @@ enum LearningProgressionEngine {
     }
 
     static func isConstructionUnlocked(_ snapshot: SoundCardProgressSnapshot) -> Bool {
-        guard let modes = curriculumEntry(forOrderIndex: snapshot.orderIndex)?.supportsModes else { return false }
-        return modes.construction && hasEarlySoundCardSuccess(snapshot)
+        curriculumAllowsConstruction(at: snapshot.orderIndex) && hasUnlockedConstructionOrSegmentationSoundWork(snapshot)
     }
 
     static func isSegmentationUnlocked(_ snapshot: SoundCardProgressSnapshot) -> Bool {
-        guard let modes = curriculumEntry(forOrderIndex: snapshot.orderIndex)?.supportsModes else { return false }
-        return modes.segmentation && hasEarlySoundCardSuccess(snapshot)
+        curriculumAllowsSegmentation(at: snapshot.orderIndex) && hasUnlockedConstructionOrSegmentationSoundWork(snapshot)
     }
 
     static func isMemoryUnlocked(_ snapshot: SoundCardProgressSnapshot) -> Bool {
@@ -96,19 +119,36 @@ enum LearningProgressionEngine {
         return modes.memory && isInSuccessfulPool(snapshot)
     }
 
-    /// Cumulative word set for this sound at the current progress stage. MVP: example word from master JSON; later tiers append without replacing earlier words.
+    /// Cumulative word set for this sound at the current progress stage. Uses sound-units master when present; otherwise G1 construction index.
     static func wordsForMode(orderIndex: Int, mode: LearningPracticeMode, snapshot: SoundCardProgressSnapshot) -> [String] {
-        guard let entry = curriculumEntry(forOrderIndex: orderIndex) else { return [] }
-        let word = entry.exampleWord.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !word.isEmpty else { return [] }
+        let curriculumWord: String? = {
+            guard let entry = curriculumEntry(forOrderIndex: orderIndex) else { return nil }
+            let w = entry.exampleWord.trimmingCharacters(in: .whitespacesAndNewlines)
+            return w.isEmpty ? nil : w
+        }()
+        let fallbackWord = fallbackExampleWord(forOrderIndex: orderIndex)
+        let exampleWord = curriculumWord ?? fallbackWord
+        guard let word = exampleWord else {
+            if mode == .construction && isConstructionUnlocked(snapshot) {
+                return ConstructionIndexG1Loader.stage4FirstFiveWords(forSoundOrderIndex: orderIndex)
+            }
+            if mode == .segmentation && isSegmentationUnlocked(snapshot) {
+                return ConstructionIndexG1Loader.stage4FirstFiveWords(forSoundOrderIndex: orderIndex)
+            }
+            return []
+        }
 
         switch mode {
         case .soundCards:
             return [word]
         case .construction:
-            return isConstructionUnlocked(snapshot) ? [word] : []
+            guard isConstructionUnlocked(snapshot) else { return [] }
+            let fromIndex = ConstructionIndexG1Loader.stage4FirstFiveWords(forSoundOrderIndex: orderIndex)
+            return fromIndex.isEmpty ? [word] : fromIndex
         case .segmentation:
-            return isSegmentationUnlocked(snapshot) ? [word] : []
+            guard isSegmentationUnlocked(snapshot) else { return [] }
+            let fromIndex = ConstructionIndexG1Loader.stage4FirstFiveWords(forSoundOrderIndex: orderIndex)
+            return fromIndex.isEmpty ? [word] : fromIndex
         case .memory:
             return isMemoryUnlocked(snapshot) ? [word] : []
         }

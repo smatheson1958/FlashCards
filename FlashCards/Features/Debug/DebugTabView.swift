@@ -36,7 +36,15 @@ struct DebugTabView: View {
 
             Section {
                 VStack(alignment: .leading, spacing: 14) {
-                    Text("Deletes all Sound Card rows (`CardProgress`) and re-imports from the bundled seed. Word cards and appearance settings are unchanged.")
+                    Text(
+                        """
+                        Deletes all Sound Card rows (`CardProgress`) and all Construction/Segmentation per-word rows (`ModeWordProgress`), then re-imports phonics from the bundled seed.
+
+                        Also clears in-memory caches: sound-units curriculum (`LearningProgressionEngine`), G1 construction index JSON, and POC construction segment map (`ConstructionDataSource`).
+
+                        Word cards and appearance settings are unchanged.
+                        """
+                    )
                         .font(.caption)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)

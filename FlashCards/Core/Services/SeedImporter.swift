@@ -139,10 +139,18 @@ enum SeedImporter {
         for card in all {
             context.delete(card)
         }
+        ModeWordProgressService.deleteAll(context: context)
         try context.save()
         hasSeeded = false
-        LearningProgressionEngine.clearCurriculumCacheForTesting()
+        clearPhonicsBundledCachesAfterDevelopmentRebuild()
         try importIfNeeded(context: context)
+    }
+
+    /// In-memory JSON / curriculum caches so the next read matches the bundle after a rebuild or fixture change.
+    private static func clearPhonicsBundledCachesAfterDevelopmentRebuild() {
+        LearningProgressionEngine.clearCurriculumCacheForTesting()
+        ConstructionIndexG1Loader.clearCacheForTesting()
+        ConstructionDataSource.clearCacheForTesting()
     }
     #endif
 }

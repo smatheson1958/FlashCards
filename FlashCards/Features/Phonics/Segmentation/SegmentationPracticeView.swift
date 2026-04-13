@@ -15,7 +15,10 @@ struct SegmentationModeView: View {
     var soundOrderIndex: Int?
     var isReminderSession: Bool
     var dismissAfterRecordingSuccess: Bool
+    /// Journey / error fallback: learner indicates a miss without recording success (module-local only).
+    var showPracticeMissButton: Bool
     var onSuccessfulPracticeRecorded: (() -> Void)?
+    var onPracticeMissed: (() -> Void)?
     var onReminderMissed: (() -> Void)?
 
     @Bindable private var appearance = StudyAppearanceSettings.shared
@@ -33,7 +36,9 @@ struct SegmentationModeView: View {
         soundOrderIndex: Int? = nil,
         isReminderSession: Bool = false,
         dismissAfterRecordingSuccess: Bool = true,
+        showPracticeMissButton: Bool = false,
         onSuccessfulPracticeRecorded: (() -> Void)? = nil,
+        onPracticeMissed: (() -> Void)? = nil,
         onReminderMissed: (() -> Void)? = nil
     ) {
         self.word = word
@@ -41,7 +46,9 @@ struct SegmentationModeView: View {
         self.soundOrderIndex = soundOrderIndex
         self.isReminderSession = isReminderSession
         self.dismissAfterRecordingSuccess = dismissAfterRecordingSuccess
+        self.showPracticeMissButton = showPracticeMissButton
         self.onSuccessfulPracticeRecorded = onSuccessfulPracticeRecorded
+        self.onPracticeMissed = onPracticeMissed
         self.onReminderMissed = onReminderMissed
     }
 
@@ -139,6 +146,17 @@ struct SegmentationModeView: View {
                 .buttonStyle(.bordered)
             }
 
+            if showPracticeMissButton, let onPracticeMissed {
+                Button(role: .destructive) {
+                    UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+                    onPracticeMissed()
+                } label: {
+                    Text("Record miss (repeat pair)")
+                        .font(appearance.bodyFont(size: 15, weight: .medium))
+                }
+                .buttonStyle(.bordered)
+            }
+
             Spacer(minLength: 0)
         }
         .padding(.horizontal, 24)
@@ -160,12 +178,16 @@ struct SegmentationPracticeListView: View {
 
 // MARK: - Hub (words) + optional sound browser
 
-private struct SegmentationFlatPracticeRow: Identifiable, Hashable {
+/// One visit’s two-word pair for the hub list (opens `SegmentationVisitPairPracticeView`).
+private struct SegmentationHubPairRow: Identifiable, Hashable {
     let id: String
     let soundLabel: String
     let orderIndex: Int
-    let word: String
-    let segments: [String]
+    let visitIndex: Int
+    let word0: String
+    let word1: String
+    let segments0: [String]
+    let segments1: [String]
 }
 
 private struct SegmentationExerciseHubView: View {
@@ -191,28 +213,26 @@ private struct SegmentationExerciseHubView: View {
         }
     }
 
-    private var flatRows: [SegmentationFlatPracticeRow] {
-        var rows: [SegmentationFlatPracticeRow] = []
+    /// Visit pairs from the journey seed (or synthetic pairs); both words must have segmentation data.
+    private var hubPairRows: [SegmentationHubPairRow] {
+        var rows: [SegmentationHubPairRow] = []
         rows.reserveCapacity(workingSounds.count * 5)
         for card in workingSounds {
-            let snap = SoundCardProgressSnapshot(card: card)
-            let words = LearningProgressionEngine.wordsForMode(
-                orderIndex: card.orderIndex,
-                mode: .segmentation,
-                snapshot: snap
-            )
-            for word in words {
-                let segments = SegmentationDataSource.resolvedSegments(forWord: word, soundOrderIndex: card.orderIndex)
-                guard !segments.isEmpty else { continue }
-                let key = ModeWordProgressService.normalizedWordKey(word)
-                let id = "\(card.orderIndex)|\(key)"
+            let pairs = SegmentationJourneyLoader.fiveVisitWordPairs(soundOrderIndex: card.orderIndex)
+            for p in pairs {
+                let s0 = SegmentationDataSource.resolvedSegments(forWord: p.word0, soundOrderIndex: card.orderIndex)
+                let s1 = SegmentationDataSource.resolvedSegments(forWord: p.word1, soundOrderIndex: card.orderIndex)
+                guard !s0.isEmpty, !s1.isEmpty else { continue }
                 rows.append(
-                    SegmentationFlatPracticeRow(
-                        id: id,
+                    SegmentationHubPairRow(
+                        id: "\(card.orderIndex)|visit\(p.visitIndex)",
                         soundLabel: card.sound,
                         orderIndex: card.orderIndex,
-                        word: word,
-                        segments: segments
+                        visitIndex: p.visitIndex,
+                        word0: p.word0,
+                        word1: p.word1,
+                        segments0: s0,
+                        segments1: s1
                     )
                 )
             }
@@ -230,7 +250,7 @@ private struct SegmentationExerciseHubView: View {
 
     var body: some View {
         Group {
-            if flatRows.isEmpty && segmentationReminders.isEmpty {
+            if hubPairRows.isEmpty && segmentationReminders.isEmpty {
                 ContentUnavailableView(
                     "No segmentation yet",
                     systemImage: "rectangle.split.3x1",
@@ -242,41 +262,76 @@ private struct SegmentationExerciseHubView: View {
                 List {
                     Section {
                         Text(
-                            "Tap a word to open the segmentation activity: hear the whole word, then each grapheme. Record a successful practice when you’ve played them all."
+                            "The journey follows bundled visit pairs (five per sound) when available. Below, each sound lists visits with per-word progress."
                         )
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                         .listRowBackground(Color.clear)
                     }
 
-                    if !flatRows.isEmpty {
-                        Section("Words") {
-                            ForEach(flatRows) { row in
+                    Section {
+                        NavigationLink {
+                            SegmentationJourneySessionView()
+                        } label: {
+                            Label("Segmentation journey", systemImage: "point.topleft.down.to.point.bottomright.curvepath")
+                                .font(appearance.bodyFont(size: 17, weight: .semibold))
+                        }
+                        Text("Unlocked sounds only, visit order 1 → 5, two words per visit. Errors adjust this sound’s module progress only.")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    } header: {
+                        Text("Guided path")
+                    }
+
+                    Section {
+                        Text(
+                            "Each row is one visit for a sound. The two practice words open in order; then you return here."
+                        )
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .listRowBackground(Color.clear)
+                    }
+
+                    if !hubPairRows.isEmpty {
+                        Section("Sounds") {
+                            ForEach(hubPairRows) { row in
                                 NavigationLink {
-                                    PhonicsModeWordSessionView(
-                                        mode: .segmentation,
+                                    SegmentationVisitPairPracticeView(
                                         soundOrderIndex: row.orderIndex,
-                                        word: row.word,
-                                        segments: row.segments,
-                                        isReminder: false
+                                        visitIndex: row.visitIndex,
+                                        word0: row.word0,
+                                        word1: row.word1,
+                                        segments0: row.segments0,
+                                        segments1: row.segments1
                                     )
                                 } label: {
                                     HStack(alignment: .center, spacing: 12) {
                                         VStack(alignment: .leading, spacing: 4) {
-                                            Text(row.word.capitalized)
-                                                .font(appearance.bodyFont(size: 17, weight: .semibold))
                                             Text("Sound \(row.soundLabel)")
+                                                .font(appearance.bodyFont(size: 17, weight: .semibold))
+                                            Text("Visit \(row.visitIndex)")
                                                 .font(appearance.bodyFont(size: 13, weight: .medium))
                                                 .foregroundStyle(.secondary)
                                         }
                                         Spacer(minLength: 8)
-                                        SegmentationHubFiveBoxes(
-                                            filledCount: segmentationProgressCount(
-                                                soundOrderIndex: row.orderIndex,
-                                                word: row.word
+                                        HStack(spacing: 8) {
+                                            SegmentationHubFiveBoxes(
+                                                filledCount: segmentationProgressCount(
+                                                    soundOrderIndex: row.orderIndex,
+                                                    word: row.word0
+                                                )
                                             )
-                                        )
+                                            SegmentationHubFiveBoxes(
+                                                filledCount: segmentationProgressCount(
+                                                    soundOrderIndex: row.orderIndex,
+                                                    word: row.word1
+                                                )
+                                            )
+                                        }
                                     }
+                                    .accessibilityLabel(
+                                        "Sound \(row.soundLabel), visit \(row.visitIndex). Words \(row.word0) and \(row.word1)."
+                                    )
                                 }
                             }
                         }
@@ -373,7 +428,12 @@ private struct SegmentationHubFiveBoxes: View {
 }
 
 #Preview("Segmentation list") {
-    let schema = Schema([CardProgress.self, ModeWordProgress.self])
+    let schema = Schema([
+        CardProgress.self,
+        ModeWordProgress.self,
+        SegmentationSoundModuleProgress.self,
+        SegmentationProgressEvent.self,
+    ])
     let config = ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! ModelContainer(for: schema, configurations: config)
     return NavigationStack {

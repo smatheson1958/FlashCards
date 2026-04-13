@@ -68,7 +68,13 @@ struct ContentView: View {
 
 #Preview {
     let memory = ModelConfiguration(isStoredInMemoryOnly: true)
-    let schema = Schema([CardProgress.self, WordCard.self, ModeWordProgress.self])
+    let schema = Schema([
+        CardProgress.self,
+        WordCard.self,
+        ModeWordProgress.self,
+        SegmentationSoundModuleProgress.self,
+        SegmentationProgressEvent.self,
+    ])
     let container = try! ModelContainer(for: schema, configurations: memory)
     return ContentView()
         .modelContainer(container)

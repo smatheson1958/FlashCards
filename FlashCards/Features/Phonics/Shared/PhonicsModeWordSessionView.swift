@@ -50,6 +50,7 @@ struct PhonicsModeWordSessionView: View {
                     soundOrderIndex: soundOrderIndex,
                     isReminderSession: isReminder,
                     dismissAfterRecordingSuccess: true,
+                    showPracticeMissButton: false,
                     onSuccessfulPracticeRecorded: {
                         ModeWordProgressService.recordSuccessfulAttempt(
                             soundOrderIndex: soundOrderIndex,
@@ -58,6 +59,7 @@ struct PhonicsModeWordSessionView: View {
                             context: modelContext
                         )
                     },
+                    onPracticeMissed: nil,
                     onReminderMissed: {
                         ModeWordProgressService.resetFromReminderWrong(
                             soundOrderIndex: soundOrderIndex,

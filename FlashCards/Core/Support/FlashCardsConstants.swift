@@ -45,6 +45,17 @@ enum FlashCardsConstants {
 
     // MARK: Construction activity (POC from bundled JSON)
 
+    // MARK: Segmentation journey (module-local; `segmentation_seed_146.json`)
+
+    /// Minimum successes and distinct words before checking recency for “segmentation secure” (module-only).
+    enum SegmentationJourneySecure {
+        static let minSuccessCount = 5
+        static let minDistinctWords = 4
+        static let recentWindowSize = 8
+        static let minRecentAccuracy = 0.75
+        static let maxRecentOutcomeChars = 32
+    }
+
     /// Activities need at least this many ordered pieces to be worth showing.
     static let constructionMinimumSegmentCount = 2
 

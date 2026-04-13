@@ -144,6 +144,7 @@ enum SeedImporter {
             context.delete(card)
         }
         ModeWordProgressService.deleteAll(context: context)
+        SegmentationModuleProgressService.deleteAll(context: context)
         try context.save()
         hasSeeded = false
         clearPhonicsBundledCachesAfterDevelopmentRebuild()
@@ -156,6 +157,7 @@ enum SeedImporter {
         ConstructionIndexG1Loader.clearCacheForTesting()
         ConstructionDataSource.clearCacheForTesting()
         SegmentationDataSource.clearCacheForTesting()
+        SegmentationJourneyLoader.clearCacheForTesting()
     }
     #endif
 }

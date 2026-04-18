@@ -8,29 +8,39 @@
 import SwiftData
 import SwiftUI
 
+private enum RootTab: Hashable {
+    case exercises
+    case currentDeck
+    #if DEBUG
+    case debug
+    #endif
+}
+
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var session = StudySessionStore()
     @State private var isPreparingLibrary = true
     @State private var showLibraryLoadAlert = false
     @State private var libraryLoadErrorMessage = ""
+    /// Keep launch (and any ambiguous tab state) on **Exercises** — the main entry screen.
+    @State private var selectedTab: RootTab = .exercises
 
     var body: some View {
-        TabView {
-            Tab("Exercises", systemImage: "square.grid.2x2") {
+        TabView(selection: $selectedTab) {
+            Tab("Exercises", systemImage: "square.grid.2x2", value: RootTab.exercises) {
                 NavigationStack {
                     ExerciseHomeView(session: session, isLibraryPreparing: isPreparingLibrary)
                 }
             }
 
-            Tab("Current deck", systemImage: "square.stack") {
+            Tab("Current deck", systemImage: "square.stack", value: RootTab.currentDeck) {
                 NavigationStack {
                     CurrentDeckListView()
                 }
             }
 
             #if DEBUG
-            Tab("Debug", systemImage: "ladybug") {
+            Tab("Debug", systemImage: "ladybug", value: RootTab.debug) {
                 NavigationStack {
                     DebugTabView()
                 }

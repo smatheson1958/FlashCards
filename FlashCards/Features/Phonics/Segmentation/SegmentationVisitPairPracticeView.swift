@@ -15,6 +15,10 @@ struct SegmentationVisitPairPracticeView: View {
     let word1: String
     let segments0: [String]
     let segments1: [String]
+    /// When false (e.g. optional review after the hub is complete), successes are not written to `ModeWordProgress`.
+    var recordsProgress: Bool = true
+    /// Prefixes navigation titles with “Review ·” when true.
+    var isReviewSession: Bool = false
 
     @Bindable private var appearance = StudyAppearanceSettings.shared
     @Environment(\.modelContext) private var modelContext
@@ -30,13 +34,15 @@ struct SegmentationVisitPairPracticeView: View {
                     dismissAfterSuccess: false,
                     viewIdSuffix: "a",
                     onSuccess: {
-                        ModeWordProgressService.recordSuccessfulAttempt(
-                            soundOrderIndex: soundOrderIndex,
-                            mode: .segmentation,
-                            word: word0,
-                            context: modelContext
-                        )
-                        try? modelContext.save()
+                        if recordsProgress {
+                            ModeWordProgressService.recordSuccessfulAttempt(
+                                soundOrderIndex: soundOrderIndex,
+                                mode: .segmentation,
+                                word: word0,
+                                context: modelContext
+                            )
+                            try? modelContext.save()
+                        }
                         activeSlot = 1
                     }
                 )
@@ -47,20 +53,25 @@ struct SegmentationVisitPairPracticeView: View {
                     dismissAfterSuccess: true,
                     viewIdSuffix: "b",
                     onSuccess: {
-                        ModeWordProgressService.recordSuccessfulAttempt(
-                            soundOrderIndex: soundOrderIndex,
-                            mode: .segmentation,
-                            word: word1,
-                            context: modelContext
-                        )
-                        try? modelContext.save()
+                        if recordsProgress {
+                            ModeWordProgressService.recordSuccessfulAttempt(
+                                soundOrderIndex: soundOrderIndex,
+                                mode: .segmentation,
+                                word: word1,
+                                context: modelContext
+                            )
+                            try? modelContext.save()
+                        }
                     }
                 )
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(appearance.backgroundColor)
-        .navigationTitle(activeSlot == 0 ? "1 of 2 · \(word0.capitalized)" : "2 of 2 · \(word1.capitalized)")
+        .navigationTitle(
+            (isReviewSession ? "Review · " : "")
+                + (activeSlot == 0 ? "1 of 2 · \(word0.capitalized)" : "2 of 2 · \(word1.capitalized)")
+        )
         .navigationBarTitleDisplayMode(.inline)
         .studyAppearanceToolbar()
     }

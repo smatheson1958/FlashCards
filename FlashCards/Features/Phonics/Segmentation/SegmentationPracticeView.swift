@@ -178,16 +178,85 @@ struct SegmentationPracticeListView: View {
 
 // MARK: - Hub (words) + optional sound browser
 
-/// One visit’s two-word pair for the hub list (opens `SegmentationVisitPairPracticeView`).
-private struct SegmentationHubPairRow: Identifiable, Hashable {
+private enum SegmentationExerciseHubConfig {
+    /// One recorded success completes that word for the hub (solid green square). Revisit flow may use counts later.
+    static let successesPerHubWord = 1
+}
+
+/// One sound’s visit pairs for the hub list (opens `SegmentationVisitPairPracticeView` at the next incomplete visit).
+private struct SegmentationHubSoundRow: Identifiable, Hashable {
     let id: String
     let soundLabel: String
     let orderIndex: Int
+    let visitPairs: [SegmentationHubVisitPair]
+}
+
+private struct SegmentationHubVisitPair: Hashable {
     let visitIndex: Int
     let word0: String
     let word1: String
     let segments0: [String]
     let segments1: [String]
+}
+
+private func hubTenWordsWithSegments(for row: SegmentationHubSoundRow) -> [(word: String, segments: [String])] {
+    var out: [(word: String, segments: [String])] = []
+    out.reserveCapacity(row.visitPairs.count * 2)
+    for p in row.visitPairs {
+        out.append((word: p.word0, segments: p.segments0))
+        out.append((word: p.word1, segments: p.segments1))
+    }
+    return out
+}
+
+/// Two distinct words from the hub’s list, in random order, for a no-progress review session.
+private func pickRandomHubReviewPair(from row: SegmentationHubSoundRow) -> (word0: String, segments0: [String], word1: String, segments1: [String])? {
+    let items = hubTenWordsWithSegments(for: row)
+    guard items.count >= 2 else { return nil }
+    let i = Int.random(in: 0..<items.count)
+    var j = Int.random(in: 0..<items.count)
+    while j == i {
+        j = Int.random(in: 0..<items.count)
+    }
+    var pair = [items[i], items[j]]
+    pair.shuffle()
+    return (pair[0].word, pair[0].segments, pair[1].word, pair[1].segments)
+}
+
+/// After all ten hub words are done, opens a random two-word pair without recording progress.
+private struct SegmentationHubReviewPairSessionView: View {
+    let row: SegmentationHubSoundRow
+
+    @State private var picked: (word0: String, segments0: [String], word1: String, segments1: [String])?
+
+    var body: some View {
+        Group {
+            if hubTenWordsWithSegments(for: row).count < 2 {
+                ContentUnavailableView(
+                    "Review unavailable",
+                    systemImage: "rectangle.split.3x1",
+                    description: Text("This sound needs at least two practice words for a random pair.")
+                )
+            } else if let picked {
+                SegmentationVisitPairPracticeView(
+                    soundOrderIndex: row.orderIndex,
+                    visitIndex: 0,
+                    word0: picked.word0,
+                    word1: picked.word1,
+                    segments0: picked.segments0,
+                    segments1: picked.segments1,
+                    recordsProgress: false,
+                    isReviewSession: true
+                )
+            } else {
+                ProgressView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .task {
+                        picked = pickRandomHubReviewPair(from: row)
+                    }
+            }
+        }
+    }
 }
 
 private struct SegmentationExerciseHubView: View {
@@ -213,21 +282,20 @@ private struct SegmentationExerciseHubView: View {
         }
     }
 
-    /// Visit pairs from the journey seed (or synthetic pairs); both words must have segmentation data.
-    private var hubPairRows: [SegmentationHubPairRow] {
-        var rows: [SegmentationHubPairRow] = []
-        rows.reserveCapacity(workingSounds.count * 5)
+    /// One row per sound: five visit pairs (when all have segments), merged progress in the list cell.
+    private var hubSoundRows: [SegmentationHubSoundRow] {
+        var rows: [SegmentationHubSoundRow] = []
+        rows.reserveCapacity(workingSounds.count)
         for card in workingSounds {
             let pairs = SegmentationJourneyLoader.fiveVisitWordPairs(soundOrderIndex: card.orderIndex)
+            var visitPairs: [SegmentationHubVisitPair] = []
+            visitPairs.reserveCapacity(pairs.count)
             for p in pairs {
                 let s0 = SegmentationDataSource.resolvedSegments(forWord: p.word0, soundOrderIndex: card.orderIndex)
                 let s1 = SegmentationDataSource.resolvedSegments(forWord: p.word1, soundOrderIndex: card.orderIndex)
                 guard !s0.isEmpty, !s1.isEmpty else { continue }
-                rows.append(
-                    SegmentationHubPairRow(
-                        id: "\(card.orderIndex)|visit\(p.visitIndex)",
-                        soundLabel: card.sound,
-                        orderIndex: card.orderIndex,
+                visitPairs.append(
+                    SegmentationHubVisitPair(
                         visitIndex: p.visitIndex,
                         word0: p.word0,
                         word1: p.word1,
@@ -236,6 +304,15 @@ private struct SegmentationExerciseHubView: View {
                     )
                 )
             }
+            guard !visitPairs.isEmpty else { continue }
+            rows.append(
+                SegmentationHubSoundRow(
+                    id: "\(card.orderIndex)",
+                    soundLabel: card.sound,
+                    orderIndex: card.orderIndex,
+                    visitPairs: visitPairs
+                )
+            )
         }
         return rows
     }
@@ -250,7 +327,7 @@ private struct SegmentationExerciseHubView: View {
 
     var body: some View {
         Group {
-            if hubPairRows.isEmpty && segmentationReminders.isEmpty {
+            if hubSoundRows.isEmpty && segmentationReminders.isEmpty {
                 ContentUnavailableView(
                     "No segmentation yet",
                     systemImage: "rectangle.split.3x1",
@@ -262,7 +339,7 @@ private struct SegmentationExerciseHubView: View {
                 List {
                     Section {
                         Text(
-                            "The journey follows bundled visit pairs (five per sound) when available. Below, each sound lists visits with per-word progress."
+                            "The journey follows bundled visit pairs (five per sound) when available. Below, each sound shows merged progress for all visits."
                         )
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
@@ -285,53 +362,28 @@ private struct SegmentationExerciseHubView: View {
 
                     Section {
                         Text(
-                            "Each row is one visit for a sound. The two practice words open in order; then you return here."
+                            "Each row is one sound. Tap to open the next incomplete visit; the two practice words run in order, then you return here. Ten squares: one per word (two per visit). One successful practice fills that square green. When all ten are green, tap the row for a random two-word review (no extra progress recorded)."
                         )
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                         .listRowBackground(Color.clear)
                     }
 
-                    if !hubPairRows.isEmpty {
+                    if !hubSoundRows.isEmpty {
                         Section("Sounds") {
-                            ForEach(hubPairRows) { row in
-                                NavigationLink {
-                                    SegmentationVisitPairPracticeView(
-                                        soundOrderIndex: row.orderIndex,
-                                        visitIndex: row.visitIndex,
-                                        word0: row.word0,
-                                        word1: row.word1,
-                                        segments0: row.segments0,
-                                        segments1: row.segments1
-                                    )
-                                } label: {
-                                    HStack(alignment: .center, spacing: 12) {
-                                        VStack(alignment: .leading, spacing: 4) {
-                                            Text("Sound \(row.soundLabel)")
-                                                .font(appearance.bodyFont(size: 17, weight: .semibold))
-                                            Text("Visit \(row.visitIndex)")
-                                                .font(appearance.bodyFont(size: 13, weight: .medium))
-                                                .foregroundStyle(.secondary)
-                                        }
-                                        Spacer(minLength: 8)
-                                        HStack(spacing: 8) {
-                                            SegmentationHubFiveBoxes(
-                                                filledCount: segmentationProgressCount(
-                                                    soundOrderIndex: row.orderIndex,
-                                                    word: row.word0
-                                                )
-                                            )
-                                            SegmentationHubFiveBoxes(
-                                                filledCount: segmentationProgressCount(
-                                                    soundOrderIndex: row.orderIndex,
-                                                    word: row.word1
-                                                )
-                                            )
-                                        }
+                            ForEach(hubSoundRows) { row in
+                                if hubSoundIsFullyComplete(for: row) {
+                                    NavigationLink {
+                                        SegmentationHubReviewPairSessionView(row: row)
+                                    } label: {
+                                        hubSoundRowLabel(row: row)
                                     }
-                                    .accessibilityLabel(
-                                        "Sound \(row.soundLabel), visit \(row.visitIndex). Words \(row.word0) and \(row.word1)."
-                                    )
+                                } else {
+                                    NavigationLink {
+                                        segmentationHubPairPracticeDestination(for: row)
+                                    } label: {
+                                        hubSoundRowLabel(row: row)
+                                    }
                                 }
                             }
                         }
@@ -361,6 +413,26 @@ private struct SegmentationExerciseHubView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(appearance.backgroundColor)
+    }
+
+    @ViewBuilder
+    private func hubSoundRowLabel(row: SegmentationHubSoundRow) -> some View {
+        HStack(alignment: .center, spacing: 12) {
+            Text("Sound \(row.soundLabel)")
+                .font(appearance.bodyFont(size: 17, weight: .semibold))
+                .frame(maxWidth: .infinity, alignment: .leading)
+            HStack(spacing: 4) {
+                ForEach(Array(hubWordCompletionFlags(for: row).enumerated()), id: \.offset) { _, isDone in
+                    SegmentationHubWordProgressSquare(isCompleted: isDone)
+                }
+            }
+        }
+        .accessibilityLabel(accessibilityLabelForHubSoundRow(row))
+    }
+
+    private func hubSoundIsFullyComplete(for row: SegmentationHubSoundRow) -> Bool {
+        let flags = hubWordCompletionFlags(for: row)
+        return !flags.isEmpty && flags.allSatisfy { $0 }
     }
 
     @ViewBuilder
@@ -401,29 +473,82 @@ private struct SegmentationExerciseHubView: View {
         }
         return 0
     }
+
+    /// Visit order: for each visit, first word then second word (ten flags when five visits are present).
+    private func hubWordCompletionFlags(for row: SegmentationHubSoundRow) -> [Bool] {
+        let need = SegmentationExerciseHubConfig.successesPerHubWord
+        var flags: [Bool] = []
+        flags.reserveCapacity(row.visitPairs.count * 2)
+        for p in row.visitPairs {
+            flags.append(segmentationProgressCount(soundOrderIndex: row.orderIndex, word: p.word0) >= need)
+            flags.append(segmentationProgressCount(soundOrderIndex: row.orderIndex, word: p.word1) >= need)
+        }
+        return flags
+    }
+
+    @ViewBuilder
+    private func segmentationHubPairPracticeDestination(for row: SegmentationHubSoundRow) -> some View {
+        let pair = defaultHubVisitPair(for: row)
+        SegmentationVisitPairPracticeView(
+            soundOrderIndex: row.orderIndex,
+            visitIndex: pair.visitIndex,
+            word0: pair.word0,
+            word1: pair.word1,
+            segments0: pair.segments0,
+            segments1: pair.segments1
+        )
+    }
+
+    /// First visit where either word has not yet completed the hub (one success); otherwise the first visit so practice can still be opened.
+    private func defaultHubVisitPair(for row: SegmentationHubSoundRow) -> SegmentationHubVisitPair {
+        let need = SegmentationExerciseHubConfig.successesPerHubWord
+        for p in row.visitPairs {
+            let c0 = segmentationProgressCount(soundOrderIndex: row.orderIndex, word: p.word0)
+            let c1 = segmentationProgressCount(soundOrderIndex: row.orderIndex, word: p.word1)
+            if c0 < need || c1 < need { return p }
+        }
+        return row.visitPairs[0]
+    }
+
+    private func accessibilityLabelForHubSoundRow(_ row: SegmentationHubSoundRow) -> String {
+        let need = SegmentationExerciseHubConfig.successesPerHubWord
+        var parts: [String] = []
+        parts.reserveCapacity(row.visitPairs.count)
+        var squareIndex = 1
+        for p in row.visitPairs {
+            let c0 = segmentationProgressCount(soundOrderIndex: row.orderIndex, word: p.word0)
+            let c1 = segmentationProgressCount(soundOrderIndex: row.orderIndex, word: p.word1)
+            let d0 = c0 >= need ? "done" : "not done"
+            let d1 = c1 >= need ? "done" : "not done"
+            parts.append(
+                "Visit \(p.visitIndex): \(p.word0) \(d0), \(p.word1) \(d1); squares \(squareIndex)–\(squareIndex + 1)"
+            )
+            squareIndex += 2
+        }
+        let reviewHint = hubSoundIsFullyComplete(for: row)
+            ? " All words complete. Tap for a random two-word review."
+            : ""
+        return "Sound \(row.soundLabel). " + parts.joined(separator: ". ") + "." + reviewHint
+    }
 }
 
-private struct SegmentationHubFiveBoxes: View {
-    let filledCount: Int
+/// One small square per word: solid green when that word has at least one recorded success for the hub.
+private struct SegmentationHubWordProgressSquare: View {
+    let isCompleted: Bool
 
-    private static let boxSize: CGFloat = 10
-    private static let boxSpacing: CGFloat = 3
-
-    private var cap: Int { FlashCardsConstants.modeExerciseWordMasteryCount }
+    private static let boxSize: CGFloat = 12
 
     var body: some View {
-        HStack(spacing: Self.boxSpacing) {
-            ForEach(0..<cap, id: \.self) { index in
-                RoundedRectangle(cornerRadius: 2, style: .continuous)
-                    .fill(index < filledCount ? Color.green : Color.clear)
-                    .frame(width: Self.boxSize, height: Self.boxSize)
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 2, style: .continuous)
-                            .stroke(Color.secondary.opacity(0.5), lineWidth: 1)
-                    }
+        RoundedRectangle(cornerRadius: 2, style: .continuous)
+            .fill(isCompleted ? Color.green : Color.clear)
+            .frame(width: Self.boxSize, height: Self.boxSize)
+            .overlay {
+                if !isCompleted {
+                    RoundedRectangle(cornerRadius: 2, style: .continuous)
+                        .stroke(Color.secondary.opacity(0.5), lineWidth: 1)
+                }
             }
-        }
-        .accessibilityLabel("\(min(filledCount, cap)) of \(cap) for this word")
+            .accessibilityLabel(isCompleted ? "Word completed" : "Word not completed")
     }
 }
 

@@ -21,7 +21,7 @@ final class SegmentationSoundPlayer {
     private(set) var lastPlaybackFailed = false
 
     static let wavSubdirectory = "Sounds/Segmentation"
-    static let defaultPauseAfterClip: TimeInterval = 1.0
+    nonisolated static let defaultPauseAfterClip: TimeInterval = 1.0
 
     private static let log = Logger(
         subsystem: Bundle.main.bundleIdentifier ?? "FlashCards",

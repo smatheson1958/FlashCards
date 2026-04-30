@@ -32,6 +32,13 @@ struct FlashCardStudyView: View {
     @State private var wordAutoPlayCountdownPhase = 0
 
     private let swipeThreshold: CGFloat = 96
+    /// On the answer face: swipes and edge arrow actions stay off until the standard delay finishes or the learner plays the word (e.g. tap).
+    private var backAnswerActionsEnabled: Bool {
+        guard showingBack else { return true }
+        return wordAutoPlayCountdownPhase >= FlashCardsConstants.StandardDelay.tickCount
+            || wordSoundHeardThisBack
+    }
+
     /// Pause after tap, before playing the letter sound.
     private let tapPauseBeforeSound: TimeInterval = 0.5
     /// Pause after the sound ends, before flipping the card.
@@ -214,7 +221,7 @@ struct FlashCardStudyView: View {
     }
 
     /// Tap strips at the card edges + arrow visuals when the answer face is visible (left = wrong, right = correct).
-    private var cardEdgeSwipeOverlay: some View {
+    private func cardEdgeSwipeOverlay(answerActionsEnabled: Bool) -> some View {
         ZStack {
             GeometryReader { geo in
                 let w = geo.size.width
@@ -229,6 +236,7 @@ struct FlashCardStudyView: View {
                             .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
+                    .disabled(!answerActionsEnabled)
                     .accessibilityLabel("Wrong")
                     .accessibilityHint("Same as swiping left.")
 
@@ -244,6 +252,7 @@ struct FlashCardStudyView: View {
                             .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
+                    .disabled(!answerActionsEnabled)
                     .accessibilityLabel("Correct")
                     .accessibilityHint("Same as swiping right.")
                 }
@@ -251,12 +260,12 @@ struct FlashCardStudyView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
 
-            cardEdgeSwipeArrowIcons
+            cardEdgeSwipeArrowIcons(answerActionsEnabled: answerActionsEnabled)
                 .allowsHitTesting(false)
         }
     }
 
-    private var cardEdgeSwipeArrowIcons: some View {
+    private func cardEdgeSwipeArrowIcons(answerActionsEnabled: Bool) -> some View {
         let w = dragOffset.width
         let dragBias: CGFloat = 14
         let wrongTint = Color(red: 0.78, green: 0.22, blue: 0.24)
@@ -266,14 +275,16 @@ struct FlashCardStudyView: View {
                 systemImage: "arrow.left",
                 accent: wrongTint,
                 emphasized: w < -dragBias,
-                dimmed: w > dragBias
+                dimmed: w > dragBias,
+                actionsLocked: !answerActionsEnabled
             )
             Spacer(minLength: 0)
             swipeEdgeArrow(
                 systemImage: "arrow.right",
                 accent: correctTint,
                 emphasized: w > dragBias,
-                dimmed: w < -dragBias
+                dimmed: w < -dragBias,
+                actionsLocked: !answerActionsEnabled
             )
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
@@ -282,13 +293,23 @@ struct FlashCardStudyView: View {
         .accessibilityHidden(true)
     }
 
-    private func swipeEdgeArrow(systemImage: String, accent: Color, emphasized: Bool, dimmed: Bool) -> some View {
+    private func swipeEdgeArrow(
+        systemImage: String,
+        accent: Color,
+        emphasized: Bool,
+        dimmed: Bool,
+        actionsLocked: Bool
+    ) -> some View {
         Image(systemName: systemImage)
             .font(.system(size: 28, weight: .semibold))
             .symbolRenderingMode(.monochrome)
             .foregroundStyle(accent)
-            .opacity(dimmed ? 0.38 : (emphasized ? 1 : 0.82))
-            .scaleEffect(emphasized ? 1.07 : 1)
+            .opacity(
+                actionsLocked
+                    ? 0.28
+                    : (dimmed ? 0.38 : (emphasized ? 1 : 0.82))
+            )
+            .scaleEffect(emphasized && !actionsLocked ? 1.07 : 1)
     }
 
     private func cardFace(card: CardProgress, isReview: Bool) -> some View {
@@ -313,7 +334,7 @@ struct FlashCardStudyView: View {
             .rotation3DEffect(.degrees(flipDegrees), axis: (x: 0, y: 1, z: 0))
 
             if showingBack {
-                cardEdgeSwipeOverlay
+                cardEdgeSwipeOverlay(answerActionsEnabled: backAnswerActionsEnabled)
             }
         }
         .frame(maxWidth: 520)
@@ -348,12 +369,16 @@ struct FlashCardStudyView: View {
     private var swipeGesture: some Gesture {
         DragGesture(minimumDistance: 24)
             .onChanged { value in
-                guard showingBack else { return }
+                guard showingBack, backAnswerActionsEnabled else { return }
                 dragOffset = CGSize(width: value.translation.width, height: value.translation.height * 0.15)
             }
             .onEnded { value in
                 guard showingBack else {
                     dragOffset = .zero
+                    return
+                }
+                guard backAnswerActionsEnabled else {
+                    withAnimation(.spring) { dragOffset = .zero }
                     return
                 }
                 let w = value.translation.width

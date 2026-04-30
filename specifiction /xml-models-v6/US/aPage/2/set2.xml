@@ -1,0 +1,81 @@
+
+<Lesson stage="2" page="2" type="Reading Check">
+<APageParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3"  pencil="p3" skipIntro="true">
+   <paragraph>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>The dark streets are empty.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>Plate glass windows let me see the counter of the all-night diner where one man sits alone, hunched.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>There is a couple sitting on the other side of the counter.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>They appear to be in the middle of speaking to each other.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+	  </sentence>
+	  <sentence>
+		  <text>The lights are harsh and make the room look sharp and cold.</text>
+		  <clip>uk/assets/sound/whiteSpace.mp3</clip>
+	  </sentence>
+	  <sentence>
+		  <text>It is still, very still, like something is about to happen.</text>
+		  <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>      
+   </paragraph>
+   <paragraph>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>I go in and take a seat.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>I sit, so I can hear the couple, but watch the man.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>He can see me clearly, too.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+       <sentence>
+		  <text>I tip my hat back and sag slightly on the stool.</text>
+		  <clip>uk/assets/sound/whiteSpace.mp3</clip>
+	   </sentence>
+	   <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>   
+      <sentence>
+         <text>"I'll have a coffee," I say to the guy behind the counter.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+		  <text>CR</text>
+		  <clip></clip>
+	  </sentence>
+	  <sentence>
+		  <text>CR</text>
+		  <clip></clip>
+	  </sentence>
+	  <sentence>
+         <text>"Do I know you?" asks the man.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+   </paragraph>
+</APageParagraph>
+</Lesson>

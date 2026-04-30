@@ -1,0 +1,65 @@
+
+<Lesson stage="1" page="8" type="Reading Check">
+<APageParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3"  pencil="p3" skipIntro="true">
+   <paragraph>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>Did you say you can fix my bike for me?</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>I will be pleased if you can.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>      
+      <sentence>
+         <text>You see, I can't get home on foot.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>      
+      <sentence>
+         <text>I live too far away and need my bike to get there.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>      
+      <sentence>
+         <text>Mom is at work till five so she can't get me.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+	   <sentence>
+		 <text>I'm in a fix.</text>
+		 <clip>uk/assets/sound/whiteSpace.mp3</clip>
+	   </sentence>
+   </paragraph>
+   <paragraph>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>I think a little bit of glass made a hole in the tube.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>If you can mend it, I will soon be on my way.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+       <sentence>
+         <text>You have been very good to take the time to do this for me.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>Thanks and have a good day.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+   </paragraph>
+</APageParagraph>
+</Lesson>

@@ -1,0 +1,73 @@
+
+<Lesson stage="1" page="5" type="Reading Check">
+<APageParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3"  pencil="p3" skipIntro="true">
+   <paragraph>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>Dan has gone off to see his pal.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>Will you come with me to see them as well?</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>      
+      <sentence>
+         <text>You will soon get there if you run.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+       <sentence>
+         <text>I can give you a hand if the hill is too steep.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+   </paragraph>
+   <paragraph>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>Come on, I can pull you up.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>There, that’s not too bad is it?</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>Let’s run to get there soon.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>Dan will have gone soon and I have to see him.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>Mom will get mad if I miss him.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+       <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>
+      <sentence>
+         <text>CR</text>
+         <clip></clip>
+      </sentence>   
+      <sentence>
+         <text>See, there's Dan in the green hut.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+      <sentence>
+         <text>He keeps his things in that hut at the end of the path.</text>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </sentence>
+   </paragraph>
+</APageParagraph>
+</Lesson>

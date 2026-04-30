@@ -1,0 +1,110 @@
+
+<Lesson stage="1" page="1" type="Reading Check">
+<APageReadingBlock activityIntroClip="uk/assets/sound/whiteSpace.mp3"  pencil="p3" skipIntro="false">
+   <block uofs="a" regex="a" uofsClip="uk/assets/sound/whiteSpace.mp3" introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+      <word>
+         <text>am</text>
+          <pattern>[a]m</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>had</text>
+          <pattern>h[a]d</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>mat</text>
+          <pattern>m[a]t</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+   </block>
+   <block uofs="a" regex="a" uofsClip="uk/assets/sound/whiteSpace.mp3" introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+      <word>
+         <text>bad</text>
+          <pattern>b[a]d</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>hat</text>
+          <pattern>h[a]t</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>lab</text>
+          <pattern>l[a]d</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+   </block>
+   <block uofs="a" regex="a" uofsClip="uk/assets/sound/whiteSpace.mp3" introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+      <word>
+         <text>ham</text>
+          <pattern>h[a]m</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>sag</text>
+          <pattern>s[a]g</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>than</text>
+          <pattern>th[a]n</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+   </block>
+      <block uofs="a" regex="a" uofsClip="uk/assets/sound/whiteSpace.mp3" introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+      <word>
+         <text>have</text>
+          <pattern>h[a]ve</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>rat</text>
+          <pattern>r[a]t</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>cab</text>
+          <pattern>c[a]b</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+   </block>
+</APageReadingBlock>
+<APageReadingBlock activityIntroClip="uk/assets/sound/whiteSpace.mp3"  pencil="p1" skipIntro="false">
+   <block uofs="o" regex="o" uofsClip="uk/assets/sound/whiteSpace.mp3" introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+      <word>
+         <text>on</text>
+          <pattern>[o]n</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>off</text>
+          <pattern>[o]ff</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>dog</text>
+          <pattern>d[o]g</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+   </block>
+   <block uofs="o" regex="o" uofsClip="uk/assets/sound/whiteSpace.mp3" introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+      <word>
+         <text>fog</text>
+          <pattern>f[o]g</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>gone</text>
+          <pattern>g[o]ne</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+      <word>
+         <text>job</text>
+          <pattern>j[o]b</pattern>
+         <clip>uk/assets/sound/whiteSpace.mp3</clip>
+      </word>
+   </block>
+
+</APageReadingBlock>
+</Lesson>

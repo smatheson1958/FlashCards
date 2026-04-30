@@ -1,0 +1,3734 @@
+<syllabys>
+    <Lesson stage="1" page="1" type="Reading Check">
+        <ReadingCheckBlock activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="false">
+            <block uofs="a" regex="a" uofsClip="uk/assets/sound/whiteSpace.mp3"
+                   introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3"
+                   newIntro="true">
+                <word>
+                    <text>am</text>
+                    <pattern>[a]m</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>had</text>
+                    <pattern>h[a]d</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>mat</text>
+                    <pattern>m[a]t</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+            <block uofs="a" regex="a" uofsClip="uk/assets/sound/whiteSpace.mp3"
+                   introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3"
+                   newIntro="true">
+                <word>
+                    <text>bad</text>
+                    <pattern>b[a]d</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>hat</text>
+                    <pattern>h[a]t</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>lab</text>
+                    <pattern>l[a]d</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+            <block uofs="a" regex="a" uofsClip="uk/assets/sound/whiteSpace.mp3"
+                   introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3"
+                   newIntro="true">
+                <word>
+                    <text>ham</text>
+                    <pattern>h[a]m</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>sag</text>
+                    <pattern>s[a]g</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>than</text>
+                    <pattern>th[a]n</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+            <block uofs="a" regex="a" uofsClip="uk/assets/sound/whiteSpace.mp3"
+                   introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3"
+                   newIntro="true">
+                <word>
+                    <text>have</text>
+                    <pattern>h[a]ve</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>rat</text>
+                    <pattern>r[a]t</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>cab</text>
+                    <pattern>c[a]b</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+        </ReadingCheckBlock>
+        <ReadingCheckBlock activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p1" skipIntro="false">
+            <block uofs="o" regex="o" uofsClip="uk/assets/sound/whiteSpace.mp3"
+                   introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3"
+                   newIntro="true">
+                <word>
+                    <text>on</text>
+                    <pattern>[o]n</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>off</text>
+                    <pattern>[o]ff</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>dog</text>
+                    <pattern>d[o]g</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+            <block uofs="o" regex="o" uofsClip="uk/assets/sound/whiteSpace.mp3"
+                   introClip="uk/assets/sound/whiteSpace.mp3" activityIntroClip="uk/assets/sound/whiteSpace.mp3"
+                   newIntro="true">
+                <word>
+                    <text>fog</text>
+                    <pattern>f[o]g</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>gone</text>
+                    <pattern>g[o]ne</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>job</text>
+                    <pattern>j[o]b</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+
+        </ReadingCheckBlock>
+    </Lesson>
+
+    <Lesson stage="1" page="10" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Lola, tell me why you are in such a bad mood."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Well, I keep trying to do this math and I just can't do it."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Well, it’s no good asking me, is it?</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I’m no good at doing things like that.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But I don't need to tell you that, do I Lola?"</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"No, I don’t think you do.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>When you add 2 and 2 you seem to get five."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Hmm, yes.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But that keeps me well away from anything to do with math, and that's the way I like it."
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Maybe you're the smart kid, after all.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But just let me get on with what I have to do for the class test."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="1" page="11" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"What a good spot this is for a camp site."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Yes, we love it for the fishing.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This park can get very busy but we avoid those peak times.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Do you want to help put up the tent?</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We have to be sure to lock the food away from the bears and even Bigfoot."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Bigfoot?</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>That's just a tall story.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You don't get ten foot tall apes in America."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"That’s what you think.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You come over here and take a look at these marks on the ground.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>What do you think of the tall story now?"</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="1" page="12" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>My sister has a cat called Ritz.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>With a name like that it sounds as if it must be a very fine cat with good manners.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>No way!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>That cat is a mean, cold hunter.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Last week, I saw it crawling across the lawn.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>When I had a second look, I saw it had a mouse in its jaws.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It was awful.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It looked at me and then it ran off.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Next time I saw it, it was sitting on the grass in the sunshine.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It was blinking and yawning and washing its paws.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It gave me a look as if to say, "What a lovely day it is for a cat to sit in the sun and be
+                        good!"
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It really looked like Ritz was smiling at me.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="1" page="2" type="Check Reading">
+        <ReadingBlock activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="false">
+            <block uofs="e" regex="e" uofsClip="uk/assets/sound/page/6/e.mp3" introClip="uk/assets/sound/whiteSpace.mp3"
+                   activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+                <word>
+                    <text>leg</text>
+                    <pattern>l[e]g</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>yet</text>
+                    <pattern>y[e]t</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>red</text>
+                    <pattern>r[e]d</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+            <block uofs="e" regex="e" uofsClip="uk/assets/sound/page/6/e.mp3" introClip="uk/assets/sound/whiteSpace.mp3"
+                   activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+                <word>
+                    <text>set</text>
+                    <pattern>s[e]t</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>yes</text>
+                    <pattern>y[e]s</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>get</text>
+                    <pattern>g[e]t</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+            <block uofs="e" regex="e" uofsClip="uk/assets/sound/page/6/e.mp3" introClip="uk/assets/sound/whiteSpace.mp3"
+                   activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+                <word>
+                    <text>them</text>
+                    <pattern>th[e]m</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>jet</text>
+                    <pattern>j[e]t</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>ten</text>
+                    <pattern>t[e]n</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+            <block uofs="u" regex="u" uofsClip="uk/assets/sound/page/1/a.mp3" introClip="uk/assets/sound/whiteSpace.mp3"
+                   activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+                <word>
+                    <text>hug</text>
+                    <pattern>h[u]g</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>fun</text>
+                    <pattern>f[u]n</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>rut</text>
+                    <pattern>r[u]t</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+        </ReadingBlock>
+        <ReadingBlock activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p1" skipIntro="false">
+            <block uofs="u" regex="u" uofsClip="uk/assets/sound/page/4/o.mp3" introClip="uk/assets/sound/whiteSpace.mp3"
+                   activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+                <word>
+                    <text>us</text>
+                    <pattern>[u]s</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>sun</text>
+                    <pattern>s[u]n</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>rug</text>
+                    <pattern>r[u]g</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+            <block uofs="u" regex="u" uofsClip="uk/assets/sound/page/4/o.mp3" introClip="uk/assets/sound/whiteSpace.mp3"
+                   activityIntroClip="uk/assets/sound/whiteSpace.mp3" newIntro="true">
+                <word>
+                    <text>run</text>
+                    <pattern>r[u]n</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>put</text>
+                    <pattern>p[u]t</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+                <word>
+                    <text>pull</text>
+                    <pattern>p[u]ll</pattern>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </word>
+            </block>
+
+        </ReadingBlock>
+    </Lesson>
+
+    <Lesson stage="1" page="3" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The sun is up and Jim is up.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Jim’s dad has a red truck but it has a lot of mud on it.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Jim thinks he will wax the truck.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>He gets the mud off with a wet rag.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then he gets the lid off the can of wax.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He puts a lot of wax on the truck.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Then Jim sits in the sun as he is hot!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He thinks the wax can come off and gets his rag.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The truck is big and red and dad gives Jim a hug.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="1" page="4" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Tom has a dog, Zip.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Tom sends his dog off on a run and tells him not to get wet.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Oh no! The hut is a mess and Tom is mad at Zip.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We will have to give Zip a bath.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>And, we have to try and get rid of this mess in the hut.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Tom will have to try and settle that dog.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But I think Zip is full of fun.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I think I will get a dog like Zip, as well.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="1" page="5" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Dan has gone off to see his pal.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Will you come with me to see them as well?</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You will soon get there if you run.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I can give you a hand if the hill is too steep.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Come on, I can pull you up.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>There, that’s not too bad is it?</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Let’s run to get there soon.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Dan will have gone soon and I have to see him.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Mom will get mad if I miss him.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>See, there's Dan in the green hut.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He keeps his things in that hut at the end of the path.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="1" page="6" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>I think I will ask that boy if he will lend us his ball and bat.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I can give him this bottle of soda if he will let us have the ball.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He can watch us to see we don't keep his ball.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Come on then, send the ball to me.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I will bat.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>All set!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Toss the ball to me and give it a spin.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>That was a dud!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>All set?</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Run and get that!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I tag you- Out!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>If I am out, I think I have had it.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Let's give the boy his ball back and sit on that log.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="1" page="7" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>This was a very funny dream.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>There was a big fat cat in it, but he was green.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He did not like milk.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I had a can of cat meat for him there too, but he didn't like that.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>He wanted to eat green grass and wood all the time.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He seemed to like thick, dry, wood.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then he let some wood drop on my hand and I woke up.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>There was my dog with her bone.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I had gone to sleep at the foot of the tree in the hot sun.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>That was a funny cat, and a funny dream.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="1" page="8" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Did you say you can fix my bike for me?</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I will be pleased if you can.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You see, I can't get home on foot.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I live too far away and need my bike to get there.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Mom is at work till five so she can't get me.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I'm in a fix.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>I think a little bit of glass made a hole in the tube.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>If you can mend it, I will soon be on my way.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You have been very good to take the time to do this for me.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Thanks and have a good day.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="1" page="9" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>It's hot and dry today.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The summer has come at last.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Maybe my Mom will say it's OK to take my bike and some food to the river.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I will ask Sara if she wants to come, too.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>There is not a cloud in the sky.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The sun looks as if it is here for ever.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Come on, Mom!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Let's put the food in the backpack.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Give me a soda to drink and away I go!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>All I have to do is get Sara but I bet she is still in bed, fast asleep.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="1" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Madison and Noah have set off to go fishing.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The sun is shining and the air is warm.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They choose a good place beside the brook where the bank is not very steep.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This time they are hoping to get a good catch.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>After a long time they still hadn't gotten any fish, so they begin to shoot the breeze.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"I think this is the wrong place," says Madison.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Just down there where that tree trunk sticks out over the water looks much better.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>That's the sort of dark place where the fish will breed."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then she gets up to have a look.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Maybe," says Noah, "but remember last time when I tried to stretch out too far and fell in?
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I got very wet, and my rod was broken.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You can stick your neck out and be brave if you want to.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But don't blame me if you fall in.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Have a look at those black clouds.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>There's a breeze coming up and it will start to rain soon."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="10" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>I was just a greenhorn American soldier that fateful year.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We had fought the British army and lost and we were worn out.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The General found us a valley for our winter ground but it brought us no peace.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>That was a bitter, bitter winter.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We were holed up in rough cabins made of logs, with cracks so big the wind just howled
+                        straight through the walls.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The winds were sharp and cold and we only had rags to wear.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The only pillows were our knapsacks and our only blankets the snow clouds above us.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Few of us had any shoes.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We made do with raw hide boots which scratched and cut our feet and made them bleed.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We left red trails in the show.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Some days there was nothing to eat but stale bread, and even that we had to share.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>For days on end we lived on salt pork alone.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The folks in Congress sent no money as they had none to spare.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I have never been so hungry in all my life.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We all grew sick with hunger and cold.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We huddled in our cabins, too weak to stand.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Some brave soldiers couldn't make it through the hardship.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>It seemed like our fight for freedom had to die with us.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But in the spring, we got a break from the French and we had some training in fighting.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We got guns and we got stronger in body and in spirit.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We were not going to yield to anyone, ever again.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="11" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>China has far more people than any other country.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It claims, with good cause, to have the longest history in the world.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>In the England of King Alfred, men could write and copy books.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They did this by hand with pen and with paint brush.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>In China, at the same time, they could print books by using wood-cut blocks.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Long before the birth of Christ, the Chinese had trade-routes to Tibet and India.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Then for hundreds of years China and its rulers had little contact with the rest of the
+                        world.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Right across the north of their land they still had the Great Wall of China.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This had been built almost two thousand years ago.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It crosses hills, valleys, rivers, rocks and sand.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Its total length is about five thousand miles.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This gigantic structure is known as the one of the Seven Wonders of the World.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But it is not true that it can be seen from the moon.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>But things have now changed.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>China has become a world power.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It has many new factories, roads, bridges and dams.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>More and more tourists are visiting China and learning about the history of the Chinese
+                        people.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="12" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Ryan and Hunter were resting on the hillside on their way home from baseball practice.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Hunter suddenly pointed down the valley.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>"Look at that idiot with that bus.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Can you imagine bringing a school bus down a country road like this?</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>There's no room for it.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>What if something comes the other way?"</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Just then they saw a car coming much too fast in the other direction.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The school bus and the car went towards each other without either driver knowing it.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The bus and the car almost hit each other at the sharp bend.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The car turned right and smashed partly through a gate and partly through a fence.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The two friends snapped into action.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Ryan tried to phone for help, but there was no signal for his cell phone in such a remote
+                        area.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Ryan and Hunter ran faster than they had ever run before.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They were scared of children being hurt and what they might find.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Hunter remained by the crash, while Ryan sprinted to the nearest town.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It was a good thing he was fit.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>At the coffee shop he dialled 911 and got through right away.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"There’s been an accident about a mile down the road.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>A school bus and a car are smashed up and some people are hurt.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This is an emergency."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The operator said, "Tell me where the crash happened and we'll get help to you real soon."
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"I'll go back and tell them," replied Ryan, and he was soon running back up the road.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="2" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The dark streets are empty.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Plate glass windows let me see the counter of the all-night diner where one man sits alone,
+                        hunched.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>There is a couple sitting on the other side of the counter.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They appear to be in the middle of speaking to each other.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The lights are harsh and make the room look sharp and cold.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It is still, very still, like something is about to happen.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>I go in and take a seat.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I sit, so I can hear the couple, but watch the man.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He can see me clearly, too.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I tip my hat back and sag slightly on the stool.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"I'll have a coffee," I say to the guy behind the counter.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Do I know you?" asks the man.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="3" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Growing crops for food matters to the US.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>In 1870, 70-80 percent of the workers in the US were in farming.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Today, it is just 2-3 percent.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Farmers have become better at getting more food from the same amount of land.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The main job on a farm is to grow and raise food for the US.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They grow many things from corn and salad crops to peanuts.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They also have many dairy and beef cattle, and pigs.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Children used to work on farms where they lived.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Not many of them do that now.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>There are laws in place to make sure that children who live on farms come to no harm.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>A large farm that raises cattle can be known as a ranch.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>A ranch can be hundreds of miles wide.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It lets the cattle roam and feed across the land.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Some ranchers used to be known as cowboys.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They take care of the cattle and make sure they are safe.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then, they have to round up the cattle and go to market.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="4" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Now, many years ago, Paul Bunyan was born in Maine.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He was so big his howls made fish jump and his clapping made windows shake.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He was so big he had to curl up in a lumber truck to sleep.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>His parents took him to live in the woods where he grew up.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>One winter it was so cold the snow was blue.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Paul was staring at this odd sight.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He found an animal stuck in a snow drift.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It was a baby ox, so he brought it back home with him.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The next day, the ox was warm and dry but it had blue hair.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Paul kept his blue ox and called him Babe.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Soon, Babe was the biggest ox there was.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Paul had Babe help with his work and they made a very good team.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Paul and Babe went on to live and work in the logging camps.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Paul set up his own camp near the banks of a river.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The camp was so big, you needed a basket of food with you to walk from one side to the
+                        other.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>People say Paul Bunyan made the shape of this land.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Others say he and Babe cut down all the trees from North and South Dakota.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Some say, he went as far as Alaska.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It all rests on the teller and the tale.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="5" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>I like coming to visit Abigail.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I am so glad to get away from the city with all its crowds and noise.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>All those cars, buses and trucks make noise and smells.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They can knock you down in the blink of an eye.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You have to get out of the way as quick as you can.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Out here it is full of trees and animals.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But you have to watch out for the skunks, because they stink.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>It is the most fun when we come to visit in July.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We come every year for the picnic and fireworks.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Before the fireworks we have hot dogs, coleslaw, potato salad and root beer.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>First, I have to help my aunt frost the flag cake.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then we all wear red, white and blue.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We watch the parade and then get ready for the fireworks.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>I get to sit high up on the edge of the fire truck to watch.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Those hoses are lumpy but I don't mind.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Up here I can see it all.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I have a great view to the shore.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I can also lay back and see all the jewels in the sky.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="6" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>You can hike all day in the Blue Ridge Mountains.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The air when you are walking on the trail is fresh and clear.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It smells like green trees and wild flowers.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The path is dark green and little light reaches there.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It is so thick with trees you cannot see the sky.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>From far away, the early morning air looks like smoke.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It makes the color of the mountains a deep blue, like fog.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>When the sun rises higher, some of the water in the air will burn off.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then the mountains will slowly turn dark green.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The mountain water is icy cold and sparkles in the sun.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You could drink it all day - it's that good!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The rough landscape takes your breath away with its scale and color.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Hikers should stick to the trails for a safe passage through the miles of wild, tough land.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You have to go there to smell and taste the huge backdrop that the mountains give to you.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The size of them is hard to take in from maps and books.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>All too soon it will be time to leave.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It will be hard to go back to the world of cars, roads, stores and crowds of people.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But you will remember your time in the Blue Ridge Mountains.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Over the years there have been many songs made up about them, often performed by well-known
+                        artists.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="7" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Every year many people go hiking.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Their dream is to live a simple life off the beaten path for a short time.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>For some backpackers, the complete lack of cars and trucks on the trails suits them best.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Each part of the country has many different trails.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Some trails are short and take only a day to walk.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>These trails might be near your home.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You could take bread, cold cuts and drinks for a picnic.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>It's great to get the feeling of open spaces and blue skies.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Not having to carry a heavy pack which weighs a ton is good too.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Or you could pick one of the other trails which are tougher.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You can walk at a great height up into the mountains.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Or you could wind your way down to sea level over a week or so.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The oldest of these longer backpacking trails begins in Maine and ends in Georgia.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The choice is yours, if you go for a short walk or a long hike.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Take a deep breath and head off.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The fun thing is to have nothing in front of you but the open trail.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>When you have had enough you can go back to the city.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="8" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Cole had given his neighbor a promise that he would keep an eye on her house while she was
+                        away.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>When he went there that night with Dylan, it was dark and pretty cold, with a nip of frost in
+                        the air.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Inside the house was cold too, but everything was in order.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Suddenly, the boys heard a noise outside.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"What's that?", said Dylan.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"I don’t know," said Cole, grabbing a stick.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>"But you go out that way and I’ll go this way and we can find out."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>After waiting a little while, Cole went out into the darkness.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He went very slowly and carefully around the end of the house.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then he heard Dylan shout out and say, "Hey, Cole, come and look at this."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Cole took a few quick steps towards Dylan.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>All at once something bumped into Cole’s legs.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>There was a shrill cry and Cole could not help stumbling.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>As he fell forward, he put his arms up.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Cole’s hands and his stick hit Dylan smack in the face, and they both fell down.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They yelled and got to their feet as quickly as they could.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"You fool!" shouted Dylan.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>"I only wanted to show you where the cat had put her kittens.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Now, I’ll have a black eye.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Ow, and I'm going to have a bruise on my face!"</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="2" page="9" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The Native Tribes of the US have lived here since before the end of the last ice age.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Groups settled many parts of the land and each group had their own way of life.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They became the Tribes of the Great Plains.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The plains stretch straight through the center of the country.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They cross rivers and deserts.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>In some parts, a person can see for hundreds of miles over flat lands.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Large stretches of this land used to be covered by high, thick grasses.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The grass fed the buffulo that were the center of the lives of the Great Plains Tribes.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The animals gave them meat, and much more.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Buffalo were central to their spirit life as well.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The horse played an important part in the life of the Tribes too.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The horse gave them a new way to travel.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It allowed them to follow and hunt the buffalo more safely.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The coming of white settlers to the Great Plains changed things.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It saw the end of the horse and buffalo life of the Tribes.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Settlers did not want buffalo to destroy their crops and killed many of them.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The Native Tribes struggled with this threat to their way of life and fought it.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This way of life came to an end when they were forced to live on limited lands.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="1" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Do you know what a blackbird is?</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>I bet you're thinking of a bird that looks like a crow.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Perhaps you know the song about four and twenty blackbirds baked in a pie.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>But there's another kind of blackbird.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It's a spy plane and is one of the most powerful aircraft seen by mankind.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It can travel up to three times the speed of sound.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It is shaped smoothly to reduce its radar footprint.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It is able to fly from the west coast to the east in one hour and four minutes.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This makes it the fastest aircraft in the world.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>The Blackbird was used by the government for twenty-five years.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It has been used by NASA for experiments.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Some experts say that the Blackbird was more useful than anything in space because no one knew
+                        it was there.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It would sneak up behind you and be gone before you knew it.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Just 32 of the aircraft were built between 1966 and 1998.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>You can see a Blackbird now in the Air and Space Center.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="10" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>We have had many pioneers in our country and some have had a big impact on us all, like Henry
+                        Ford.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>When he was young, Ford was curious and tinkered with things.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>As an adult, Ford became an engineer in Detroit.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He was able to combine his time and money to work with car engines.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>In 1903, Henry Ford started the Ford Motor Company.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He reached his dream of making a car that was affordable and reliable when he made the Model T
+                        in 1908.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This car was very popular.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Ford changed car-making completely in 1913.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He made a moving assembly line.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This took the car parts by moving belt to the workers.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The speed was constant to keep the line running smoothly.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>His clever idea in car-making reduced substantially the time it took to make a car, and made
+                        it cheap to make.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Ford's company became the largest car-maker in the world because there was no competition that
+                        could beat the Model T.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Ford's company helped to change America because cities changed and suburbs grew; the highway
+                        system expanded.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We connected to a love of the open road.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Ford saw many of these changes before his death in 1947.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="11" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>In deep sea diving the human body goes a long way under water.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The body feels pressure which is related to the depth it is under the water.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The weak parts of the human body which can be particularly affected by this are the ears and
+                        the lungs.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>If a diver descends to a very deep level of water, there is real danger.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Because of pressure, our bodies are unable to get rid of the nitrogen which we breathe in.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>At this depth the nitrogen being absorbed into the bloodstream begins to affect the brain.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The diver becomes confused and gets into a condition described as "raptures of the deep".
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>If he then comes quickly to the surface, the nitrogen will cause his blood to bubble, and he
+                        can die.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This danger is known as the "bends".</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The only way to avoid the bends used to be for the diver to come up to the surface very
+                        slowly.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The modern method is for him to go into a special tank called a decompression chamber.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>In this chamber the pressure is the same as it was under water.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Very gradually the pressure is adjusted, until it is equal to that at ground level.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>So the next time you dive, and feel the pressure on your ears, watch out!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="12" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Martin Luther King Jr. came from a humble family, and like the inventor Edison or the
+                        businessman Ford, his name was to become a household word.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He was the most important voice in the movement of equal rights for all.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He was famous for using nonviolent methods to stand against injustice.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He did all he could to make us realize that "all men are created equal".</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The history of his work gives an indication of the enormity of his achievements.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>King believed that as a Christian pastor he had to be nonviolent.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He believed that violent protests would ruin the struggle for change.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>King and others were willing to go to jail for the cause of civil rights.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Others criticized him for his conviction.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>In 1963, King led mass protests against the practice of discrimination in Birmingham,
+                        Alabama.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>King was arrested and jailed for his part in the civil protests.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>After he was released from jail, King took part in the huge civil rights march on Washington
+                        DC in August 1963.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This is where he delivered his famous "I have a dream" speech.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He predicted a time when freedom and equality for all would become a reality in America.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>He was awarded the Nobel Peace Prize in 1964.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>After that, he led the movement to increase voter sign-up among the African-American
+                        population.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Martin Luther King Jr. was assassinated on April 4, 1968 during a visit to Memphis,
+                        Tennessee.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>His birthday is observed as a national holiday on the third Monday in January.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He is one of the foremost names in American history.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="2" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>On July 2, 1900, a man introduced a new engineering wonder to the world.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The machines to which he gave his name were expensive to build.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>As it turned out, they were also delicate.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>His name was Count Zeppelin.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>No one in the USA had heard of him at that time.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>However, the Zeppelin was to become a household word.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The Zeppelin was a giant rigid airship, which was filled with hydrogen gas.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Zeppelins were driven by two engines which were fixed below it.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But the engines of the first Zeppelin were far too small to be effective.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It had to be taken apart.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Zeppelin 2 wasn't much better and was destroyed in a storm.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But the Zeppelin 3 design worked well.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The last Zeppelin, called the Hindenburg, was number 129.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>By the 1920s, Britain, France, Italy and the USA were all building airships, but the
+                        Hindenburg impressed the whole world.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The Hindenburg was 800 feet long and 135 feet wide.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This is four times longer than a 747 airplane.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>In 1937, the Hindenburg made a flight across the Atlantic to the USA.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Thousands of people came to watch its landing.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The beautiful, gleaming, airship came gently down to its landing point.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Suddenly, it gave a jerk.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>There was a flash of flame and it exploded.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>A moment later its whole length crumpled to the ground.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Its crew and passengers all died.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="3" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Mia, Luis and Diego entered the back workshop of the garage.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They saw Tomas having an argument with a boy who was sitting on a motorbike.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>"Look, Pablo" said Tomas, "That’s not your bike, and you can’t ride one anyhow, so get off."
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The motorbike was on its rear stand in the middle of the workshop.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Pablo shrugged his shoulders and said, "Look, that’s the front brake, that’s the clutch,
+                        that’s the gearbox and here’s the ignition."
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then he turned on the ignition and the engine started up.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"Get off!" shouted Tomas.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>"It’s easy!" yelled Pablo, over the engine noise.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He suddenly gave a jerk, and hit the gearshift as the bike bumped forward off its stand.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They all knew in a flash that Pablo meant to ride the bike out of the garage.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The rear wheel of the bike came straight down on to a pool of oil.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The wheel spun around, and the bike slid to one side and then suddenly pulled away.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It went straight at the corner of the garage.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The front wheel hit the leg of a bench and the bike bounced back before it lurched again.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then it fell over, throwing Pablo to one side.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The engine stalled.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>All at once there was silence.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Pablo got to his feet and scowled at the others.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They were laughing so hard they couldn’t speak.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He was red in the face and covered with blotches of oil and dirt.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="4" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Doctors worked on Anne's eyes to get some of her sight back.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>She worked hard at school and became a star scholar.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>One of the most important techniques that she learned there was the hand alphabet for deaf
+                        people.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>For a person who is deaf-blind, words are shaped on the surface of the hand.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>In 1886, the teacher in charge of the school suggested to Anne that she work with a child who
+                        had been deaf-blind since she was a baby.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This six year old girl was called Helen Keller.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>She could not hear, could not see and had no language.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Anne said yes.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Helen was not an easy student and it was a challenge to get her to learn.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But Anne had a strong character and was determined that she would not give up on Helen.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Soon, Helen learned her first word by using the hand alphabet.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>After that, Helen began to learn with speed and efficiency.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Later on, Anne also taught Helen how to speak.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>When Helen went to college in 1900, Anne went with her to translate her books into hand
+                        language.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They worked as a team for the rest of Anne's life.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Helen Keller became well known.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>She said that Anne was the one who made her fame possible.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Helen said that Anne was the one who deserved the praise.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Anne had found a way to teach Helen and gave her the freedom to live a whole life.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="5" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Thomas Edison’s first recording machine was a simple sort of thing.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It used a roll of metal to record on.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He spoke a few words of a nursery rhyme into it, and then set it to play back to him.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The funny, squeaky voice on the machine spoke to him quite clearly.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It said, "Mary had a little lamb, its fleece was white as snow."</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>That was well over a hundred years ago in 1877.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>He competed with others to be the first to design and build a machine that could record and
+                        play back sound.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Edison got there first.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Edison is, of course, famous for other inventions.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He never stopped making things.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He made an electric light bulb, and switches and fuses.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He also designed a machine which could make electric power.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He spent a lot of time improving the working of the telephone and the telegraph.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He helped to design cameras for film-making.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>He played a part in the invention of the typewriter.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He designed new ways to improve the making of cement and concrete.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He build an electric train.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He was still hard at work and full of new ideas when he was 80 years old.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>One of the most amazing things about Thomas Edison was that he had no training as a
+                        scientist.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He had great problems learning in school and left early, without a diploma.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He was self-taught after that.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>He is one of a very few such men in history.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They were men who had a kind of genius for inventing things.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="6" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>When a human heart comes to a stop the person dies.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>That is simply because the heart is a pump.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>If it stops, the body, which depends on that pump, also stops.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>It is this pump which keeps our blood on the move, from the end of each toe to the top of the
+                        head.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>As blood circulates it collects carbon dioxide.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This is the waste matter in the blood stream.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The carbon dioxide makes the blood darker as it is collected.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The blood then takes on the more purple color, and it is this that we can see showing in our
+                        veins.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The blood returns to the right chamber of the heart, from where it is pumped to the lungs for
+                        cleaning.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then it carries on to the left chamber of the heart.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>From there the clean blood is pumped out once more to circulate around the body.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This constant pumping and cleaning goes on without a stop until we die.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>More and more people now live to be 100 years old.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>That means their hearts have been pumping non-stop for a century.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>We can only wonder when a computer will be built that can last that long!</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="7" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>The movies used to be in black and white with no sound.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then in the 1920's there were considerable changes in how films were made.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Once actors could talk on screen it changed their performances.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Soon sound and color in films were the norm.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>As films became more popular, the film makers had a great deal of power.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They controlled the actors, the theaters and ticket sales.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>By 1939 there were more movie theaters in the US than there were banks.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Hollywood was the main center of film making in the world, not just in the USA.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The Golden Age of film ended when the Supreme Court ruled this control had to change.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>More changes came when TV found a place in all homes.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Theaters were empty and the business went into decline.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Yet, the medium of film did not die.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>There were still people who liked to watch a film on a night out.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The movie business used new technology and changed the way films were made and shown.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Wide screens and drive-ins were all part of the show.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>They made sure that they could give you something you couldn't get on TV.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Now, film makers use DVDs and gaming to do the same thing.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The movies are a big business and have come a long way from the orange groves of Hollywood.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="8" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>After the war with Mexico (1846-1848), the homestead movement got bigger.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>People who came to the States from Europe were ambitious to make a new life so moved west.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>When the South left the Union, a major stumbling block to homesteading was removed.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>In 1862, the Homestead Act passed into law.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The new law had three steps to owning land: filing a claim, improving the land, and filing for
+                        deed of title.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Any U.S. citizen could apply and in exchange for improving the land and building a dwelling,
+                        the homesteader could file for the deed to own the land after 5 years.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>Physical existence for the homesteader was very hard.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Crops were blown down by strong winds and blizzards in the winter.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The summers were scorching and had swarms of insects.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Fuel and water supplies were short, so simple cooking and heating chores were hard.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The plots on the dry plains were too small to grow large crops.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The landscape made grazing livestock on the prairie difficult .</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>In many places, the experiment failed and the homesteader did not stay on the land long enough
+                        to make a final claim.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>However, homesteaders who toughed it out were rewarded with excellent chances for wealth and a
+                        new life.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>By 1934, over 1.6 million homestead claims had gone through the system and more than 270
+                        million acres given over.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>In 1976 the Homestead Act was stopped in 48 states, but homesteading was allowed in Alaska
+                        until 1986.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The state of Nebraska has the national memorial to the Homestead Act.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+
+    <Lesson stage="3" page="9" type="Reading Check">
+        <ReadingCheckParagraph activityIntroClip="uk/assets/sound/whiteSpace.mp3" pencil="p3" skipIntro="true">
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The oil industry grew as a direct result of the motor car.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>More precisely, it was because of the internal combustion engine, which burns the gasoline
+                        made from oil.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Oil is formed from the remains of plants and creatures living millions of years ago and the
+                        weight of tons of rock pressed on those remains. This caused a gradual change.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>The liquid, which has been trapped and compressed under the weight of rock above it, rushes to
+                        the surface.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>To obtain the oil a gigantic drill works its way down from the surface and breaks into the
+                        lake of oil.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>The liquid, which has been trapped and compressed under the weight of the rock above it,
+                        rushes to the surface.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>There are two main problems for the oil industry.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>First of all, scientists have to locate the oil-bearing rocks.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Then, the oil engineers have to drill at exactly the right spot.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Some drills have to drill into the ground as deep as four miles down before oil is found.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>When the oil is found, it has to be moved, often by pipeline.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Some pipelines are over 1,000 miles in length.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>One of the largest pipelines in the world runs through Alaska.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+            <paragraph>
+                <sentence>
+                    <text>CR</text>
+                    <clip></clip>
+                </sentence>
+                <sentence>
+                    <text>Second, we now know that the sources of crude oil will run dry.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Our way of life depends on oil.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>Large amounts of oil are used in industry, for fuel and to run cars.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>When the oil runs out we will need to replace it with things such as solar and nuclear
+                        power.
+                    </text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>But each of these has its own drawbacks.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+                <sentence>
+                    <text>This means that finding a replacement for crude oil is a slow process.</text>
+                    <clip>uk/assets/sound/whiteSpace.mp3</clip>
+                </sentence>
+            </paragraph>
+        </ReadingCheckParagraph>
+    </Lesson>
+</syllabys>

@@ -15,6 +15,8 @@ struct SimpleConstructionModeView: View {
     var soundOrderIndex: Int?
     var isReminderSession: Bool
     var dismissAfterSuccess: Bool
+    /// When `dismissAfterSuccess` is false, normally the engine resets for another try. Set true when a parent view replaces this screen after success (e.g. next word in a short drill).
+    var suppressPostSuccessReset: Bool
     var onSuccessfulCompletion: (() -> Void)?
     var onReminderWrongTap: (() -> Void)?
 
@@ -31,6 +33,7 @@ struct SimpleConstructionModeView: View {
         soundOrderIndex: Int? = nil,
         isReminderSession: Bool = false,
         dismissAfterSuccess: Bool = true,
+        suppressPostSuccessReset: Bool = false,
         onSuccessfulCompletion: (() -> Void)? = nil,
         onReminderWrongTap: (() -> Void)? = nil
     ) {
@@ -39,6 +42,7 @@ struct SimpleConstructionModeView: View {
         self.soundOrderIndex = soundOrderIndex
         self.isReminderSession = isReminderSession
         self.dismissAfterSuccess = dismissAfterSuccess
+        self.suppressPostSuccessReset = suppressPostSuccessReset
         self.onSuccessfulCompletion = onSuccessfulCompletion
         self.onReminderWrongTap = onReminderWrongTap
         let count = ConstructionTilePoolBuilder.distractorCount(forSegmentCount: segments.count)
@@ -100,6 +104,8 @@ struct SimpleConstructionModeView: View {
                 try? await Task.sleep(for: .seconds(1.15))
                 if dismissAfterSuccess {
                     dismiss()
+                } else if suppressPostSuccessReset {
+                    return
                 } else {
                     var nextEngine = engine
                     nextEngine.reset()

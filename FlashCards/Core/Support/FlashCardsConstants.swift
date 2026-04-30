@@ -27,6 +27,9 @@ enum FlashCardsConstants {
     /// Successful Construction or Segmentation completions required per word (same count as Sound Card mastery boxes).
     static let modeExerciseWordMasteryCount = 5
 
+    /// When opening construction or segmentation from the working-sounds list, at most this many words are practised in one visit before returning to the list.
+    static let phonicsWordsPerSoundDrillSession = 2
+
     /// Teaching-deck size and phonics “working sounds” cap. Must match `totalSounds` in bundled `Seed/sound_units_primary_index_146.json` (see `SoundUnitsPrimaryIndexLoader`).
     static let currentDeckTargetCount = 146
 

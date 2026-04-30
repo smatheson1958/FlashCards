@@ -133,7 +133,7 @@ struct PhonicsModeSoundListView: View {
                     .foregroundStyle(.secondary)
             } else {
                 ForEach(words, id: \.self) { word in
-                    wordRow(card: card, word: word)
+                    wordRow(card: card, word: word, curriculumWords: words)
                 }
             }
         } label: {
@@ -149,14 +149,34 @@ struct PhonicsModeSoundListView: View {
         }
     }
 
-    private func wordRow(card: CardProgress, word: String) -> some View {
-        let segments: [String] = {
-            if mode == .segmentation {
-                return SegmentationDataSource.resolvedSegments(forWord: word, soundOrderIndex: card.orderIndex)
-            }
-            return ConstructionIndexG1Loader.graphemeUnits(forSoundOrderIndex: card.orderIndex, word: word)
-                ?? ConstructionDataSource.segments(forWord: word)
-        }()
+    private func segmentsForWord(card: CardProgress, word: String) -> [String] {
+        if mode == .segmentation {
+            return SegmentationDataSource.resolvedSegments(forWord: word, soundOrderIndex: card.orderIndex)
+        }
+        return ConstructionIndexG1Loader.graphemeUnits(forSoundOrderIndex: card.orderIndex, word: word)
+            ?? ConstructionDataSource.segments(forWord: word)
+    }
+
+    private func isWordExerciseOpenable(card: CardProgress, word: String) -> Bool {
+        let segments = segmentsForWord(card: card, word: word)
+        if mode == .segmentation { return !segments.isEmpty }
+        return segments.count >= FlashCardsConstants.constructionMinimumSegmentCount
+    }
+
+    /// Up to `phonicsWordsPerSoundDrillSession` consecutive openable words from the curriculum, starting at `startWord`.
+    private func openableDrillWords(card: CardProgress, curriculumWords: [String], startWord: String) -> [String] {
+        let start = curriculumWords.firstIndex(where: { $0.caseInsensitiveCompare(startWord) == .orderedSame }) ?? 0
+        var out: [String] = []
+        for w in curriculumWords.dropFirst(start) {
+            guard isWordExerciseOpenable(card: card, word: w) else { continue }
+            out.append(w)
+            if out.count >= FlashCardsConstants.phonicsWordsPerSoundDrillSession { break }
+        }
+        return out
+    }
+
+    private func wordRow(card: CardProgress, word: String, curriculumWords: [String]) -> some View {
+        let segments = segmentsForWord(card: card, word: word)
         let filled = modeProgressCount(soundOrderIndex: card.orderIndex, word: word)
         let canOpenExercise: Bool = {
             if mode == .segmentation { return !segments.isEmpty }
@@ -172,14 +192,9 @@ struct PhonicsModeSoundListView: View {
                     .font(.caption)
                     .foregroundStyle(.tertiary)
             } else {
+                let drillWords = openableDrillWords(card: card, curriculumWords: curriculumWords, startWord: word)
                 NavigationLink {
-                    PhonicsModeWordSessionView(
-                        mode: mode,
-                        soundOrderIndex: card.orderIndex,
-                        word: word,
-                        segments: segments,
-                        isReminder: false
-                    )
+                    PhonicsSoundWordDrillView(mode: mode, card: card, wordQueue: drillWords)
                 } label: {
                     Text(word.capitalized)
                         .font(appearance.bodyFont(size: 16, weight: .medium))

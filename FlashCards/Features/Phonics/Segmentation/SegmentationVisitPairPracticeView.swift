@@ -24,56 +24,75 @@ struct SegmentationVisitPairPracticeView: View {
     @Environment(\.modelContext) private var modelContext
 
     @State private var activeSlot: Int = 0
+    @State private var veilPracticeDuringPop = false
 
     var body: some View {
-        Group {
-            if activeSlot == 0 {
-                pairWordView(
-                    word: word0,
-                    segments: segments0,
-                    dismissAfterSuccess: false,
-                    viewIdSuffix: "a",
-                    onSuccess: {
-                        if recordsProgress {
-                            ModeWordProgressService.recordSuccessfulAttempt(
-                                soundOrderIndex: soundOrderIndex,
-                                mode: .segmentation,
-                                word: word0,
-                                context: modelContext
-                            )
-                            try? modelContext.save()
-                        }
-                        activeSlot = 1
-                    }
-                )
-            } else {
-                pairWordView(
-                    word: word1,
-                    segments: segments1,
-                    dismissAfterSuccess: true,
-                    viewIdSuffix: "b",
-                    onSuccess: {
-                        if recordsProgress {
-                            ModeWordProgressService.recordSuccessfulAttempt(
-                                soundOrderIndex: soundOrderIndex,
-                                mode: .segmentation,
-                                word: word1,
-                                context: modelContext
-                            )
-                            try? modelContext.save()
-                        }
-                    }
-                )
+        VStack(spacing: 0) {
+            if !veilPracticeDuringPop {
+                PhonicsMultiStepDotProgress(activeIndex: activeSlot, stepCount: 2)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 12)
+                    .background(appearance.backgroundColor)
             }
+
+            ZStack {
+                Group {
+                    if activeSlot == 0 {
+                        pairWordView(
+                            word: word0,
+                            segments: segments0,
+                            dismissAfterSuccess: false,
+                            viewIdSuffix: "a",
+                            onSuccess: {
+                                if recordsProgress {
+                                    ModeWordProgressService.recordSuccessfulAttempt(
+                                        soundOrderIndex: soundOrderIndex,
+                                        mode: .segmentation,
+                                        word: word0,
+                                        context: modelContext
+                                    )
+                                    try? modelContext.save()
+                                }
+                                activeSlot = 1
+                            }
+                        )
+                    } else {
+                        pairWordView(
+                            word: word1,
+                            segments: segments1,
+                            dismissAfterSuccess: true,
+                            viewIdSuffix: "b",
+                            onSuccess: {
+                                veilPracticeDuringPop = true
+                                if recordsProgress {
+                                    ModeWordProgressService.recordSuccessfulAttempt(
+                                        soundOrderIndex: soundOrderIndex,
+                                        mode: .segmentation,
+                                        word: word1,
+                                        context: modelContext
+                                    )
+                                    try? modelContext.save()
+                                }
+                            }
+                        )
+                    }
+                }
+
+                if veilPracticeDuringPop {
+                    Rectangle()
+                        .fill(appearance.backgroundColor)
+                        .allowsHitTesting(true)
+                        .accessibilityHidden(true)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(appearance.backgroundColor)
-        .navigationTitle(
-            (isReviewSession ? "Review · " : "")
-                + (activeSlot == 0 ? "1 of 2 · \(word0.capitalized)" : "2 of 2 · \(word1.capitalized)")
-        )
+        .navigationTitle(isReviewSession ? "Review" : "")
         .navigationBarTitleDisplayMode(.inline)
         .studyAppearanceToolbar()
+        .animation(veilPracticeDuringPop ? nil : .easeInOut(duration: 0.22), value: activeSlot)
     }
 
     @ViewBuilder

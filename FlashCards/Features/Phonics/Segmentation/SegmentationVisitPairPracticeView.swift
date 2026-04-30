@@ -19,6 +19,8 @@ struct SegmentationVisitPairPracticeView: View {
     var recordsProgress: Bool = true
     /// Prefixes navigation titles with “Review ·” when true.
     var isReviewSession: Bool = false
+    /// When non-nil, finishing the second word calls this instead of dismissing (hub mini lesson chaining).
+    var onPairFullyCompleteInsteadOfDismiss: (() -> Void)? = nil
 
     @Bindable private var appearance = StudyAppearanceSettings.shared
     @Environment(\.modelContext) private var modelContext
@@ -42,6 +44,7 @@ struct SegmentationVisitPairPracticeView: View {
                             word: word0,
                             segments: segments0,
                             dismissAfterSuccess: false,
+                            customDismissAfterSuccess: nil,
                             viewIdSuffix: "a",
                             onSuccess: {
                                 if recordsProgress {
@@ -61,6 +64,7 @@ struct SegmentationVisitPairPracticeView: View {
                             word: word1,
                             segments: segments1,
                             dismissAfterSuccess: true,
+                            customDismissAfterSuccess: onPairFullyCompleteInsteadOfDismiss,
                             viewIdSuffix: "b",
                             onSuccess: {
                                 veilPracticeDuringPop = true
@@ -100,6 +104,7 @@ struct SegmentationVisitPairPracticeView: View {
         word: String,
         segments: [String],
         dismissAfterSuccess: Bool,
+        customDismissAfterSuccess: (() -> Void)?,
         viewIdSuffix: String,
         onSuccess: @escaping () -> Void
     ) -> some View {
@@ -112,7 +117,8 @@ struct SegmentationVisitPairPracticeView: View {
             showPracticeMissButton: false,
             onSuccessfulPracticeRecorded: onSuccess,
             onPracticeMissed: nil,
-            onReminderMissed: nil
+            onReminderMissed: nil,
+            onDismissAfterSuccess: customDismissAfterSuccess
         )
         .id("visitPair-\(soundOrderIndex)-\(visitIndex)-\(viewIdSuffix)-\(word)")
     }

@@ -7,6 +7,20 @@ import SwiftData
 import SwiftUI
 import UIKit
 
+private struct SegmentationSegmentRowContentWidthKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
+
+private struct SegmentationSegmentRowViewportWidthKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
+
 /// Hear segment sounds and the whole word; segments come from `segmentation.json` first, then the G1 index / construction seed.
 struct SegmentationModeView: View {
     let word: String
@@ -20,6 +34,8 @@ struct SegmentationModeView: View {
     var onSuccessfulPracticeRecorded: (() -> Void)?
     var onPracticeMissed: (() -> Void)?
     var onReminderMissed: (() -> Void)?
+    /// When `dismissAfterRecordingSuccess` is true, invoked after the short delay instead of `dismiss()` (e.g. mini lesson chaining).
+    var onDismissAfterSuccess: (() -> Void)?
 
     @Bindable private var appearance = StudyAppearanceSettings.shared
     @Environment(\.dismiss) private var dismiss
@@ -29,6 +45,10 @@ struct SegmentationModeView: View {
     @State private var didPlayWholeWord = false
     @State private var playedSegmentIndices: Set<Int> = []
     @State private var didRecordSuccessThisVisit = false
+    /// Letter row wider than visible strip (scroll layout); drives pre-scroll hint.
+    @State private var segmentRowOverflows = false
+    @State private var segmentRowContentWidth: CGFloat = 0
+    @State private var segmentRowViewportWidth: CGFloat = 0
 
     init(
         word: String,
@@ -39,7 +59,8 @@ struct SegmentationModeView: View {
         showPracticeMissButton: Bool = false,
         onSuccessfulPracticeRecorded: (() -> Void)? = nil,
         onPracticeMissed: (() -> Void)? = nil,
-        onReminderMissed: (() -> Void)? = nil
+        onReminderMissed: (() -> Void)? = nil,
+        onDismissAfterSuccess: (() -> Void)? = nil
     ) {
         self.word = word
         self.segments = segments
@@ -50,15 +71,151 @@ struct SegmentationModeView: View {
         self.onSuccessfulPracticeRecorded = onSuccessfulPracticeRecorded
         self.onPracticeMissed = onPracticeMissed
         self.onReminderMissed = onReminderMissed
+        self.onDismissAfterSuccess = onDismissAfterSuccess
     }
 
     private var canRecordSuccess: Bool {
         didPlayWholeWord && playedSegmentIndices.count == segments.count && segments.count > 0 && !didRecordSuccessThisVisit
     }
 
+    /// Faded edges + chevrons when several segments suggest horizontal scrolling (scroll layout only).
+    private var segmentStripShowsScrollAffordance: Bool {
+        segments.count >= 4
+    }
+
+    private static let segmentStripHeight: CGFloat = 72
+
+    @ViewBuilder
+    private func segmentButton(for index: Int) -> some View {
+        let segment = segments[index]
+        Button {
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            wordPlayer.stop()
+            segmentPlayer.playGrapheme(segment)
+            _ = playedSegmentIndices.insert(index)
+        } label: {
+            Text(segment.uppercased())
+                .font(appearance.titleFont(size: 26, weight: .semibold))
+                .foregroundStyle(appearance.primaryTextColor)
+                .frame(minWidth: 44, minHeight: 56)
+                .padding(.horizontal, 14)
+                .background(appearance.cardFillColor, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .strokeBorder(appearance.surroundColor.opacity(0.35), lineWidth: 1)
+                )
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Segment \(segment)")
+    }
+
+    /// Wide rows: horizontal scroll + edge affordances. Narrow rows: centered, no scroll (avoids left-aligned short words).
+    private func segmentStripScrollableZStack(scrollHintActive: Bool) -> some View {
+        ZStack {
+            ScrollView(.horizontal, showsIndicators: true) {
+                HStack(spacing: 12) {
+                    ForEach(segments.indices, id: \.self) { index in
+                        segmentButton(for: index)
+                    }
+                }
+                .padding(.vertical, 4)
+                .padding(.horizontal, 2)
+                .background(
+                    GeometryReader { geo in
+                        Color.clear.preference(
+                            key: SegmentationSegmentRowContentWidthKey.self,
+                            value: geo.size.width
+                        )
+                    }
+                )
+            }
+            .scrollIndicators(.visible)
+            .scrollBounceBehavior(.basedOnSize)
+            .background(
+                GeometryReader { geo in
+                    Color.clear.preference(
+                        key: SegmentationSegmentRowViewportWidthKey.self,
+                        value: geo.size.width
+                    )
+                }
+            )
+            .frame(maxWidth: .infinity)
+
+            if segmentStripShowsScrollAffordance {
+                HStack(spacing: 0) {
+                    segmentScrollEdgeAffordance(isLeading: true, scrollHintActive: scrollHintActive)
+                    Spacer(minLength: 0)
+                    segmentScrollEdgeAffordance(isLeading: false, scrollHintActive: scrollHintActive)
+                }
+                .frame(minHeight: 64)
+                .allowsHitTesting(false)
+                .accessibilityHidden(true)
+            }
+        }
+    }
+
+    private var segmentStripView: some View {
+        ViewThatFits(in: .horizontal) {
+            HStack(spacing: 12) {
+                Spacer(minLength: 0)
+                ForEach(segments.indices, id: \.self) { index in
+                    segmentButton(for: index)
+                }
+                Spacer(minLength: 0)
+            }
+            .padding(.vertical, 4)
+
+            segmentStripScrollableZStack(scrollHintActive: segmentRowOverflows)
+        }
+        .frame(height: Self.segmentStripHeight)
+        .frame(maxWidth: .infinity)
+        .onPreferenceChange(SegmentationSegmentRowContentWidthKey.self) { w in
+            segmentRowContentWidth = w
+            updateSegmentRowOverflow()
+        }
+        .onPreferenceChange(SegmentationSegmentRowViewportWidthKey.self) { w in
+            segmentRowViewportWidth = w
+            updateSegmentRowOverflow()
+        }
+    }
+
+    private func updateSegmentRowOverflow() {
+        let pad: CGFloat = 8
+        guard segmentRowViewportWidth > 10, segmentRowContentWidth > 10 else {
+            segmentRowOverflows = false
+            return
+        }
+        segmentRowOverflows = segmentRowContentWidth > segmentRowViewportWidth + pad
+    }
+
+    @ViewBuilder
+    private func segmentScrollEdgeAffordance(isLeading: Bool, scrollHintActive: Bool) -> some View {
+        let bandWidth: CGFloat = 36
+        let showChevrons = segments.count >= 5
+        ZStack(alignment: isLeading ? .leading : .trailing) {
+            LinearGradient(
+                colors: isLeading
+                    ? [appearance.backgroundColor, appearance.backgroundColor.opacity(0)]
+                    : [appearance.backgroundColor.opacity(0), appearance.backgroundColor],
+                startPoint: .leading,
+                endPoint: .trailing
+            )
+            .frame(width: bandWidth)
+
+            if showChevrons {
+                Image(systemName: isLeading ? "chevron.left" : "chevron.right")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(appearance.surroundColor.opacity(0.55))
+                    .symbolEffect(.pulse, options: .repeating.speed(0.55), isActive: scrollHintActive)
+                    .padding(isLeading ? .leading : .trailing, 8)
+            }
+        }
+        .frame(width: bandWidth)
+    }
+
     var body: some View {
         VStack(spacing: 36) {
-            Spacer(minLength: 0)
+            Spacer(minLength: 24)
 
             Button {
                 UIImpactFeedbackGenerator(style: .medium).impactOccurred()
@@ -83,31 +240,26 @@ struct SegmentationModeView: View {
             .buttonStyle(.plain)
             .accessibilityLabel("Whole word, \(word)")
 
-            HStack(spacing: 12) {
-                ForEach(segments.indices, id: \.self) { index in
-                    let segment = segments[index]
-                    Button {
-                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                        wordPlayer.stop()
-                        segmentPlayer.playGrapheme(segment)
-                        _ = playedSegmentIndices.insert(index)
-                    } label: {
-                        Text(segment.uppercased())
-                            .font(appearance.titleFont(size: 26, weight: .semibold))
-                            .foregroundStyle(appearance.primaryTextColor)
-                            .frame(minWidth: 44, minHeight: 56)
-                            .padding(.horizontal, 14)
-                            .background(appearance.cardFillColor, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 16, style: .continuous)
-                                    .strokeBorder(appearance.surroundColor.opacity(0.35), lineWidth: 1)
-                            )
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("Segment \(segment)")
+            VStack(spacing: 10) {
+                if segments.count >= 6 {
+                    segmentStripView
+                        .accessibilityHint("Swipe left or right to reach every segment button.")
+                } else {
+                    segmentStripView
+                }
+
+                if segmentRowOverflows {
+                    Label("Swipe the letters sideways to see them all", systemImage: "hand.point.left.and.right.fill")
+                        .font(appearance.bodyFont(size: 13, weight: .semibold))
+                        .foregroundStyle(appearance.surroundColor.opacity(0.92))
+                        .labelStyle(.titleAndIcon)
+                        .symbolRenderingMode(.hierarchical)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity)
+                        .padding(.horizontal, 8)
+                        .transition(.opacity.combined(with: .move(edge: .top)))
                 }
             }
-            .frame(maxWidth: .infinity)
 
             Button {
                 UIImpactFeedbackGenerator(style: .medium).impactOccurred()
@@ -116,7 +268,11 @@ struct SegmentationModeView: View {
                 if dismissAfterRecordingSuccess {
                     Task { @MainActor in
                         try? await Task.sleep(for: .milliseconds(350))
-                        dismiss()
+                        if let onDismissAfterSuccess {
+                            onDismissAfterSuccess()
+                        } else {
+                            dismiss()
+                        }
                     }
                 }
             } label: {
@@ -128,7 +284,7 @@ struct SegmentationModeView: View {
             .buttonStyle(.borderedProminent)
             .disabled(!canRecordSuccess)
 
-            Text("Listen to the whole word, then each segment at least once. Then tap the button above to count one success toward five.")
+            Text("Listen to the whole word, then each segment at least once—scroll sideways if the segment buttons don't all fit on screen. Then tap the button above to count one success toward five.")
                 .font(appearance.bodyFont(size: 13))
                 .foregroundStyle(appearance.primaryTextColor.opacity(0.7))
                 .multilineTextAlignment(.center)
@@ -157,12 +313,18 @@ struct SegmentationModeView: View {
                 .buttonStyle(.bordered)
             }
 
-            Spacer(minLength: 0)
+            Spacer(minLength: 24)
         }
         .padding(.horizontal, 24)
         .frame(maxWidth: 560)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(appearance.backgroundColor)
+        .animation(.easeOut(duration: 0.22), value: segmentRowOverflows)
+        .onChange(of: word) { _, _ in
+            segmentRowContentWidth = 0
+            segmentRowViewportWidth = 0
+            segmentRowOverflows = false
+        }
     }
 }
 
@@ -181,6 +343,8 @@ struct SegmentationPracticeListView: View {
 private enum SegmentationExerciseHubConfig {
     /// One recorded success completes that word for the hub (solid green square). Revisit flow may use counts later.
     static let successesPerHubWord = 1
+    /// Random mini lesson: up to this many distinct sounds (two words each from one random visit pair per sound).
+    static let miniLessonSoundCount = 10
 }
 
 /// One sound’s visit pairs for the hub list (opens `SegmentationVisitPairPracticeView` at the next incomplete visit).
@@ -221,6 +385,95 @@ private func pickRandomHubReviewPair(from row: SegmentationHubSoundRow) -> (word
     var pair = [items[i], items[j]]
     pair.shuffle()
     return (pair[0].word, pair[0].segments, pair[1].word, pair[1].segments)
+}
+
+private struct SegmentationHubMiniLessonStep: Identifiable, Hashable {
+    let id: String
+    let soundOrderIndex: Int
+    let visitIndex: Int
+    let word0: String
+    let word1: String
+    let segments0: [String]
+    let segments1: [String]
+}
+
+private func buildMiniLessonSteps(from rows: [SegmentationHubSoundRow]) -> [SegmentationHubMiniLessonStep] {
+    guard !rows.isEmpty else { return [] }
+    let cap = SegmentationExerciseHubConfig.miniLessonSoundCount
+    let shuffled = rows.shuffled()
+    let pickCount = min(cap, shuffled.count)
+    var steps: [SegmentationHubMiniLessonStep] = []
+    steps.reserveCapacity(pickCount)
+    for row in shuffled.prefix(pickCount) {
+        guard let pair = row.visitPairs.randomElement() else { continue }
+        steps.append(
+            SegmentationHubMiniLessonStep(
+                id: "\(row.orderIndex)-\(pair.visitIndex)-\(pair.word0)-\(pair.word1)",
+                soundOrderIndex: row.orderIndex,
+                visitIndex: pair.visitIndex,
+                word0: pair.word0,
+                word1: pair.word1,
+                segments0: pair.segments0,
+                segments1: pair.segments1
+            )
+        )
+    }
+    return steps
+}
+
+/// Random hub sounds: two words per sound (one visit pair each), then advance until ten sounds or dismiss.
+private struct SegmentationHubMiniLessonSessionView: View {
+    let steps: [SegmentationHubMiniLessonStep]
+
+    @Bindable private var appearance = StudyAppearanceSettings.shared
+    @Environment(\.dismiss) private var dismiss
+
+    @State private var stepIndex = 0
+
+    init(rows: [SegmentationHubSoundRow]) {
+        steps = buildMiniLessonSteps(from: rows)
+    }
+
+    var body: some View {
+        Group {
+            if steps.isEmpty {
+                ContentUnavailableView(
+                    "Mini lesson unavailable",
+                    systemImage: "shuffle",
+                    description: Text("You need at least one sound with visit pairs in the list below.")
+                )
+            } else if stepIndex < steps.count {
+                let step = steps[stepIndex]
+                SegmentationVisitPairPracticeView(
+                    soundOrderIndex: step.soundOrderIndex,
+                    visitIndex: step.visitIndex,
+                    word0: step.word0,
+                    word1: step.word1,
+                    segments0: step.segments0,
+                    segments1: step.segments1,
+                    recordsProgress: true,
+                    onPairFullyCompleteInsteadOfDismiss: {
+                        let next = stepIndex + 1
+                        if next >= steps.count {
+                            dismiss()
+                        } else {
+                            stepIndex = next
+                        }
+                    }
+                )
+                .id(step.id)
+            } else {
+                Color.clear
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .onAppear { dismiss() }
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(appearance.backgroundColor)
+        .navigationTitle("Mini lesson")
+        .navigationBarTitleDisplayMode(.inline)
+        .studyAppearanceToolbar()
+    }
 }
 
 /// After all ten hub words are done, opens a random two-word pair without recording progress.
@@ -370,6 +623,22 @@ private struct SegmentationExerciseHubView: View {
                     }
 
                     if !hubSoundRows.isEmpty {
+                        Section {
+                            NavigationLink {
+                                SegmentationHubMiniLessonSessionView(rows: hubSoundRows)
+                            } label: {
+                                Label("Random mini lesson", systemImage: "shuffle")
+                                    .font(appearance.bodyFont(size: 17, weight: .semibold))
+                            }
+                            Text(
+                                "Runs up to \(SegmentationExerciseHubConfig.miniLessonSoundCount) sounds in random order. Each sound is two words from one random visit pair. Successes count toward the hub like tapping each sound row."
+                            )
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                        } header: {
+                            Text("Quick practice")
+                        }
+
                         Section("Sounds") {
                             ForEach(hubSoundRows) { row in
                                 if hubSoundIsFullyComplete(for: row) {

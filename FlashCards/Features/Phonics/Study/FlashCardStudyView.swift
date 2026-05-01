@@ -12,6 +12,8 @@ struct FlashCardStudyView: View {
     @Environment(\.modelContext) private var modelContext
     @Bindable var session: StudySessionStore
     @Bindable private var appearance = StudyAppearanceSettings.shared
+    @AppStorage(FlashCardsConstants.userDefaultsKeyDebugAdjustProgressSquares)
+    private var debugAdjustProgressSquares = false
     /// True while bundled JSON is imported into SwiftData on first launch.
     var isLibraryPreparing: Bool = false
     /// When true, begins a session as soon as the library is ready (skips the Study / Start session screen).
@@ -35,6 +37,7 @@ struct FlashCardStudyView: View {
     /// On the answer face: swipes and edge arrow actions stay off until the standard delay finishes or the learner plays the word (e.g. tap).
     private var backAnswerActionsEnabled: Bool {
         guard showingBack else { return true }
+        if debugAdjustProgressSquares { return true }
         return wordAutoPlayCountdownPhase >= FlashCardsConstants.StandardDelay.tickCount
             || wordSoundHeardThisBack
     }
@@ -43,6 +46,14 @@ struct FlashCardStudyView: View {
     private let tapPauseBeforeSound: TimeInterval = 0.5
     /// Pause after the sound ends, before flipping the card.
     private let tapPauseAfterSoundBeforeFlip: TimeInterval = 0.5
+
+    private var tapPauseBeforeSoundEffective: TimeInterval {
+        debugAdjustProgressSquares ? 0 : tapPauseBeforeSound
+    }
+
+    private var tapPauseAfterSoundBeforeFlipEffective: TimeInterval {
+        debugAdjustProgressSquares ? 0 : tapPauseAfterSoundBeforeFlip
+    }
 
     var body: some View {
         VStack(spacing: 20) {
@@ -349,12 +360,12 @@ struct FlashCardStudyView: View {
             }
             tapFlipSequenceTask?.cancel()
             tapFlipSequenceTask = Task { @MainActor in
-                let preNs = UInt64((tapPauseBeforeSound * 1_000_000_000.0).rounded())
+                let preNs = UInt64((tapPauseBeforeSoundEffective * 1_000_000_000.0).rounded())
                 try? await Task.sleep(nanoseconds: preNs)
                 guard !Task.isCancelled else { return }
                 await segmentationSound.playGraphemeOrBeepAwaitFinish(card.sound)
                 guard !Task.isCancelled else { return }
-                let postNs = UInt64((tapPauseAfterSoundBeforeFlip * 1_000_000_000.0).rounded())
+                let postNs = UInt64((tapPauseAfterSoundBeforeFlipEffective * 1_000_000_000.0).rounded())
                 try? await Task.sleep(nanoseconds: postNs)
                 guard !Task.isCancelled else { return }
                 withAnimation(.spring(duration: 0.5, bounce: 0.18)) {
@@ -397,6 +408,12 @@ struct FlashCardStudyView: View {
         autoPlayWordTask = nil
         wordAutoPlayCountdownPhase = 0
         guard isBack else { return }
+        if debugAdjustProgressSquares {
+            autoPlayWordTask = Task { @MainActor in
+                playWordAudio(card: card)
+            }
+            return
+        }
         autoPlayWordTask = Task { @MainActor in
             wordAutoPlayCountdownPhase = 0
             let nanosPerTick = FlashCardsConstants.StandardDelay.nanosecondsPerTick

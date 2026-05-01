@@ -15,6 +15,9 @@ struct DebugTabView: View {
     @AppStorage(FlashCardsConstants.userDefaultsKeyDebugShowSuccessfulReviewPriority)
     private var showSuccessfulReviewPriority = false
 
+    @AppStorage(FlashCardsConstants.userDefaultsKeyDebugAdjustProgressSquares)
+    private var adjustProgressSquares = false
+
     @State private var showRebuildDeckConfirm = false
     @State private var rebuildDeckErrorMessage: String?
     @State private var scoreAdjustErrorMessage: String?
@@ -97,6 +100,12 @@ struct DebugTabView: View {
             Section {
                 Toggle("Show Priority", isOn: $showSuccessfulReviewPriority)
                 Text("When on, the Current deck list shows each mastered card’s review-priority weight above the mastery indicators (used when picking review cards in Sounds).")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Toggle("Adjust progress squares", isOn: $adjustProgressSquares)
+                Text("When on, tap a mastery square on Current deck (Sounds) or Construction/Segmentation word rows to set how many times that item has been practised — e.g. tap the 4th square for 4 out of 5.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)

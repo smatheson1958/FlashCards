@@ -58,6 +58,20 @@ enum ModeWordProgressService {
         try? context.save()
     }
 
+    /// Debug: set per-word exercise progress directly (Construction / Segmentation five-box count).
+    static func setCorrectCountTowardMastery(
+        soundOrderIndex: Int,
+        mode: PhonicsModeExerciseKind,
+        word: String,
+        count: Int,
+        context: ModelContext
+    ) {
+        let cap = FlashCardsConstants.modeExerciseWordMasteryCount
+        let row = findOrCreate(soundOrderIndex: soundOrderIndex, mode: mode, word: word, context: context)
+        row.correctCountTowardMastery = min(max(count, 0), cap)
+        try? context.save()
+    }
+
     /// Wrong attempt on a reminder session: back to zero; then requires five successes again.
     static func resetFromReminderWrong(
         soundOrderIndex: Int,

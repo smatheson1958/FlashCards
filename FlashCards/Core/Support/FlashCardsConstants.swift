@@ -46,6 +46,9 @@ enum FlashCardsConstants {
     /// When true, the deck list shows each mastered card’s review-priority weight (Sounds review sampling).
     static let userDefaultsKeyDebugShowSuccessfulReviewPriority = "debugShowSuccessfulReviewPriority"
 
+    /// When true, tapping a mastery square on the Current deck or Construction/Segmentation lists sets progress to that position (e.g. 4th square → worked 4 times).
+    static let userDefaultsKeyDebugAdjustProgressSquares = "debugAdjustProgressSquares"
+
     // MARK: Construction activity (POC from bundled JSON)
 
     // MARK: Segmentation journey (module-local; `segmentation_seed_146.json`)

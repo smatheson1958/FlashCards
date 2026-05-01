@@ -155,6 +155,9 @@ private struct CurrentDeckRow: View {
     @AppStorage(FlashCardsConstants.userDefaultsKeyDebugShowSuccessfulReviewPriority)
     private var showSuccessfulReviewPriority = false
 
+    @AppStorage(FlashCardsConstants.userDefaultsKeyDebugAdjustProgressSquares)
+    private var debugAdjustProgressSquares = false
+
     let card: CardProgress
 
     /// Fixed width so every row’s sound and word columns line up.
@@ -185,7 +188,13 @@ private struct CurrentDeckRow: View {
                         .accessibilityLabel("Review priority \(String(format: "%.1f", card.reviewPriority))")
                 }
                 MasteryFiveBoxes(
-                    filledCount: min(max(card.masteryCorrectCount, 0), FlashCardsConstants.masteryThreshold)
+                    filledCount: min(max(card.masteryCorrectCount, 0), FlashCardsConstants.masteryThreshold),
+                    onSquareTap: debugAdjustProgressSquares
+                        ? { count in
+                            card.masteryCorrectCount = count
+                            try? modelContext.save()
+                        }
+                        : nil
                 )
             }
             .frame(minWidth: Self.boxIndicatorWidth, alignment: .trailing)
@@ -205,6 +214,8 @@ private struct CurrentDeckRow: View {
 /// Five small squares: first `filledCount` are filled green; the rest are outlined only.
 private struct MasteryFiveBoxes: View {
     let filledCount: Int
+    /// When set (debug), tapping square *n* sets mastery to *n* (1…threshold).
+    var onSquareTap: ((Int) -> Void)?
 
     private static let boxSize: CGFloat = 12
     private static let boxSpacing: CGFloat = 4
@@ -215,18 +226,37 @@ private struct MasteryFiveBoxes: View {
     }
 
     var body: some View {
+        let threshold = FlashCardsConstants.masteryThreshold
         HStack(spacing: Self.boxSpacing) {
-            ForEach(0..<FlashCardsConstants.masteryThreshold, id: \.self) { index in
-                RoundedRectangle(cornerRadius: 2, style: .continuous)
-                    .fill(index < filledCount ? Color.green : Color.clear)
-                    .frame(width: Self.boxSize, height: Self.boxSize)
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 2, style: .continuous)
-                            .stroke(Color.secondary.opacity(0.55), lineWidth: 1)
+            ForEach(0..<threshold, id: \.self) { index in
+                let squareNumber = index + 1
+                let filled = index < filledCount
+                if let onSquareTap {
+                    Button {
+                        onSquareTap(squareNumber)
+                    } label: {
+                        masterySquareShape(filled: filled)
                     }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Set progress to \(squareNumber) of \(threshold)")
+                } else {
+                    masterySquareShape(filled: filled)
+                }
             }
         }
-        .accessibilityLabel("\(filledCount) of \(FlashCardsConstants.masteryThreshold) correct toward mastery")
+        .accessibilityElement(children: onSquareTap == nil ? .ignore : .contain)
+        .accessibilityLabel(onSquareTap == nil ? "\(filledCount) of \(threshold) correct toward mastery" : "")
+    }
+
+    private func masterySquareShape(filled: Bool) -> some View {
+        RoundedRectangle(cornerRadius: 2, style: .continuous)
+            .fill(filled ? Color.green : Color.clear)
+            .frame(width: Self.boxSize, height: Self.boxSize)
+            .overlay {
+                RoundedRectangle(cornerRadius: 2, style: .continuous)
+                    .stroke(Color.secondary.opacity(0.55), lineWidth: 1)
+            }
+            .contentShape(Rectangle())
     }
 }
 

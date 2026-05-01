@@ -21,7 +21,11 @@ struct PhonicsModeSoundListView: View {
     let mode: PhonicsModeExerciseKind
     var chrome: PhonicsModeSoundListChrome = .standalone
 
+    @Environment(\.modelContext) private var modelContext
     @Bindable private var appearance = StudyAppearanceSettings.shared
+
+    @AppStorage(FlashCardsConstants.userDefaultsKeyDebugAdjustProgressSquares)
+    private var debugAdjustProgressSquares = false
 
     @Query(
         filter: #Predicate<CardProgress> { card in
@@ -203,7 +207,20 @@ struct PhonicsModeSoundListView: View {
 
             Spacer(minLength: 8)
 
-            ModeExerciseFiveBoxes(filledCount: filled)
+            ModeExerciseFiveBoxes(
+                filledCount: filled,
+                onSquareTap: debugAdjustProgressSquares
+                    ? { count in
+                        ModeWordProgressService.setCorrectCountTowardMastery(
+                            soundOrderIndex: card.orderIndex,
+                            mode: mode,
+                            word: word,
+                            count: count,
+                            context: modelContext
+                        )
+                    }
+                    : nil
+            )
         }
         .padding(.vertical, 4)
     }
@@ -253,7 +270,20 @@ struct PhonicsModeSoundListView: View {
             }
 
             Spacer(minLength: 8)
-            ModeExerciseFiveBoxes(filledCount: min(filled, FlashCardsConstants.modeExerciseWordMasteryCount))
+            ModeExerciseFiveBoxes(
+                filledCount: min(filled, FlashCardsConstants.modeExerciseWordMasteryCount),
+                onSquareTap: debugAdjustProgressSquares
+                    ? { count in
+                        ModeWordProgressService.setCorrectCountTowardMastery(
+                            soundOrderIndex: row.soundOrderIndex,
+                            mode: mode,
+                            word: row.wordKey,
+                            count: count,
+                            context: modelContext
+                        )
+                    }
+                    : nil
+            )
         }
     }
 
@@ -272,6 +302,8 @@ struct PhonicsModeSoundListView: View {
 
 private struct ModeExerciseFiveBoxes: View {
     let filledCount: Int
+    /// When set (debug), tapping square *n* sets progress to *n* (1…cap).
+    var onSquareTap: ((Int) -> Void)?
 
     private static let boxSize: CGFloat = 10
     private static let boxSpacing: CGFloat = 3
@@ -281,15 +313,33 @@ private struct ModeExerciseFiveBoxes: View {
     var body: some View {
         HStack(spacing: Self.boxSpacing) {
             ForEach(0..<cap, id: \.self) { index in
-                RoundedRectangle(cornerRadius: 2, style: .continuous)
-                    .fill(index < filledCount ? Color.green : Color.clear)
-                    .frame(width: Self.boxSize, height: Self.boxSize)
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 2, style: .continuous)
-                            .stroke(Color.secondary.opacity(0.5), lineWidth: 1)
+                let squareNumber = index + 1
+                let filled = index < filledCount
+                if let onSquareTap {
+                    Button {
+                        onSquareTap(squareNumber)
+                    } label: {
+                        modeSquareShape(filled: filled)
                     }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Set progress to \(squareNumber) of \(cap)")
+                } else {
+                    modeSquareShape(filled: filled)
+                }
             }
         }
-        .accessibilityLabel("\(min(filledCount, cap)) of \(cap) for this word in the exercise")
+        .accessibilityElement(children: onSquareTap == nil ? .ignore : .contain)
+        .accessibilityLabel(onSquareTap == nil ? "\(min(filledCount, cap)) of \(cap) for this word in the exercise" : "")
+    }
+
+    private func modeSquareShape(filled: Bool) -> some View {
+        RoundedRectangle(cornerRadius: 2, style: .continuous)
+            .fill(filled ? Color.green : Color.clear)
+            .frame(width: Self.boxSize, height: Self.boxSize)
+            .overlay {
+                RoundedRectangle(cornerRadius: 2, style: .continuous)
+                    .stroke(Color.secondary.opacity(0.5), lineWidth: 1)
+            }
+            .contentShape(Rectangle())
     }
 }

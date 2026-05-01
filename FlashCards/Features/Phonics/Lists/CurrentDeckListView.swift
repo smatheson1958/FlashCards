@@ -192,6 +192,7 @@ private struct CurrentDeckRow: View {
                     onSquareTap: debugAdjustProgressSquares
                         ? { count in
                             card.masteryCorrectCount = count
+                            DeckManager.promoteToSuccessfulIfMastered(card, context: modelContext)
                             try? modelContext.save()
                         }
                         : nil

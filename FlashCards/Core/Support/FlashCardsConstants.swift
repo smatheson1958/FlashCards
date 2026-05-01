@@ -30,10 +30,10 @@ enum FlashCardsConstants {
     /// When opening construction or segmentation from the working-sounds list, at most this many words are practised in one visit before returning to the list.
     static let phonicsWordsPerSoundDrillSession = 2
 
-    /// Teaching-deck size and phonics “working sounds” cap. Must match `totalSounds` in bundled `Seed/sound_units_primary_index_146.json` (see `SoundUnitsPrimaryIndexLoader`).
+    /// Total sounds in the primary curriculum and cap for phonics “working sounds” lists (Construction / Segmentation). Must match `totalSounds` in bundled `Seed/sound_units_primary_index_146.json` (see `SoundUnitsPrimaryIndexLoader`). Not the count of `currentDeck` rows to maintain after each mastery.
     static let currentDeckTargetCount = 146
 
-    /// On first seed only: how many sounds start in the teaching deck (`currentDeck`), in `orderIndex` order. Additional sounds enter via `DeckManager.introduceNextCardsToReachTarget` as the learner progresses.
+    /// How many sounds sit in the teaching deck (`currentDeck`) at once: this many are seeded on first import and `DeckManager.introduceNextCardsToReachTarget` refills toward this count when a card graduates (typically one new sound per completion).
     static let initialSoundDeckIntroLimit = 30
     static let maxReviewCardsPerSession = 5
     static let reviewPriorityMin = 0.25

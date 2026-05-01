@@ -54,10 +54,11 @@ enum DeckManager {
 
     // MARK: - Introduce next cards
 
-    /// Pulls cards from `notIntroduced` into `currentDeck` until teaching count reaches `targetCount`.
+    /// Pulls cards from `notIntroduced` into `currentDeck` until the teaching roster reaches `targetCount`.
+    /// Uses `initialSoundDeckIntroLimit` by default so each mastered card frees one slot and only enough replacements are introduced (not the whole curriculum).
     static func introduceNextCardsToReachTarget(
         context: ModelContext,
-        targetCount: Int = FlashCardsConstants.currentDeckTargetCount
+        targetCount: Int = FlashCardsConstants.initialSoundDeckIntroLimit
     ) {
         let current = cards(in: .currentDeck, context: context).count
         let deficit = targetCount - current

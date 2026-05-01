@@ -41,7 +41,7 @@ struct AppearanceSettingsSheet: View {
                                 .fixedSize(horizontal: false, vertical: true)
 
                             settingsBlock(title: "Font") {
-                                Text("Lexend and OpenDyslexic are bundled under the SIL Open Font License.")
+                                Text("Andika and OpenDyslexic are bundled under the SIL Open Font License.")
                                     .font(.caption)
                                     .foregroundStyle(.tertiary)
                                     .fixedSize(horizontal: false, vertical: true)

@@ -20,7 +20,8 @@ final class StudyAppearanceSettings {
     }
 
     /// PostScript names after registration (see bundled files in `Resources/Fonts`).
-    private static let lexendPostScriptName = "Lexend-Regular"
+    private static let andikaRegularPostScriptName = "Andika"
+    private static let andikaBoldPostScriptName = "Andika-Bold"
     private static let openDyslexicPostScriptName = "OpenDyslexic-Regular"
 
     private let defaults = UserDefaults.standard
@@ -45,7 +46,7 @@ final class StudyAppearanceSettings {
         didSet { defaults.set(textIndex, forKey: Keys.text) }
     }
 
-    /// 0 rounded system, 1 serif (Times-style system reading font), 2 Lexend (OFL), 3 OpenDyslexic (OFL).
+    /// 0 rounded system, 1 serif (Times-style system reading font), 2 Andika (OFL), 3 OpenDyslexic (OFL).
     var fontIndex: Int {
         didSet { defaults.set(fontIndex, forKey: Keys.font) }
     }
@@ -92,12 +93,12 @@ final class StudyAppearanceSettings {
 
     static let textNames = ["Slate", "Teal", "Plum", "Cocoa"]
 
-    static let fontTitles = ["Rounded", "Serif", "Lexend", "OpenDyslexic"]
+    static let fontTitles = ["Rounded", "Serif", "Andika", "OpenDyslexic"]
 
     static let fontFootnotes = [
         "Soft, rounded system letters (Apple)",
         "Times-style reading serif — system font (Apple)",
-        "Royalty-free (SIL Open Font License)",
+        "Literacy-focused sans — royalty-free (SIL Open Font License)",
         "Dyslexia-friendly, royalty-free (SIL Open Font License)",
     ]
 
@@ -124,8 +125,10 @@ final class StudyAppearanceSettings {
         case 1:
             return .system(size: size, weight: weight, design: .serif)
         case 2:
-            // Variable font: weight is supported.
-            return Font.custom(lexendPostScriptName, size: size).weight(weight)
+            let psName = weight == .semibold || weight == .bold || weight == .heavy || weight == .black
+                ? andikaBoldPostScriptName
+                : andikaRegularPostScriptName
+            return Font.custom(psName, size: size)
         case 3:
             // OpenDyslexic Regular has a single face; asking SwiftUI for `.weight(.medium)` etc. often substitutes SF Pro.
             let base = Font.custom(openDyslexicPostScriptName, size: size)

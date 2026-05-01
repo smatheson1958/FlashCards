@@ -211,7 +211,7 @@ struct FlashCardStudyView: View {
 
     @ViewBuilder
     private func progressHint(card: CardProgress, isReview: Bool) -> some View {
-        HStack {
+        HStack(alignment: .center, spacing: 12) {
             if isReview {
                 Text("Review")
                     .font(appearance.bodyFont(size: 12, weight: .semibold))
@@ -220,7 +220,15 @@ struct FlashCardStudyView: View {
                     .background(appearance.surroundColor.opacity(0.35), in: Capsule())
                     .foregroundStyle(appearance.primaryTextColor.opacity(0.9))
             }
-            Spacer()
+            Spacer(minLength: 8)
+            if session.sessionTotalCards > 0 {
+                Text("\(session.currentSessionCardNumber) / \(session.sessionTotalCards)")
+                    .font(appearance.bodyFont(size: 13, weight: .semibold))
+                    .monospacedDigit()
+                    .foregroundStyle(appearance.primaryTextColor.opacity(0.92))
+                    .accessibilityLabel("Card \(session.currentSessionCardNumber) of \(session.sessionTotalCards)")
+            }
+            Spacer(minLength: 8)
             if !isReview {
                 Text("\(card.masteryCorrectCount)/\(FlashCardsConstants.masteryThreshold)")
                     .font(appearance.bodyFont(size: 12))

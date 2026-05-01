@@ -22,9 +22,17 @@ final class StudySessionStore {
 
     private(set) var queue: [SessionEntry] = []
     private(set) var started = false
+    /// Count of cards when the session began (fixed for the session). Used for progress UI.
+    private(set) var sessionTotalCards: Int = 0
 
     var currentEntry: SessionEntry? { queue.first }
     var isComplete: Bool { started && queue.isEmpty }
+
+    /// 1-based position in this session’s deck (`1…sessionTotalCards` while a card is showing).
+    var currentSessionCardNumber: Int {
+        guard started, !queue.isEmpty, sessionTotalCards > 0 else { return 0 }
+        return sessionTotalCards - queue.count + 1
+    }
 
     func startSession(modelContext: ModelContext) {
         let teaching = DeckManager.cards(in: .currentDeck, context: modelContext)
@@ -40,16 +48,19 @@ final class StudySessionStore {
         guard !entries.isEmpty else {
             queue = []
             started = false
+            sessionTotalCards = 0
             return
         }
         entries.shuffle()
         queue = entries
+        sessionTotalCards = entries.count
         started = true
     }
 
     func resetSession() {
         queue = []
         started = false
+        sessionTotalCards = 0
     }
 
     /// Correct swipe: teaching advances progress; review adjusts priority and drops from session.

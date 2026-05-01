@@ -112,45 +112,90 @@ struct SegmentationModeView: View {
     /// Wide rows: horizontal scroll + edge affordances. Narrow rows: centered, no scroll (avoids left-aligned short words).
     private func segmentStripScrollableZStack(scrollHintActive: Bool) -> some View {
         ZStack {
-            ScrollView(.horizontal, showsIndicators: true) {
-                HStack(spacing: 12) {
-                    ForEach(segments.indices, id: \.self) { index in
-                        segmentButton(for: index)
+            ScrollViewReader { proxy in
+                ScrollView(.horizontal, showsIndicators: true) {
+                    HStack(spacing: 12) {
+                        ForEach(segments.indices, id: \.self) { index in
+                            segmentButton(for: index)
+                                .id(index)
+                        }
                     }
+                    .padding(.vertical, 4)
+                    .padding(.horizontal, 2)
+                    .background(
+                        GeometryReader { geo in
+                            Color.clear.preference(
+                                key: SegmentationSegmentRowContentWidthKey.self,
+                                value: geo.size.width
+                            )
+                        }
+                    )
                 }
-                .padding(.vertical, 4)
-                .padding(.horizontal, 2)
+                .scrollIndicators(.visible)
+                .scrollBounceBehavior(.basedOnSize)
                 .background(
                     GeometryReader { geo in
                         Color.clear.preference(
-                            key: SegmentationSegmentRowContentWidthKey.self,
+                            key: SegmentationSegmentRowViewportWidthKey.self,
                             value: geo.size.width
                         )
                     }
                 )
-            }
-            .scrollIndicators(.visible)
-            .scrollBounceBehavior(.basedOnSize)
-            .background(
-                GeometryReader { geo in
-                    Color.clear.preference(
-                        key: SegmentationSegmentRowViewportWidthKey.self,
-                        value: geo.size.width
-                    )
+                .frame(maxWidth: .infinity)
+                .onAppear {
+                    scrollSegmentRowToStart(proxy: proxy)
                 }
-            )
-            .frame(maxWidth: .infinity)
+                .onChange(of: word) { _, _ in
+                    scrollSegmentRowToStart(proxy: proxy)
+                }
+                .onChange(of: segmentRowOverflows) { _, overflows in
+                    if overflows {
+                        scrollSegmentRowToStart(proxy: proxy)
+                    }
+                }
+            }
 
             if segmentStripShowsScrollAffordance {
                 HStack(spacing: 0) {
-                    segmentScrollEdgeAffordance(isLeading: true, scrollHintActive: scrollHintActive)
                     Spacer(minLength: 0)
-                    segmentScrollEdgeAffordance(isLeading: false, scrollHintActive: scrollHintActive)
+                    segmentStripTrailingMoreCue
                 }
                 .frame(minHeight: 64)
                 .allowsHitTesting(false)
                 .accessibilityHidden(true)
             }
+        }
+    }
+
+    /// Fixed on the trailing edge whenever the scroll strip is shown (overflow geometry can lag or match incorrectly).
+    private var segmentStripTrailingMoreCue: some View {
+        ZStack(alignment: .trailing) {
+            LinearGradient(
+                colors: [
+                    appearance.backgroundColor.opacity(0),
+                    appearance.backgroundColor.opacity(0.55),
+                    appearance.backgroundColor,
+                ],
+                startPoint: .leading,
+                endPoint: .trailing
+            )
+            .frame(width: 76)
+
+            Text("...")
+                .font(.system(size: 26, weight: .heavy, design: .rounded))
+                .foregroundStyle(appearance.primaryTextColor)
+                .padding(.trailing, 12)
+                .padding(.leading, 8)
+                .accessibilityLabel("More letters, swipe the row sideways")
+        }
+        .frame(width: 76)
+    }
+
+    /// Anchor first segment to the leading edge when the row scrolls (avoids starting centred with ends clipped).
+    private func scrollSegmentRowToStart(proxy: ScrollViewProxy) {
+        Task { @MainActor in
+            try? await Task.sleep(for: .milliseconds(120))
+            proxy.scrollTo(0, anchor: .leading)
         }
     }
 
@@ -188,31 +233,6 @@ struct SegmentationModeView: View {
         segmentRowOverflows = segmentRowContentWidth > segmentRowViewportWidth + pad
     }
 
-    @ViewBuilder
-    private func segmentScrollEdgeAffordance(isLeading: Bool, scrollHintActive: Bool) -> some View {
-        let bandWidth: CGFloat = 36
-        let showChevrons = segments.count >= 5
-        ZStack(alignment: isLeading ? .leading : .trailing) {
-            LinearGradient(
-                colors: isLeading
-                    ? [appearance.backgroundColor, appearance.backgroundColor.opacity(0)]
-                    : [appearance.backgroundColor.opacity(0), appearance.backgroundColor],
-                startPoint: .leading,
-                endPoint: .trailing
-            )
-            .frame(width: bandWidth)
-
-            if showChevrons {
-                Image(systemName: isLeading ? "chevron.left" : "chevron.right")
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(appearance.surroundColor.opacity(0.55))
-                    .symbolEffect(.pulse, options: .repeating.speed(0.55), isActive: scrollHintActive)
-                    .padding(isLeading ? .leading : .trailing, 8)
-            }
-        }
-        .frame(width: bandWidth)
-    }
-
     var body: some View {
         VStack(spacing: 36) {
             Spacer(minLength: 24)
@@ -231,7 +251,7 @@ struct SegmentationModeView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 20)
                     .padding(.horizontal, 24)
-                    .background(appearance.cardFillColor, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+                    .background(Color.clear, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
                     .overlay(
                         RoundedRectangle(cornerRadius: 20, style: .continuous)
                             .strokeBorder(appearance.surroundColor.opacity(0.4), lineWidth: 1)
@@ -248,12 +268,12 @@ struct SegmentationModeView: View {
                     segmentStripView
                 }
 
-                if segmentRowOverflows {
+                if segmentRowOverflows || segments.count >= 5 {
                     Label("Swipe the letters sideways to see them all", systemImage: "hand.point.left.and.right.fill")
-                        .font(appearance.bodyFont(size: 13, weight: .semibold))
-                        .foregroundStyle(appearance.surroundColor.opacity(0.92))
+                        .font(appearance.bodyFont(size: 14, weight: .semibold))
+                        .foregroundStyle(appearance.primaryTextColor)
                         .labelStyle(.titleAndIcon)
-                        .symbolRenderingMode(.hierarchical)
+                        .symbolRenderingMode(.monochrome)
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: .infinity)
                         .padding(.horizontal, 8)
@@ -284,9 +304,9 @@ struct SegmentationModeView: View {
             .buttonStyle(.borderedProminent)
             .disabled(!canRecordSuccess)
 
-            Text("Listen to the whole word, then each segment at least once—scroll sideways if the segment buttons don't all fit on screen. Then tap the button above to count one success toward five.")
+            Text("Listen to the whole word, then each segment at least once. When letters scroll sideways, they start at the first sound; follow the … on the right for more. Then tap the button above to count one success toward five.")
                 .font(appearance.bodyFont(size: 13))
-                .foregroundStyle(appearance.primaryTextColor.opacity(0.7))
+                .foregroundStyle(Color(red: 0.20, green: 0.21, blue: 0.24))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 8)
 

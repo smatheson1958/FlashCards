@@ -2,7 +2,7 @@
 //  SegmentationJourneySeedDTO.swift
 //  FlashCards
 //
-//  Decodes `Resources/Seed/segmentation_seed_146.json` (visit pairs per sound).
+//  Decodes `Resources/Seed/phonics_structure.json` (visit pairs per sound).
 //
 
 import Foundation

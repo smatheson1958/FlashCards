@@ -2,7 +2,7 @@
 //  SegmentationJourneyLoader.swift
 //  FlashCards
 //
-//  Loads bundled `segmentation_seed_146.json` and resolves five visit pairs per `soundOrderIndex`.
+//  Loads bundled `phonics_structure.json` and resolves five visit pairs per `soundOrderIndex`.
 //
 
 import Foundation
@@ -72,7 +72,7 @@ enum SegmentationJourneyLoader {
         if let cachedRoot {
             return cachedRoot
         }
-        let name = "segmentation_seed_146"
+        let name = "phonics_structure"
         let ext = "json"
         guard let url = Bundle.main.url(forResource: name, withExtension: ext, subdirectory: "Seed")
             ?? Bundle.main.url(forResource: name, withExtension: ext) else {

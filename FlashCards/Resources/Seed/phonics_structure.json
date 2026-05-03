@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "assumption": "Working 146-card segmentation seed generated from a broad English phonics progression because the exact official ordered 146-card deck was not present in the uploaded specification.",
-  "sourceNote": "The uploaded background specification confirms a fixed dataset of about 146 cards and a seed-JSON-first architecture, but it does not include the full ordered 146-sound list. See fileciteturn1file1 and fileciteturn1file3.",
+  "assumption": "Working 146-card bundled phonics structure generated from a broad English phonics progression because the exact official ordered 146-card deck was not present in the uploaded specification.",
+  "sourceNote": "The uploaded background specification confirms a fixed dataset of about 146 cards and a JSON-first architecture, but it does not include the full ordered 146-sound list. See fileciteturn1file1 and fileciteturn1file3.",
   "globalRules": {
     "pairModel": "5 visits per sound, 2 words per visit",
     "wordAdvanceRule": "Unlock the next pair only after the current pair is passed.",

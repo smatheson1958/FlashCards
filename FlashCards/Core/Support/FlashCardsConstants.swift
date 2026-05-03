@@ -51,7 +51,7 @@ enum FlashCardsConstants {
 
     // MARK: Construction activity (POC from bundled JSON)
 
-    // MARK: Segmentation journey (module-local; `segmentation_seed_146.json`)
+    // MARK: Phonics structure bundle (`phonics_structure.json`; visit pairs per sound)
 
     /// Minimum successes and distinct words before checking recency for “segmentation secure” (module-only).
     enum SegmentationJourneySecure {
